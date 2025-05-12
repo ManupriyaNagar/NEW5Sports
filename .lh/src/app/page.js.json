@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 25,
             "patches": [
                 {
                     "date": 1747076108233,
@@ -96,6 +96,18 @@
                 {
                     "date": 1747088013411,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,12 @@\n \n \n \n import AboutUsSection from \"@/components/Home/AboutSection\";\n+import FounderSection from \"@/components/Home/FounderSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n+import SportsMedicineBanner from \"@/components/Home/SportsMedicineBanner\";\n import InfoGrid from \"@/components/Home/SportsUnlock\";\n \n \n import Image from \"next/image\";\n@@ -16,8 +18,11 @@\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n+     <SportsMedicineBanner />\n+  \n+      <FounderSection />\n \n \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1747089258850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \n \n \n import AboutUsSection from \"@/components/Home/AboutSection\";\n+import FeatureCard from \"@/components/Home/FeatureCard\";\n import FounderSection from \"@/components/Home/FounderSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n import SportsMedicineBanner from \"@/components/Home/SportsMedicineBanner\";\n@@ -21,9 +22,15 @@\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n   \n       <FounderSection />\n+      <FeatureCard\n+        topTitle=\"Healing Being Transformed\"\n+        topText=\"Elite recovery methods are being made accessible to all—enabling faster healing and peak performance.\"\n+        topImage=\"/images/recovery.jpg\"\n+        bottomTitle=\"Advanced Machines for Testing\"\n+        bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n+      />\n \n-\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747089336500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <FounderSection />\n       <FeatureCard\n         topTitle=\"Healing Being Transformed\"\n         topText=\"Elite recovery methods are being made accessible to all—enabling faster healing and peak performance.\"\n-        topImage=\"/images/recovery.jpg\"\n+        topImage=\"/news.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n \n"
+                },
+                {
+                    "date": 1747089343794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <FounderSection />\n       <FeatureCard\n         topTitle=\"Healing Being Transformed\"\n         topText=\"Elite recovery methods are being made accessible to all—enabling faster healing and peak performance.\"\n-        topImage=\"/news.jpg\"\n+        topImage=\"/news1.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n \n"
                 }
             ],
             "date": 1747076108233,
