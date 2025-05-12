@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/global/card/SportsCard.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1747076064204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747076145930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,14 @@\n import React from \"react\";\n import CardComponent from \"./CardComponent\";\n import FontLoader from \"./FontLoader\";\n \n+\n const SportsCard: React.FC = () => {\n   return (\n     <>\n       <CardComponent />\n-      <FontLoader />\n+<FontLoader/>\n     </>\n   );\n };\n \n"
+                },
+                {
+                    "date": 1747076210665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,13 @@\n import React from \"react\";\n import CardComponent from \"./CardComponent\";\n import FontLoader from \"./FontLoader\";\n \n-\n-const SportsCard: React.FC = () => {\n+const SportsCard = () => {\n   return (\n     <>\n       <CardComponent />\n-<FontLoader/>\n+      <FontLoader />\n     </>\n   );\n };\n \n"
+                }
+            ],
+            "date": 1747076064204,
+            "name": "Commit-0",
+            "content": "\"use client\";\n\nimport React from \"react\";\nimport CardComponent from \"./CardComponent\";\nimport FontLoader from \"./FontLoader\";\n\nconst SportsCard: React.FC = () => {\n  return (\n    <>\n      <CardComponent />\n      <FontLoader />\n    </>\n  );\n};\n\nexport default SportsCard;\n"
+        }
+    ]
+}

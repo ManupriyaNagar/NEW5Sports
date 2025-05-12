@@ -1,0 +1,82 @@
+{
+    "sourceFile": "src/components/Home/SportsUnlock.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1747086342449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747086405700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,19 +16,19 @@\n );\n \n const InfoGrid = () => {\n   return (\n-    <section className=\"re flex justify-center items-center ] bg-black px-4 py-16\">\n-      <div className=\"absolute top-10 left-10\">\n+    <section className=\" flex justify-center items-center  bg-black px-4 py-16\">\n+      <div className=\" left-10\">\n         <Card />\n       </div>\n-      <div className=\"absolute top-10 right-10\">\n+      <div className=\" right-10\">\n         <Card />\n       </div>\n-      <div className=\"absolute bottom-10 left-10\">\n+      <div className=\"left-10\">\n         <Card />\n       </div>\n-      <div className=\"absolute bottom-10 right-10\">\n+      <div className=\" right-10\">\n         <Card />\n       </div>\n \n       {/* Optional background grid or effect */}\n"
+                },
+                {
+                    "date": 1747086416197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,40 +1,9 @@\n-'use client';\n-import React from 'react';\n+import React from 'react'\n \n-const Card = () => (\n-  <div className=\"bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-[350px]\">\n-    <h3 className=\"text-2xl font-bold mb-3 leading-snug\">\n-      It’s Not Just <br />\n-      About Skills\n-    </h3>\n-    <p className=\"text-base leading-relaxed\">\n-      Modern sports are demanding. <br />\n-      Without building strength, speed, <br />\n-      and resilience, you risk falling behind.\n-    </p>\n-  </div>\n-);\n-\n-const InfoGrid = () => {\n+const SportsUnlock = () => {\n   return (\n-    <section className=\" flex justify-center items-center  bg-black px-4 py-16\">\n-      <div className=\" left-10\">\n-        <Card />\n-      </div>\n-      <div className=\" right-10\">\n-        <Card />\n-      </div>\n-      <div className=\"left-10\">\n-        <Card />\n-      </div>\n-      <div className=\" right-10\">\n-        <Card />\n-      </div>\n+    <div>SportsUnlock</div>\n+  )\n+}\n \n-      {/* Optional background grid or effect */}\n-      <div className=\"absolute inset-0 opacity-10 bg-gradient-to-br from-lime-400 via-sky-400 to-black z-0 rounded-xl pointer-events-none\" />\n-    </section>\n-  );\n-};\n-\n-export default InfoGrid;\n+export default SportsUnlock\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1747086607751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,40 @@\n-import React from 'react'\n+'use client';\n+import React from 'react';\n \n-const SportsUnlock = () => {\n+const Card = () => (\n+  <div className=\"bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-[350px]\">\n+    <h3 className=\"text-2xl font-bold mb-3 leading-snug\">\n+      It’s Not Just <br />\n\\ No newline at end of file\n+      About Skills\n+    </h3>\n+    <p className=\"text-base leading-relaxed\">\n+      Modern sports are demanding. <br />\n+      Without building strength, speed, <br />\n+      and resilience, you risk falling behind.\n+    </p>\n+  </div>\n+);\n+\n+const InfoGrid = () => {\n   return (\n-    <div>SportsUnlock</div>\n-  )\n-}\n+    <section className=\" flex justify-center items-center  bg-black px-4 py-16\">\n+      <div className=\" left-10\">\n+        <Card />\n+      </div>\n+      <div className=\" right-10\">\n+        <Card />\n+      </div>\n+      <div className=\"left-10\">\n+        <Card />\n+      </div>\n+      <div className=\" right-10\">\n+        <Card />\n+      </div>\n \n-export default SportsUnlock\n+      {/* Optional background grid or effect */}\n+      <div className=\"absolute inset-0 opacity-10 bg-gradient-to-br from-lime-400 via-sky-400 to-black z-0 rounded-xl pointer-events-none\" />\n+    </section>\n+  );\n+};\n+\n+export default InfoGrid;\n"
+                },
+                {
+                    "date": 1747086700853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,17 @@\n+// src/components/Home/InfoGrid.jsx\n 'use client';\n import React from 'react';\n+import WavyBackground from '@/components/global/Background/WavyBackground';\n \n-const Card = () => (\n-  <div className=\"bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-[350px]\">\n+const Card = ({ className }) => (\n+  <div\n+    className={`\n+      bg-white text-black p-6 rounded-3xl shadow-lg\n+      w-full max-w-[320px]\n+      ${className}\n+    `}\n+  >\n     <h3 className=\"text-2xl font-bold mb-3 leading-snug\">\n       It’s Not Just <br />\n       About Skills\n     </h3>\n@@ -14,27 +22,65 @@\n     </p>\n   </div>\n );\n \n-const InfoGrid = () => {\n-  return (\n-    <section className=\" flex justify-center items-center  bg-black px-4 py-16\">\n-      <div className=\" left-10\">\n+const InfoGrid = () => (\n+  <section className=\"relative bg-black text-white overflow-hidden py-20\">\n+    {/* Wave background */}\n+    <WavyBackground height={500} className=\"rounded-b-3xl\" />\n+\n+    {/* Heading */}\n+    <div className=\"relative z-10 text-center mb-12\">\n+      <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n+      <p className=\"mt-2 text-lg text-gray-200\">\n+        Empower your game with insights provided\n+      </p>\n+    </div>\n+\n+    {/* Central “5” & athlete */}\n+    <div className=\"relative z-10 flex justify-center items-center mb-12\">\n+      {/* Big translucent “5” */}\n+      <span\n+        className=\"\n+          absolute \n\\ No newline at end of file\n+          text-[20rem] font-extrabold \n+          text-black/10 \n+          select-none \n+          pointer-events-none\n+        \"\n+      >\n+        5\n+      </span>\n+      {/* Athlete image */}\n+      <img\n+        src=\"/athlete.png\"\n+        alt=\"Athlete\"\n+        className=\"relative h-[380px] object-contain\"\n+      />\n+    </div>\n+\n+    {/* Four cards */}\n+    <div className=\"relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6\">\n+      {/* top-left */}\n+      <div className=\"self-end justify-self-start\">\n         <Card />\n       </div>\n-      <div className=\" right-10\">\n+\n+      {/* top-right */}\n+      <div className=\"self-end justify-self-end\">\n         <Card />\n       </div>\n-      <div className=\"left-10\">\n+\n+      {/* bottom-left */}\n+      <div className=\"self-start justify-self-start\">\n         <Card />\n       </div>\n-      <div className=\" right-10\">\n+\n+      {/* bottom-right */}\n+      <div className=\"self-start justify-self-end\">\n         <Card />\n       </div>\n+    </div>\n+  </section>\n+);\n \n-      {/* Optional background grid or effect */}\n-      <div className=\"absolute inset-0 opacity-10 bg-gradient-to-br from-lime-400 via-sky-400 to-black z-0 rounded-xl pointer-events-none\" />\n-    </section>\n-  );\n-};\n-\n-export default InfoGrid;\n+export default InfoGrid;\n"
+                },
+                {
+                    "date": 1747086718456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n \n const InfoGrid = () => (\n   <section className=\"relative bg-black text-white overflow-hidden py-20\">\n     {/* Wave background */}\n-    <WavyBackground height={500} className=\"rounded-b-3xl\" />\n \n+\n     {/* Heading */}\n     <div className=\"relative z-10 text-center mb-12\">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n@@ -82,5 +82,5 @@\n     </div>\n   </section>\n );\n \n-export default InfoGrid;\n\\ No newline at end of file\n+export default InfoGrid;\n"
+                },
+                {
+                    "date": 1747086769180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         5\n       </span>\n       {/* Athlete image */}\n       <img\n-        src=\"/athlete.png\"\n+        src=\"/3.png\"\n         alt=\"Athlete\"\n         className=\"relative h-[380px] object-contain\"\n       />\n     </div>\n"
+                },
+                {
+                    "date": 1747086779097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       />\n     </div>\n \n     {/* Four cards */}\n-    <div className=\"relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6\">\n+    <div className=\"relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 absolute top-0 left-0 right-0 bottom-0\">\n       {/* top-left */}\n       <div className=\"self-end justify-self-start\">\n         <Card />\n       </div>\n"
+                },
+                {
+                    "date": 1747086790025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       />\n     </div>\n \n     {/* Four cards */}\n-    <div className=\"relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 absolute top-0 left-0 right-0 bottom-0\">\n+    <div className=\" z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 absolute top-0 left-0 right-0 bottom-0\">\n       {/* top-left */}\n       <div className=\"self-end justify-self-start\">\n         <Card />\n       </div>\n"
+                },
+                {
+                    "date": 1747086806779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center mb-12\">\n+    <div className=\"relative z-10 text-center mb-20\">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                },
+                {
+                    "date": 1747086816771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center mb-20\">\n+    <div className=\"relative z-10 text-center \">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                },
+                {
+                    "date": 1747086832441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center \">\n+    <div className=\"relative z-10 text-center mt-20 mb-12\">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                },
+                {
+                    "date": 1747086837888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center mt-20 mb-12\">\n+    <div className=\"relative z-10 text-center  mb-12\">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                },
+                {
+                    "date": 1747086843669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center  mb-12\">\n+    <div className=\"relative z-10 text-center  mb-40\">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                },
+                {
+                    "date": 1747086849208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center  mb-40\">\n+    <div className=\"relative z-10 text-center  mb-60\">\n       <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                },
+                {
+                    "date": 1747086859031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center  mb-60\">\n-      <h2 className=\"text-4xl font-bold\">Unlock Your Potential</h2>\n+    <div className=\"relative z-10 text-center  mb-32\">\n+      <h2 className=\"text-5xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n     </div>\n"
+                },
+                {
+                    "date": 1747086865471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     {/* Wave background */}\n \n \n     {/* Heading */}\n-    <div className=\"relative z-10 text-center  mb-32\">\n+    <div className=\"relative z-10 text-center  mb-40\">\n       <h2 className=\"text-5xl font-bold\">Unlock Your Potential</h2>\n       <p className=\"mt-2 text-lg text-gray-200\">\n         Empower your game with insights provided\n       </p>\n"
+                }
+            ],
+            "date": 1747086342449,
+            "name": "Commit-0",
+            "content": "'use client';\nimport React from 'react';\n\nconst Card = () => (\n  <div className=\"bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-[350px]\">\n    <h3 className=\"text-2xl font-bold mb-3 leading-snug\">\n      It’s Not Just <br />\n      About Skills\n    </h3>\n    <p className=\"text-base leading-relaxed\">\n      Modern sports are demanding. <br />\n      Without building strength, speed, <br />\n      and resilience, you risk falling behind.\n    </p>\n  </div>\n);\n\nconst InfoGrid = () => {\n  return (\n    <section className=\"re flex justify-center items-center ] bg-black px-4 py-16\">\n      <div className=\"absolute top-10 left-10\">\n        <Card />\n      </div>\n      <div className=\"absolute top-10 right-10\">\n        <Card />\n      </div>\n      <div className=\"absolute bottom-10 left-10\">\n        <Card />\n      </div>\n      <div className=\"absolute bottom-10 right-10\">\n        <Card />\n      </div>\n\n      {/* Optional background grid or effect */}\n      <div className=\"absolute inset-0 opacity-10 bg-gradient-to-br from-lime-400 via-sky-400 to-black z-0 rounded-xl pointer-events-none\" />\n    </section>\n  );\n};\n\nexport default InfoGrid;\n"
+        }
+    ]
+}

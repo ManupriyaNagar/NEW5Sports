@@ -1,0 +1,18 @@
+
+[
+    {
+      "title": ["It's Not Just", "About Skills"],
+      "description": "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+      "iconType": "running"
+    },
+    {
+      "title": ["Train Hard", "Play Hard"],
+      "description": "Our programs focus on endurance, agility, and strategy to keep you at the top of your game.",
+      "iconType": "basketball"
+    },
+    {
+      "title": ["Push Your", "Limits"],
+      "description": "Unlock your full potential with tailored coaching and cutting-edge performance analytics.",
+      "iconType": "tennis"
+    }
+  ]

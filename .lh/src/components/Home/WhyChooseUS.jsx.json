@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Home/WhyChooseUS.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1747076091655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1747076091655,
+            "name": "Commit-0",
+            "content": "import React from 'react'\nimport SportsCard from '../global/card/SportsCard'\n\nconst WhyChooseUS = () => {\n  return (\n<SportsCard/>\n  )\n}\n\nexport default WhyChooseUS"
+        }
+    ]
+}

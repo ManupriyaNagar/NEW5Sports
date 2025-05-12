@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/app/page.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1747076108233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747076809854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import WavyBackground from \"@/components/global/Background/WavyBackground\";\n import Header from \"@/components/global/header\";\n import AboutUsSection from \"@/components/Home/AboutSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n@@ -14,7 +15,14 @@\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n      <WhyChooseUS/>\n+     <WavyBackground\n+        height={500}\n+        lines={25}\n+        amplitude={15}\n+        gradientFrom=\"#2a3b4c\"\n+        gradientTo=\"#89a4b9\"\n+      />\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747076891966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n      <WhyChooseUS/>\n      <WavyBackground\n         height={500}\n         lines={25}\n-        amplitude={15}\n+        amplitude={67}\n         gradientFrom=\"#2a3b4c\"\n         gradientTo=\"#89a4b9\"\n       />\n     </div>\n"
+                },
+                {
+                    "date": 1747076898696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n      <WhyChooseUS/>\n      <WavyBackground\n         height={500}\n         lines={25}\n-        amplitude={67}\n+        amplitude={34}\n         gradientFrom=\"#2a3b4c\"\n         gradientTo=\"#89a4b9\"\n       />\n     </div>\n"
+                },
+                {
+                    "date": 1747076921301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n      <InfoGrid/>\n      <AboutUsSection/>\n      <WhyChooseUS/>\n      <WavyBackground\n-        height={500}\n+        height={900}\n         lines={25}\n         amplitude={34}\n         gradientFrom=\"#2a3b4c\"\n         gradientTo=\"#89a4b9\"\n"
+                },
+                {
+                    "date": 1747076933017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n      <InfoGrid/>\n      <AboutUsSection/>\n      <WhyChooseUS/>\n      <WavyBackground\n-        height={900}\n+        height={600}\n         lines={25}\n         amplitude={34}\n         gradientFrom=\"#2a3b4c\"\n         gradientTo=\"#89a4b9\"\n"
+                },
+                {
+                    "date": 1747076999518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n      <AboutUsSection/>\n      <WhyChooseUS/>\n      <WavyBackground\n         height={600}\n-        lines={25}\n+        lines={30}\n         amplitude={34}\n         gradientFrom=\"#2a3b4c\"\n         gradientTo=\"#89a4b9\"\n       />\n"
+                },
+                {
+                    "date": 1747077013865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import WavyBackgroundVertical from \"@/components/global/Background/WavyBackground\";\n import WavyBackground from \"@/components/global/Background/WavyBackground\";\n import Header from \"@/components/global/header\";\n import AboutUsSection from \"@/components/Home/AboutSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n@@ -15,9 +16,9 @@\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n      <WhyChooseUS/>\n-     <WavyBackground\n+     <WavyBackgroundVertical\n         height={600}\n         lines={30}\n         amplitude={34}\n         gradientFrom=\"#2a3b4c\"\n"
+                },
+                {
+                    "date": 1747077025260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import WavyBackgroundVertical from \"@/components/global/Background/WavyBackground\";\n-import WavyBackground from \"@/components/global/Background/WavyBackground\";\n-import Header from \"@/components/global/header\";\n+\n+\n import AboutUsSection from \"@/components/Home/AboutSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n import InfoGrid from \"@/components/Home/SportsUnlock\";\n"
+                },
+                {
+                    "date": 1747077214603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n-import WavyBackgroundVertical from \"@/components/global/Background/WavyBackground\";\n \n \n+\n+import WavyBackground from \"@/components/global/Background/WavyBackground\";\n import AboutUsSection from \"@/components/Home/AboutSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n import InfoGrid from \"@/components/Home/SportsUnlock\";\n@@ -16,14 +17,15 @@\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n      <WhyChooseUS/>\n-     <WavyBackgroundVertical\n+     <WavyBackground\n         height={600}\n-        lines={30}\n-        amplitude={34}\n+        lines={40}\n+        maxAmplitude={30}\n         gradientFrom=\"#2a3b4c\"\n         gradientTo=\"#89a4b9\"\n+        borderRadius={24}\n       />\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747083451290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,15 +17,8 @@\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n      <WhyChooseUS/>\n-     <WavyBackground\n-        height={600}\n-        lines={40}\n-        maxAmplitude={30}\n-        gradientFrom=\"#2a3b4c\"\n-        gradientTo=\"#89a4b9\"\n-        borderRadius={24}\n-      />\n+    \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747083456836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+\n+\n+\n+import WavyBackground from \"@/components/global/Background/WavyBackground\";\n+import AboutUsSection from \"@/components/Home/AboutSection\";\n+import HeroSection from \"@/components/Home/HeroSection\";\n+import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n+import InfoGrid from \"@/components/Home/SportsUnlock\";\n+import WhyChooseUS from \"@/components/Home/WhyChooseUS\";\n+\n+import Image from \"next/image\";\n+\n+export default function Home() {\n+  return (\n+    <div className=\"\">\n+     <HeroSection/>\n+     <SportsInfoCards/>\n+     <InfoGrid/>\n+     <AboutUsSection/>\n+     <WhyChooseUS/>\n+     <WavyBackground\n+        height={600}\n+        lines={40}\n+        maxAmplitude={30}\n+        gradientFrom=\"#2a3b4c\"\n+        gradientTo=\"#89a4b9\"\n+        borderRadius={24}\n+      />\n+    </div>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1747083469870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,43 +13,10 @@\n export default function Home() {\n   return (\n     <div className=\"\">\n      <HeroSection/>\n-     <SportsInfoCards/>\n-     <InfoGrid/>\n-     <AboutUsSection/>\n-     <WhyChooseUS/>\n-     <WavyBackground\n-        height={600}\n-        lines={40}\n-        maxAmplitude={30}\n-        gradientFrom=\"#2a3b4c\"\n-        gradientTo=\"#89a4b9\"\n-        borderRadius={24}\n+\n+derRadius={24}\n       />\n     </div>\n   );\n }\n-\n-\n-\n-import WavyBackground from \"@/components/global/Background/WavyBackground\";\n-import AboutUsSection from \"@/components/Home/AboutSection\";\n-import HeroSection from \"@/components/Home/HeroSection\";\n-import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n-import InfoGrid from \"@/components/Home/SportsUnlock\";\n-import WhyChooseUS from \"@/components/Home/WhyChooseUS\";\n-\n-import Image from \"next/image\";\n-\n-export default function Home() {\n-  return (\n-    <div className=\"\">\n-     <HeroSection/>\n-     <SportsInfoCards/>\n-     <InfoGrid/>\n-     <AboutUsSection/>\n-     <WhyChooseUS/>\n-    \n-    </div>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1747083477313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,7 @@\n   return (\n     <div className=\"\">\n      <HeroSection/>\n \n-derRadius={24}\n-      />\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747083489157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,17 @@\n export default function Home() {\n   return (\n     <div className=\"\">\n      <HeroSection/>\n+     <SportsInfoCards/>\n \n+     <WavyBackground\n+        height={600}\n+        lines={40}\n+        maxAmplitude={30}\n+        gradientFrom=\"#2a3b4c\"\n+        gradientTo=\"#89a4b9\"\n+        borderRadius={24}\n+      />\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747084308623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,15 +15,8 @@\n     <div className=\"\">\n      <HeroSection/>\n      <SportsInfoCards/>\n \n-     <WavyBackground\n-        height={600}\n-        lines={40}\n-        maxAmplitude={30}\n-        gradientFrom=\"#2a3b4c\"\n-        gradientTo=\"#89a4b9\"\n-        borderRadius={24}\n-      />\n+\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747086291937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   return (\n     <div className=\"\">\n      <HeroSection/>\n      <SportsInfoCards/>\n+     <InfoGrid/>\n \n-\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747087009346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     <div className=\"\">\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n+     <AboutUsSection/>\n \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747087069879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     <div className=\"\">\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n-     <AboutUsSection/>\n+  \n \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747087743107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     <div className=\"\">\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n-  \n+     <AboutUsSection/>\n+     <WhyChooseUS/>\n \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747087767339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n \n \n \n-import WavyBackground from \"@/components/global/Background/WavyBackground\";\n+\n import AboutUsSection from \"@/components/Home/AboutSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n import InfoGrid from \"@/components/Home/SportsUnlock\";\n-import WhyChooseUS from \"@/components/Home/WhyChooseUS\";\n \n+\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n@@ -16,9 +16,9 @@\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n-     <WhyChooseUS/>\n+=\n \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747087786395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n-=\n \n+\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747088013411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,12 @@\n \n \n \n import AboutUsSection from \"@/components/Home/AboutSection\";\n+import FounderSection from \"@/components/Home/FounderSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n+import SportsMedicineBanner from \"@/components/Home/SportsMedicineBanner\";\n import InfoGrid from \"@/components/Home/SportsUnlock\";\n \n \n import Image from \"next/image\";\n@@ -16,8 +18,11 @@\n      <HeroSection/>\n      <SportsInfoCards/>\n      <InfoGrid/>\n      <AboutUsSection/>\n+     <SportsMedicineBanner />\n+  \n+      <FounderSection />\n \n \n     </div>\n   );\n"
+                }
+            ],
+            "date": 1747076108233,
+            "name": "Commit-0",
+            "content": "import Header from \"@/components/global/header\";\nimport AboutUsSection from \"@/components/Home/AboutSection\";\nimport HeroSection from \"@/components/Home/HeroSection\";\nimport SportsInfoCards from \"@/components/Home/SportsInfoCard\";\nimport InfoGrid from \"@/components/Home/SportsUnlock\";\nimport WhyChooseUS from \"@/components/Home/WhyChooseUS\";\n\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className=\"\">\n     <HeroSection/>\n     <SportsInfoCards/>\n     <InfoGrid/>\n     <AboutUsSection/>\n     <WhyChooseUS/>\n    </div>\n  );\n}\n"
+        }
+    ]
+}

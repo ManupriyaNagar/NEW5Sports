@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/components/Home/FounderSection.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1747088021399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747088634996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import WavyBackground from '@/components/global/Background/WavyBackground';\n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative bg-black py-16\">\n+    <section className=\"relative\">\n       {/* Invert the gradient if you like (lighter wave) */}\n       <WavyBackground\n         height={400}\n         className=\"rounded-3xl bg-gradient-to-t from-[#334d6e] to-[#7fb1d2]\"\n"
+                },
+                {
+                    "date": 1747088737199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,10 @@\n \n export default function FounderSection() {\n   return ( \n     <section className=\"relative\">\n-      {/* Invert the gradient if you like (lighter wave) */}\n-      <WavyBackground\n-        height={400}\n-        className=\"rounded-3xl bg-gradient-to-t from-[#334d6e] to-[#7fb1d2]\"\n-      />\n \n+\n       <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4\">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n"
+                },
+                {
+                    "date": 1747088748822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // src/components/Home/FounderSection.jsx\n 'use client';\n import React from 'react';\n-import WavyBackground from '@/components/global/Background/WavyBackground';\n \n+\n export default function FounderSection() {\n   return ( \n     <section className=\"relative\">\n \n"
+                },
+                {
+                    "date": 1747088772431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative\">\n+    <section className=\"relative bg-green-500 py-16\">\n \n \n       <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4\">\n         <h2 className=\"text-3xl font-bold\">\n"
+                },
+                {
+                    "date": 1747088782535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative bg-green-500 py-16\">\n+    <section className=\"relative bg-green-500 py-16 px-20\">\n \n \n       <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4\">\n         <h2 className=\"text-3xl font-bold\">\n"
+                },
+                {
+                    "date": 1747088802336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative bg-green-500 py-16 px-20\">\n+    <section className=\"relative py-16 \">\n \n \n-      <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4\">\n+      <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
+                },
+                {
+                    "date": 1747088810066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return ( \n     <section className=\"relative py-16 \">\n \n \n-      <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n+      <div className=\"relative z-10 mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
+                },
+                {
+                    "date": 1747088854940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative py-16 \">\n \n-\n-      <div className=\"relative z-10 mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n+<div className='bg-green-500'>\n+<div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n@@ -18,7 +18,9 @@\n           a center that combines cutting-edge medical technology with personalized \n           care—dedicated to helping athletes achieve peak performance.\n         </p>\n       </div>\n+</div>\n+\n     </section>\n   );\n }\n"
+                },
+                {
+                    "date": 1747088863931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative py-16 \">\n+    <section className=\"relative py-16  px-20\">\n \n <div className='bg-green-500'>\n <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n"
+                },
+                {
+                    "date": 1747088870974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative py-16  px-20\">\n+    <section className=\"relative   px-20\">\n \n <div className='bg-green-500'>\n <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n"
+                },
+                {
+                    "date": 1747088886054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative   px-20\">\n \n-<div className='bg-green-500'>\n+<div className='bg-green-500 py-20'>\n <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n"
+                },
+                {
+                    "date": 1747088895517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+// src/components/Home/FounderSection.jsx\n+'use client';\n+import React from 'react';\n+\n+\n+export default function FounderSection() {\n+  return ( \n+    <section className=\"relative py-2  px-20\">\n+\n+<div className='bg-green-500 py-20'>\n+<div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n+        <h2 className=\"text-3xl font-bold\">\n+          Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n+          in sports medicine and orthopedic care.\n+        </h2>\n+        <p className=\"text-lg\">\n+          Our visionary founders, Dr. Pooja Jhade and Dr. Nataraj H M, established \n+          a center that combines cutting-edge medical technology with personalized \n+          care—dedicated to helping athletes achieve peak performance.\n+        </p>\n+      </div>\n+</div>\n+\n+    </section>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1747088906552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+// src/components/Home/FounderSection.jsx\n+'use client';\n+import React from 'react';\n+\n+\n+export default function FounderSection() {\n+  return ( \n+    <section className=\"relative py-2  px-20\">\n+\n+<div className='bg-green-500 py-20 rounded-2xl'>\n+<div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n+        <h2 className=\"text-3xl font-bold\">\n+          Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n+          in sports medicine and orthopedic care.\n+        </h2>\n+        <p className=\"text-lg\">\n+          Our visionary founders, Dr. Pooja Jhade and Dr. Nataraj H M, established \n+          a center that combines cutting-edge medical technology with personalized \n+          care—dedicated to helping athletes achieve peak performance.\n+        </p>\n+      </div>\n+</div>\n+\n+    </section>\n+  );\n+}\n"
+                }
+            ],
+            "date": 1747088021399,
+            "name": "Commit-0",
+            "content": "// src/components/Home/FounderSection.jsx\n'use client';\nimport React from 'react';\nimport WavyBackground from '@/components/global/Background/WavyBackground';\n\nexport default function FounderSection() {\n  return ( \n    <section className=\"relative bg-black py-16\">\n      {/* Invert the gradient if you like (lighter wave) */}\n      <WavyBackground\n        height={400}\n        className=\"rounded-3xl bg-gradient-to-t from-[#334d6e] to-[#7fb1d2]\"\n      />\n\n      <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4\">\n        <h2 className=\"text-3xl font-bold\">\n          Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n          in sports medicine and orthopedic care.\n        </h2>\n        <p className=\"text-lg\">\n          Our visionary founders, Dr. Pooja Jhade and Dr. Nataraj H M, established \n          a center that combines cutting-edge medical technology with personalized \n          care—dedicated to helping athletes achieve peak performance.\n        </p>\n      </div>\n    </section>\n  );\n}\n"
+        }
+    ]
+}

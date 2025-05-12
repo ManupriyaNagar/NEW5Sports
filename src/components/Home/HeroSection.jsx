@@ -16,17 +16,17 @@ const HeroSection = () => {
   return (
     <section className=" text-white py-10 overflow-hidden px-16 min-h-screen">
       {/* Parent Container with Rounded Lime Border */}
-      <div className="relative border-2 border-lime-400 rounded-4xl overflow-visible px-0">
+      <div className="relative border-2 border-lime-400 rounded-4xl overflow-visible px-0 h-[80vh]">
 
         {/* Background Layers */}
         <div className="absolute inset-0 z-0 py-10">
           {/* Curved line texture */}
           <div
-            className="absolute inset-0 bg-[url('/curved-line.png')] bg-repeat opacity-90 mix-blend-overlay p-2"
+            className="absolute inset-0 bg-repeat opacity-90 mix-blend-overlay p-2"
           />
           {/* Animated green-black gradient */}
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-gray-900 opacity-90 
+            className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-gray-900 opacity-90  rounded-4xl
                        bg-[length:200%_200%] animate-gradient-slide"
           />
         </div>
@@ -58,9 +58,9 @@ const HeroSection = () => {
         {/* Main Content */}
         <div className="container mx-auto px-4 relative z-10 text-center rounded-full">
           <div className="flex items-center">
-            <div className="items-center flex flex-col justify-center w-full rounded-full">
+            <div className="items-center flex flex-col justify-center w-full rounded-full py-4">
               <h1 className="text-5xl font-extrabold">5 SPORTS</h1>
-              <p className="mt-4 text-xl">Where Sports Meets Health Excellence</p>
+              <p className="mt-2 text-xl">Where Sports Meets Health Excellence</p>
               <p className={`${koulen.className} text-3xl text-[#D3FA22] font-extrabold mt-4`}>
                 INDIA’S FIRST INTEGRATED SPORTS MEDICINE & REHAB CENTER
               </p>
@@ -68,10 +68,7 @@ const HeroSection = () => {
                 enhancing performance, speeding recovery, and preventing injuries.
               </p>
 
-              <div className="mt-6 mb-20">
-                <p className="text-lg">UNLOCK A NEW LEVEL OF</p>
-                <h2 className="text-4xl font-bold mt-2">PERFORMANCE</h2>
-              </div>
+            
             </div>
 
             {/* Scroll Down Arrow */}
@@ -87,11 +84,25 @@ const HeroSection = () => {
                 </span>
               </button>
             </div>
+
+
+
+
+            
           </div>
+         
         </div>
 
         {/* Buttons on Border */}
         <div className="absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2 z-40">
+        <div className="bottom-0 mt-8 justify-center flex flex-col items-center">
+
+
+                <p className="text-2xl font-thin">UNLOCK A NEW LEVEL OF</p>
+                <h2 className="text-5xl font-bold mt-2 mb-5">PERFORMANCE</h2>
+              </div>
+
+
           <div className="flex justify-center space-x-4">
             <button className="bg-[#D3FA22] text-black px-6 py-2 rounded-full">
               Improve Your Performance

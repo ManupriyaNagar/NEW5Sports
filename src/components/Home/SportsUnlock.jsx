@@ -1,8 +1,16 @@
+// src/components/Home/InfoGrid.jsx
 'use client';
 import React from 'react';
+import WavyBackground from '@/components/global/Background/WavyBackground';
 
-const Card = () => (
-  <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-[350px]">
+const Card = ({ className }) => (
+  <div
+    className={`
+      bg-white text-black p-6 rounded-3xl shadow-lg
+      w-full max-w-[320px]
+      ${className}
+    `}
+  >
     <h3 className="text-2xl font-bold mb-3 leading-snug">
       It’s Not Just <br />
       About Skills
@@ -15,26 +23,64 @@ const Card = () => (
   </div>
 );
 
-const InfoGrid = () => {
-  return (
-    <section className="relative flex justify-center items-center min-h-[80vh] bg-black px-4 py-16">
-      <div className="absolute top-10 left-10">
-        <Card />
-      </div>
-      <div className="absolute top-10 right-10">
-        <Card />
-      </div>
-      <div className="absolute bottom-10 left-10">
-        <Card />
-      </div>
-      <div className="absolute bottom-10 right-10">
+const InfoGrid = () => (
+  <section className="relative bg-black text-white overflow-hidden py-20">
+    {/* Wave background */}
+
+
+    {/* Heading */}
+    <div className="relative z-10 text-center  mb-40">
+      <h2 className="text-5xl font-bold">Unlock Your Potential</h2>
+      <p className="mt-2 text-lg text-gray-200">
+        Empower your game with insights provided
+      </p>
+    </div>
+
+    {/* Central “5” & athlete */}
+    <div className="relative z-10 flex justify-center items-center mb-12">
+      {/* Big translucent “5” */}
+      <span
+        className="
+          absolute 
+          text-[20rem] font-extrabold 
+          text-black/10 
+          select-none 
+          pointer-events-none
+        "
+      >
+        5
+      </span>
+      {/* Athlete image */}
+      <img
+        src="/3.png"
+        alt="Athlete"
+        className="relative h-[380px] object-contain"
+      />
+    </div>
+
+    {/* Four cards */}
+    <div className=" z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 absolute top-0 left-0 right-0 bottom-0">
+      {/* top-left */}
+      <div className="self-end justify-self-start">
         <Card />
       </div>
 
-      {/* Optional background grid or effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-lime-400 via-sky-400 to-black z-0 rounded-xl pointer-events-none" />
-    </section>
-  );
-};
+      {/* top-right */}
+      <div className="self-end justify-self-end">
+        <Card />
+      </div>
+
+      {/* bottom-left */}
+      <div className="self-start justify-self-start">
+        <Card />
+      </div>
+
+      {/* bottom-right */}
+      <div className="self-start justify-self-end">
+        <Card />
+      </div>
+    </div>
+  </section>
+);
 
 export default InfoGrid;
