@@ -1,43 +1,36 @@
-import Image from "next/image";
+// src/components/Home/FeatureCard.jsx
+'use client';
+import React from 'react';
 
-export default function PartneredSection() {
-  return (
-    <section className="py-12 px-4 bg-black text-white">
-      <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden border border-green-400">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 px-6 py-6 bg-black">
-          <div className="flex-1">
-            <h3 className="text-xl md:text-2xl font-semibold mb-2">
-              Partnered with a <br /> Leading Firm
-            </h3>
-            <p className="text-sm md:text-base text-gray-300">
-              Elite recovery methods are being made accessible to all— enabling
-              faster healing and peak performance.
-            </p>
-          </div>
-          <div className="w-full md:w-52 h-28 flex-shrink-0">
-            <Image
-              src="/flag-building.jpg" // Replace with your actual image path
-              alt="Flag and building"
-              width={208}
-              height={112}
-              className="rounded-md object-cover w-full h-full"
-            />
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="bg-lime-400 text-black px-6 py-6">
-          <h4 className="text-lg md:text-xl font-bold mb-1">
-            Advanced Machines for Testing
-          </h4>
-          <p className="text-sm md:text-base max-w-3xl">
-            Our state-of-the-art testing equipment helps us assess performance,
-            strength, and recovery in real-time, allowing us to deliver the most
-            effective rehab solutions.
-          </p>
-        </div>
+const PartneredSection = ({
+  topTitle,
+  topText,
+  topImage,
+  bottomTitle,
+  bottomText,
+}) => (
+  <div className="max-w-[1350px] mx-auto border border-green-500 rounded-3xl overflow-hidden mt-10">
+    {/* ───── Top Section ───── */}
+    <div className="bg-black text-white p-8 flex flex-col lg:flex-row items-center gap-6">
+      <div className="flex-1 space-y-4">
+        <h3 className="text-3xl lg:text-4xl font-bold">{topTitle}</h3>
+        <p className="text-lg">{topText}</p>
       </div>
-    </section>
-  );
-}
+      <img
+        src={topImage}
+        alt={topTitle}
+        className="w-full lg:w-1/3 object-cover rounded-xl"
+      />
+    </div>
+
+    {/* ───── Bottom Section (Flat Green) ───── */}
+    <div className="bg-green-500 p-8 text-white text-center">
+      <h3 className="text-2xl lg:text-3xl font-bold">{bottomTitle}</h3>
+      <p className="mt-2 text-base lg:text-lg max-w-2xl mx-auto">
+        {bottomText}
+      </p>
+    </div>
+  </div>
+);
+
+export default PartneredSection;

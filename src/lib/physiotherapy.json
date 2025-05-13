@@ -1,0 +1,105 @@
+[
+  {
+    "id": "physiotherapy",
+    "title": "Physiotherapy",
+    "description": "Personalized treatment plans to restore movement, reduce pain, and improve function.",
+    "image": "/programmes3.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/q",
+    "consultations": [
+      {
+        "id": "initial",
+        "title": "Initial Consultation",
+        "price": "£85 / £110 (Clinical Director Luke Anthony)",
+        "duration": "50 minutes",
+        "details": "Includes a comprehensive injury assessment with a rehabilitation plan",
+        "idealFor": "Anyone with an injury needing assessment and a comprehensive rehabilitation plan",
+        "bookings": ["BOOK ONLINE", "BOOK ONLINE (Luke Anthony)"]
+      },
+      
+      {
+        "id": "follow-up",
+        "title": "Follow-up",
+        "price": "£58 / £62 (Clinical Director Luke Anthony)",
+        "duration": "40 minutes",
+        "details": "A follow-up appointment includes a re-assessment and progression of rehab exercises.",
+        "idealFor": "Ongoing treatment and rehabilitation to support your recovery",
+        "bookings": ["BOOK ONLINE", "BOOK ONLINE (Luke Anthony)"]
+      },
+      {
+        "id": "online",
+        "title": "Online appointment",
+        "price": "£60 initial consultation | £45 follow up",
+        "duration": "40 mins (initial) / 30 mins (follow-up)",
+        "details": "Remote video consultations via secure telehealth link.",
+        "idealFor": "Remote assessments",
+        "bookings": ["Initial: BOOK ONLINE", "Follow-Up: BOOK ONLINE"]
+      },
+      {
+        "id": "pro-athlete",
+        "title": "Pro-Athlete Assessment",
+        "price": "£180",
+        "duration": "85 minutes",
+        "details": "Comprehensive injury assessment with manual therapy and rehab plan.",
+        "idealFor": "Professional athletes needing advanced sports-based physiotherapy.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "sports-injuries",
+    "title": "Sports Injuries",
+    "description": "Specialized care for athletes to recover from injuries and return to peak performance.",
+    "image": "/programmes2.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/physiothere",
+    "consultations": [
+      {
+        "id": "acute-injury",
+        "title": "Acute Injury Care",
+        "price": "£70",
+        "duration": "45 minutes",
+        "details": "Immediate treatment for sprains, strains, and fractures.",
+        "idealFor": "Athletes with recent sports injuries",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "chronic-injury",
+        "title": "Chronic Injury Management",
+        "price": "£65",
+        "duration": "40 minutes",
+        "details": "Long-term management of overuse and recurring injuries.",
+        "idealFor": "Athletes with persistent pain or tissue damage",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "rehabilitation",
+    "title": "Rehabilitation",
+    "description": "Comprehensive programs to support recovery post-injury or surgery, enhancing strength and mobility.",
+    "image": "/programmes1.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/p1y",
+    "consultations": [
+      {
+        "id": "post-surgery",
+        "title": "Post-Surgery Rehab",
+        "price": "£75",
+        "duration": "50 minutes",
+        "details": "Guided recovery after orthopedic surgery.",
+        "idealFor": "Patients after joint replacement or repair",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "functional-training",
+        "title": "Functional Training",
+        "price": "£60",
+        "duration": "45 minutes",
+        "details": "Exercise programs to restore everyday movement and strength.",
+        "idealFor": "Anyone rebuilding mobility post-injury",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  }
+]

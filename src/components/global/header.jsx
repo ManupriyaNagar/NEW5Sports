@@ -20,11 +20,11 @@ const navItems = [
     name: 'Athletes',
     href: '',
     submenu: [
-      { name: 'Injury', href: '/Atheletes/injury' },
-      { name: 'Performance Lab', href: '/Atheletes/performance-lab' },
-      { name: 'Programmes', href: '/Atheletes/programmes' },
-      { name: 'Sports Psychology', href: '/Atheletes/sports-pychology' },
-      { name: 'Sports Nutrition', href: '/Atheletes/sports-nutrients' },
+      { name: 'Injury', href: '/atheletes/injury' },
+      { name: 'Performance Lab', href: '/atheletes/performance-lab' },
+      { name: 'Programmes', href: '/atheletes/programmes' },
+      { name: 'Sports Psychology', href: '/atheletes/sports-pychology' },
+      { name: 'Sports Nutrition', href: '/atheletes/sports-nutrients' },
     ],
   },
   {
