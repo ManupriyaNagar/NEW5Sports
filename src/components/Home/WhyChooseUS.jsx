@@ -1,4 +1,5 @@
-import { FaCircle } from "react-icons/fa";
+import { CircleAlert } from "lucide-react";
+
 
 const cardData = [
   {
@@ -40,7 +41,7 @@ export default function WhyChooseUs() {
               className="bg-lime-300 text-left rounded-xl p-6 relative flex-1 max-w-sm mx-auto shadow-lg"
             >
               <div className="absolute top-0 right-0 bg-black w-10 h-10 rounded-bl-xl flex items-center justify-center">
-                <FaCircle className="text-lime-300 text-xs" />
+                <CircleAlert className="text-lime-300 text-xs" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
               <p className="text-sm text-black">{card.description}</p>

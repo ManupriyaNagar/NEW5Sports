@@ -4,28 +4,37 @@ export default function AthletesRecoveryProgram() {
   return (
     <section className="bg-black rounded-t-3xl text-center px-4 py-12 relative">
       {/* Side cutouts */}
-      <div className="absolute top-1/2 -left-2 w-4 h-10 bg-black rounded-full -translate-y-1/2" />
-      <div className="absolute top-1/2 -right-2 w-4 h-10 bg-black rounded-full -translate-y-1/2" />
 
       {/* Header */}
-       <section className="relative bg-gray-100 rounded-2xl px-6 py-6 max-w-4xl mx-auto text-center">
-      {/* Left circle cutout */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-8 bg-black rounded-r-full" />
-      {/* Right circle cutout */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-8 bg-black rounded-l-full" />
+      <section className="flex  w-full text-black px-20 max-md:flex-col">
+      {/* Main Article with notches */}
+      <article className="relative flex flex-col py-10 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
+        {/* Left notch */}
+        <div
+          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+                     transform -translate-y-1/2"
+        />
+        {/* Right notch */}
+        <div
+          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+                     transform -translate-y-1/2"
+        />
 
-      <h2 className="text-xl md:text-2xl font-bold text-black">
-        Athletes Recovery Program
-      </h2>
-      <p className="text-gray-700 mt-2 text-sm md:text-base">
-        5 Sports Hospital | Your Personal Recovery Specialist,<br />
-        Tailoring Your Path to Full Recovery Each Week
-      </p>
+        <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+      Athletes Recovery Program
+        </h2>
+
+        <div className="flex flex-wrap gap-5 justify-center mt-6 w-full text-2xl text-center">
+  <p className="max-w-3xl">
+    Learn more about our mission to redefine sports medicine and athlete care.
+  </p>
+</div>
+
+      </article>
     </section>
-   
 
       {/* Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto text-left mt-10">
         {/* Block 1 */}
         <div className="flex flex-col gap-6">
           <h3 className="text-xl font-bold text-white">
