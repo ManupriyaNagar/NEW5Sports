@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/programmes/Rehabilitationlitation.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1747152409232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1747152409232,
+            "name": "Commit-0",
+            "content": "'use client';\n\nimport React from 'react';\nimport { rehabData } from './../../data/rehabData';\n\nconst RehabilitationPackages = ({ data = rehabData }) => {\n  const { sectionTitle, aclRehabPackage, rehabMembership } = data;\n\n  return (\n    <section className=\"bg-white py-20 px-4 md:px-10 text-gray-900\">\n      <div className=\"max-w-5xl mx-auto space-y-20\">\n        <h2 className=\"text-green-600 text-sm font-bold\">{sectionTitle}</h2>\n\n        {/* ACL REHAB PACKAGE */}\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-10\">\n          <div>\n            <h3 className=\"text-lg font-bold\">{aclRehabPackage.title}</h3>\n            {aclRehabPackage.description.map((line, idx) => (\n              <p key={idx} className=\"mt-4 text-gray-700\">{line}</p>\n            ))}\n          </div>\n          <div>\n            <p className=\"text-green-600 font-semibold\">{aclRehabPackage.price.label}</p>\n            <p className=\"mb-4\">{aclRehabPackage.price.value}</p>\n\n            <p className=\"text-green-600 font-semibold\">{aclRehabPackage.details.label}</p>\n            {aclRehabPackage.details.paragraphs.map((para, idx) => (\n              <p key={idx} className=\"text-gray-700 mb-3\">{para}</p>\n            ))}\n\n            <div className=\"mt-4\">\n              <iframe\n                width={aclRehabPackage.podcastEmbed.width}\n                height={aclRehabPackage.podcastEmbed.height}\n                scrolling=\"no\"\n                frameBorder=\"no\"\n                allow=\"autoplay\"\n                src={aclRehabPackage.podcastEmbed.iframeSrc}\n              ></iframe>\n            </div>\n          </div>\n        </div>\n\n        <hr className=\"my-12 border-t border-gray-300\" />\n\n        {/* REHAB MEMBERSHIP */}\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-10\">\n          <div>\n            <h3 className=\"text-lg font-bold\">{rehabMembership.title}</h3>\n            {rehabMembership.description.map((line, idx) => (\n              <p key={idx} className=\"mt-4 text-gray-700\">{line}</p>\n            ))}\n          </div>\n          <div>\n            <p className=\"text-green-600 font-semibold\">{rehabMembership.price.label}</p>\n            <p className=\"mb-4\">{rehabMembership.price.value}</p>\n\n            <p className=\"text-green-600 font-semibold\">{rehabMembership.details.label}</p>\n            <ul className=\"list-disc list-inside text-gray-700 space-y-1\">\n              {rehabMembership.details.items.map((item, idx) => (\n                <li key={idx}>{item}</li>\n              ))}\n            </ul>\n\n            <p className=\"mt-6 text-green-600 font-semibold\">{rehabMembership.idealFor.label}</p>\n            <p className=\"text-gray-700\">{rehabMembership.idealFor.description}</p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default RehabilitationPackages;\n"
+        }
+    ]
+}
