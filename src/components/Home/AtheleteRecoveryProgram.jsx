@@ -111,7 +111,7 @@ export default function AthletesRecoveryProgram() {
         </div>
         <div className="flex flex-col gap-6">
           <h3 className="text-xl font-bold text-white">
-           04 React Faster and Move with More Power When It Matters Most
+           04 React Faster and Move with More Power When It c:\Users\Manupriya\OneDrive\Desktop\5-sports-hospotal\5-Sports-Hospital\public\curved-line.pngMatters Most
           </h3>
           <p className="text-gray-300">
             In those high-pressure momenets, milliseconds count. that's why our recovery program includes methods to enhance your reaction time and build expolsive power,helping you stay sharp and make the game-changing move when it matters.
