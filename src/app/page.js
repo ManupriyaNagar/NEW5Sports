@@ -3,12 +3,18 @@
 
 
 import AboutUsSection from "@/components/Home/AboutSection";
+import AthletesRecoveryProgram from "@/components/Home/AtheleteRecoveryProgram";
 import FeatureCard from "@/components/Home/FeatureCard";
 import FounderSection from "@/components/Home/FounderSection";
+import HealingSection from "@/components/Home/HealingSection";
 import HeroSection from "@/components/Home/HeroSection";
+import PartneredSection from "@/components/Home/PartneredSection";
+import PerformanceSection from "@/components/Home/PerformanceSection";
+import RecoverySection from "@/components/Home/RecoverySection";
 import SportsInfoCards from "@/components/Home/SportsInfoCard";
 import SportsMedicineBanner from "@/components/Home/SportsMedicineBanner";
 import InfoGrid from "@/components/Home/SportsUnlock";
+import WhyChooseUs from "@/components/Home/WhyChooseUS";
 
 
 import Image from "next/image";
@@ -18,9 +24,12 @@ export default function Home() {
     <div className="">
      <HeroSection/>
      <SportsInfoCards/>
+  
      <InfoGrid/>
+       <PerformanceSection/>
      <AboutUsSection/>
      <SportsMedicineBanner />
+     <HealingSection/>
   
       <FounderSection />
       <FeatureCard
@@ -30,6 +39,11 @@ export default function Home() {
         bottomTitle="Advanced Machines for Testing"
         bottomText="Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions."
       />
+      <PartneredSection/>
+      <RecoverySection/>
+      <WhyChooseUs/>
+      <AthletesRecoveryProgram/>
+      
 
     </div>
   );

@@ -26,8 +26,7 @@ const HeroSection = () => {
           />
           {/* Animated green-black gradient */}
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-gray-900 opacity-90  rounded-4xl
-                       bg-[length:200%_200%] animate-gradient-slide"
+            className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-gray-900 opacity-90  rounded-4xl bg-[length:200%_200%] animate-gradient-slide"
           />
         </div>
 
