@@ -3,33 +3,51 @@
 import React from 'react';
 import WavyBackground from '@/components/global/Background/WavyBackground';
 
-const Card = ({ className }) => (
+const cardData = [
+  {
+    id: 1,
+    // title: "It’s Not Just About Skills",
+    description:
+      "360 facilities of orthopedics & physiotherapy covered under one roof.",
+  },
+  {
+    id: 2,
+    // title: "Train for Longevity",
+    description:
+      "State-of-the-art performance lab & diagnostics.",
+  },
+  {
+    id: 3,
+    // title: "Smart Recovery Matters",
+    description:
+      "Personalized treatment plans designed for athletes at all levels (beginners,semipro-atheletes and pro-atheletes).",
+  },
+  {
+    id: 4,
+    // title: "Beyond the Game",
+    description:
+      "Performance enhancement for agr group ranging from 5 to 80.",
+  },
+];
+
+const Card = ({ title, description, className }) => (
   <div
-    className={`
-      bg-white text-black p-6 rounded-3xl shadow-lg
-      w-full max-w-[320px]
-      ${className}
-    `}
+    className={`bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-[320px] ${className}`}
   >
     <h3 className="text-2xl font-bold mb-3 leading-snug">
-      It’s Not Just <br />
-      About Skills
+      {title}
     </h3>
-    <p className="text-base leading-relaxed">
-      Modern sports are demanding. <br />
-      Without building strength, speed, <br />
-      and resilience, you risk falling behind.
-    </p>
+    <p className="text-base leading-relaxed">{description}</p>
   </div>
 );
 
 const InfoGrid = () => (
   <section className="relative bg-black text-white overflow-hidden py-20">
-    {/* Wave background */}
-
+    {/* Optional: Wave background */}
+    {/* <WavyBackground /> */}
 
     {/* Heading */}
-    <div className="relative z-10 text-center  mb-40">
+    <div className="relative z-10 text-center mb-40">
       <h2 className="text-5xl font-bold">Unlock Your Potential</h2>
       <p className="mt-2 text-lg text-gray-200">
         Empower your game with insights provided
@@ -38,19 +56,9 @@ const InfoGrid = () => (
 
     {/* Central “5” & athlete */}
     <div className="relative z-10 flex justify-center items-center mb-12">
-      {/* Big translucent “5” */}
-      <span
-        className="
-          absolute 
-          text-[20rem] font-extrabold 
-          text-black/10 
-          select-none 
-          pointer-events-none
-        "
-      >
+      <span className="absolute text-[20rem] font-extrabold text-black/10 select-none pointer-events-none">
         5
       </span>
-      {/* Athlete image */}
       <img
         src="/3.png"
         alt="Athlete"
@@ -58,26 +66,19 @@ const InfoGrid = () => (
       />
     </div>
 
-    {/* Four cards */}
-    <div className=" z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 absolute top-0 left-0 right-0 bottom-0">
-      {/* top-left */}
+    {/* Cards Grid */}
+    <div className="z-10 max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 absolute top-0 left-0 right-0 bottom-0">
       <div className="self-end justify-self-start">
-        <Card />
+        <Card {...cardData[0]} />
       </div>
-
-      {/* top-right */}
       <div className="self-end justify-self-end">
-        <Card />
+        <Card {...cardData[1]} />
       </div>
-
-      {/* bottom-left */}
       <div className="self-start justify-self-start">
-        <Card />
+        <Card {...cardData[2]} />
       </div>
-
-      {/* bottom-right */}
       <div className="self-start justify-self-end">
-        <Card />
+        <Card {...cardData[3]} />
       </div>
     </div>
   </section>

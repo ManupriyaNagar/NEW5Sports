@@ -4,21 +4,25 @@ import WavyBackground from '@/components/global/Background/WavyBackground';
 
 const performanceCards = [
   {
-    title: "It’s Not Just About Skills",
+    title: `Cardiac Health:
+Heart + Lungs = Your Endurance Power`,
     description:
-      "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+      `Test: Comprehensive Health Assessment
+Why It Matters: Efficient heart and lung function = Better endurance, recovery, and overall stamina for peak performance.`,
     bgColor: "#009e60",
   },
   {
-    title: "It’s Not Just About Skills",
-    description:
-      "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+    title: `Muscle Health:
+Muscles + Strength Training = Explosive Power`,
+    description:`Test: Biomechanics Assesments
+Why It Matters: Strong muscles = Increased sprinting speed, higher jumps, and more explosive movements to maximize athletic.`,
     bgColor: "#d4ff00",
   },
   {
-    title: "It’s Not Just About Skills",
-    description:
-      "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+    title: `Organ Health:
+Organs + Function = Peak Athletic Performance`,
+    description:`Test: Comprehensive Health Assessment
+Why It Matters: Optimal organ function = Enhanced recovery, better performance, and sustained energy to push your limits.`,
     bgColor: "#4cd2ff",
   },
 ];

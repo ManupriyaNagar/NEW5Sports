@@ -3,21 +3,20 @@ import CardComponent from '@/components/global/card/CardComponent';
 
 const whyChooseUsCards = [
   {
-    title: ['It’s Not Just', 'About Skills'],
-    description:
-      'Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.',
+    title: ['Trusted by Elite Athletes & Teams'],
+    description: 'Preferred by top athletes and professional sports teams for our specialized care.',
     iconType: 'down',
   },
   {
-    title: ['It’s Not Just', 'About Skills'],
+    title: ['11 Specialized Medical Fields'],
     description:
-      'Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.',
+      'A multidisciplinary team offering cutting-edge treatments across multiple domains.',
     iconType: 'down',
   },
   {
-    title: ['It’s Not Just', 'About Skills'],
+    title: ['Advanced Diagnostic & Treatment Technology'],
     description:
-      'Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.',
+      'Equipped with the latest innovations for precise assessment and faster recovery.',
     iconType: 'down',
   },
 ];

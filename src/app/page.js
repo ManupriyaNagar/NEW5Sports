@@ -36,18 +36,18 @@ export default function Home() {
   
     
       <FeatureCard
-        topTitle="Healing Being Transformed"
-        topText="Elite recovery methods are being made accessible to all—enabling faster healing and peak performance."
-        topImage="/news1.jpg"
+        topTitle="Proud Partners with Vald Test"
+        topText="At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete."
+        topImage="/vald.jpg"
         bottomTitle="Advanced Machines for Testing"
         bottomText="Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions."
       />
       <PartneredSection
-              topTitle="Healing Being Transformed"
-              topText="Elite recovery methods are being made accessible to all—enabling faster healing and peak performance."
-              topImage="/news1.jpg"
-              bottomTitle="Advanced Machines for Testing"
-              bottomText="Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions."
+              topTitle="Partnered with a Leading Firm"
+              topText="5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess."
+              topImage="/test1.png"
+              bottomTitle="By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time."
+          
       
       />
       <RecoverySection/>

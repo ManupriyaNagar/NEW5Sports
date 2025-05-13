@@ -25,7 +25,7 @@ export default function RecoverySection() {
           {/* Image */}
           <div className="flex-1 border border-lime-400 rounded-2xl overflow-hidden p-2">
             <Image
-              src="/runner-right.png" // Replace with actual image path
+              src="/news1.jpg" // Replace with actual image path
               alt="Runner"
               width={500}
               height={500}
@@ -52,7 +52,7 @@ export default function RecoverySection() {
           {/* Image */}
           <div className="flex-1 border border-green-400 rounded-2xl overflow-hidden p-2">
             <Image
-              src="/runner-left.png" // Replace with actual image path
+              src="/news2.png" // Replace with actual image path
               alt="Runner"
               width={500}
               height={500}
