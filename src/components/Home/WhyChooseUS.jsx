@@ -1,54 +1,67 @@
-import { CircleAlert } from "lucide-react";
+import React from 'react';
+import CardComponent from '@/components/global/card/CardComponent';
 
-
-const cardData = [
+const whyChooseUsCards = [
   {
-    title: "It’s Not Just About Skills",
+    title: ['It’s Not Just', 'About Skills'],
     description:
-      "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+      'Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.',
+    iconType: 'down',
   },
   {
-    title: "It’s Not Just About Skills",
+    title: ['It’s Not Just', 'About Skills'],
     description:
-      "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+      'Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.',
+    iconType: 'down',
   },
   {
-    title: "It’s Not Just About Skills",
+    title: ['It’s Not Just', 'About Skills'],
     description:
-      "Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.",
+      'Modern sports are demanding. Without building strength, speed, and resilience, you risk falling behind.',
+    iconType: 'down',
   },
 ];
 
-export default function WhyChooseUs() {
+const WhyChooseUS = () => {
   return (
-    <section className="bg-white rounded-t-3xl px-4 py-12 text-center text-black relative">
-      <div className="absolute top-1/2 -left-2 w-4 h-10 bg-black rounded-full -translate-y-1/2" />
-      <div className="absolute top-1/2 -right-2 w-4 h-10 bg-black rounded-full -translate-y-1/2" />
+    <section className="px-4 md:px-20 relative">
+      {/* Cards floating above */}
 
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">Why Choose Us?</h2>
-        <p className="text-gray-600 mb-10 text-base md:text-lg">
-          Discover what makes us the{" "}
-          <span className="text-green-500 font-medium">
-            #1 Sports Medicine & Rehab Center in India.
-          </span>
-        </p>
 
-        <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              className="bg-lime-300 text-left rounded-xl p-6 relative flex-1 max-w-sm mx-auto shadow-lg"
-            >
-              <div className="absolute top-0 right-0 bg-black w-10 h-10 rounded-bl-xl flex items-center justify-center">
-                <CircleAlert className="text-lime-300 text-xs" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
-              <p className="text-sm text-black">{card.description}</p>
-            </div>
+      {/* Notched Header */}
+      <section className="flex w-full text-black max-md:flex-col mt-40 mb-10 z-10 relative">
+        <article className="relative flex flex-col py-20 w-full bg-white border border-lime-400 rounded-[32px] overflow-visible">
+          {/* Left notch */}
+          <div className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2" />
+          {/* Right notch */}
+          <div className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2" />
+
+          <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl mb-2">
+            Why Choose Us?
+          </h2>
+          <div className="flex flex-wrap justify-center mt-3 text-2xl text-center mb-2">
+            <p className="max-w-4xl">
+              Discover what makes us the{' '}
+              <span className="text-green-600 font-bold">#1 Sports Medicine & Rehab Center in India.</span>
+            </p>
+          </div>
+        </article>
+      </section>
+
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20  mt-[22rem] w-full flex justify-center">
+        <div className="flex flex-wrap justify-center gap-6">
+          {whyChooseUsCards.map((item, idx) => (
+            <CardComponent
+              key={idx}
+              title={item.title}
+              description={item.description}
+              iconType={item.iconType}
+            />
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default WhyChooseUS;

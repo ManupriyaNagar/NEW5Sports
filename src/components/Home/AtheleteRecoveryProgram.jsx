@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function AthletesRecoveryProgram() {
   return (
-    <section className="bg-black rounded-t-3xl text-center px-4 py-12 relative">
+    <section className="bg-black rounded-t-3xl text-center px-4 py-12 relative mt-80">
       {/* Side cutouts */}
 
       {/* Header */}
       <section className="flex  w-full text-black px-20 max-md:flex-col">
       {/* Main Article with notches */}
-      <article className="relative flex flex-col py-10 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
+      <article className="relative flex flex-col py-10 w-full   bg-white border border-lime-400 border-solid rounded-[32px] overflow-visible ">
         {/* Left notch */}
         <div
           className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 

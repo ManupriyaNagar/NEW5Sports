@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 23,
+            "activePatchIndex": 30,
             "patches": [
                 {
                     "date": 1747087979711,
@@ -100,6 +100,34 @@
                 {
                     "date": 1747088650126,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"py-16  flex justify-center\">\n+    <section className=\"mt-16 flex justify-center\">\n       <WavyBackground height={500} className=\"w-full max-w-[1350px]\">\n         {/* Top content: image + text */}\n         <div className=\"flex flex-col lg:flex-row items-center lg:items-start gap-12 px-6 pt-8 text-white\">\n           {/* Image */}\n"
+                },
+                {
+                    "date": 1747139142754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-// src/components/Home/SportsMedicineBanner.jsx\n 'use client';\n import React from 'react';\n import WavyBackground from '@/components/global/Background/WavyBackground';\n \n@@ -11,11 +10,12 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"mt-16 flex justify-center\">\n-      <WavyBackground height={500} className=\"w-full max-w-[1350px]\">\n-        {/* Top content: image + text */}\n+    <section className=\"mt-16 flex justify-center relative\">\n+      {/* WavyBackground */}\n+      <WavyBackground height={500} className=\"w-full max-w-[1350px] z-10\">\n+        {/* Content inside wave */}\n         <div className=\"flex flex-col lg:flex-row items-center lg:items-start gap-12 px-6 pt-8 text-white\">\n           {/* Image */}\n           <div className=\"flex-shrink-0\">\n             <img\n@@ -36,53 +36,50 @@\n               ))}\n             </ul>\n           </div>\n         </div>\n+      </WavyBackground>\n \n-        {/* Bottom buttons */}\n-        <div\n-  className=\"\n-    absolute\n-    left-1/2 bottom-0\n-    transform -translate-x-1/2 translate-y-1/2\n-    flex flex-wrap justify-center gap-6\n- \n-  \"\n->\n-  <a\n-    href=\"tel:9353555755\"\n-    className=\"\n-      bg-gradient-to-r from-lime-400 to-green-400\n-      text-black font-bold\n-      rounded-full\n-      px-8 py-4\n-      shadow-xl\n-      hover:from-lime-300 hover:to-green-300\n-      transform hover:scale-105\n-      transition\n-      text-center z-50\n-    \"\n-  >\n-    📞 Call Us Anytime<br />\n-    <span className=\"block text-2xl\">9353555755</span>\n-  </a>\n-  <a\n-    href=\"#learn-more\"\n-    className=\"\n-      bg-white text-black font-bold\n-      rounded-full\n-      px-8 py-4\n-      shadow-xl\n-      hover:bg-gray-100\n-      transform hover:scale-105\n-      transition\n-      text-center\n-    \"\n-  >\n-    Learn More →\n-  </a>\n-</div>\n-\n-      </WavyBackground>\n+      {/* Floating Buttons ABOVE wave */}\n+      <div\n+        className=\"\n+          absolute\n+          bottom-0 left-1/2\n+          transform -translate-x-1/2 translate-y-1/2\n+          flex flex-wrap justify-center gap-6\n+          z-20\n+        \"\n+      >\n+        <a\n+          href=\"tel:9353555755\"\n+          className=\"\n+            bg-gradient-to-r from-lime-400 to-green-400\n+            text-black font-bold\n+            rounded-full\n+            px-8 py-4\n+            shadow-xl\n+            hover:from-lime-300 hover:to-green-300\n+            transform hover:scale-105\n+            transition text-center\n+          \"\n+        >\n+          📞 Call Us Anytime<br />\n+          <span className=\"block text-2xl\">9353555755</span>\n+        </a>\n+        <a\n+          href=\"#learn-more\"\n+          className=\"\n+            bg-white text-black font-bold\n+            rounded-full\n+            px-8 py-4\n+            shadow-xl\n+            hover:bg-gray-100\n+            transform hover:scale-105\n+            transition text-center\n+          \"\n+        >\n+          Learn More →\n+        </a>\n+      </div>\n     </section>\n   );\n }\n"
+                },
+                {
+                    "date": 1747139155439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             transition text-center\n           \"\n         >\n           📞 Call Us Anytime<br />\n-          <span className=\"block text-2xl\">9353555755</span>\n+\n         </a>\n         <a\n           href=\"#learn-more\"\n           className=\"\n"
+                },
+                {
+                    "date": 1747139172505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n           className=\"\n             bg-gradient-to-r from-lime-400 to-green-400\n             text-black font-bold\n             rounded-full\n-            px-8 py-4\n+            px-6 py-1\n             shadow-xl\n             hover:from-lime-300 hover:to-green-300\n             transform hover:scale-105\n             transition text-center\n@@ -69,9 +69,9 @@\n           href=\"#learn-more\"\n           className=\"\n             bg-white text-black font-bold\n             rounded-full\n-            px-8 py-4\n+            px-6 py-3\n             shadow-xl\n             hover:bg-gray-100\n             transform hover:scale-105\n             transition text-center\n"
+                },
+                {
+                    "date": 1747139189637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,9 @@\n             hover:from-lime-300 hover:to-green-300\n             transform hover:scale-105\n             transition text-center\n           \"\n-        >\n-          📞 Call Us Anytime<br />\n+        >📞 Call Us Anytime<br />\n \n         </a>\n         <a\n           href=\"#learn-more\"\n"
+                },
+                {
+                    "date": 1747139209484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,9 @@\n             shadow-xl\n             hover:from-lime-300 hover:to-green-300\n             transform hover:scale-105\n             transition text-center\n-          \"\n-        >📞 Call Us Anytime<br />\n+          \">📞 Call Us Anytime<br />\n \n         </a>\n         <a\n           href=\"#learn-more\"\n"
+                },
+                {
+                    "date": 1747139214808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n             shadow-xl\n             hover:from-lime-300 hover:to-green-300\n             transform hover:scale-105\n             transition text-center\n-          \">📞 Call Us Anytime<br />\n+          \"><br />\n \n         </a>\n         <a\n           href=\"#learn-more\"\n"
+                },
+                {
+                    "date": 1747139240467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,14 +54,14 @@\n           className=\"\n             bg-gradient-to-r from-lime-400 to-green-400\n             text-black font-bold\n             rounded-full\n-            px-6 py-1\n+            px-6 py-3\n             shadow-xl\n             hover:from-lime-300 hover:to-green-300\n             transform hover:scale-105\n             transition text-center\n-          \"><br />\n+          \">Call Us Any Time<br />\n \n         </a>\n         <a\n           href=\"#learn-more\"\n"
                 }
             ],
             "date": 1747087979711,

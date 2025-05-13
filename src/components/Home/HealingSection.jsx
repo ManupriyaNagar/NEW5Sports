@@ -28,24 +28,37 @@ const therapies = [
 export default function HealingSection() {
   return (
     <section className="bg-black text-white py-16 px-4">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className=" text-center">
         {/* Header */}
-        <div className="bg-white text-black rounded-t-2xl px-8 py-6 mb-8 relative">
-          <h2 className="text-2xl md:text-3xl font-semibold">
-            Healing Being Transformed
-          </h2>
-          <p className="text-sm md:text-base mt-2 text-gray-700">
-            Elite recovery methods are being made accessible to all— enabling
-            faster healing and peak performance.
-          </p>
+        <section className="flex  w-full text-black px-16 max-md:flex-col">
+      {/* Main Article with notches */}
+      <article className="relative flex flex-col py-10 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
+        {/* Left notch */}
+        <div
+          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+                     transform -translate-y-1/2"
+        />
+        {/* Right notch */}
+        <div
+          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+                     transform -translate-y-1/2"
+        />
 
-          {/* Decorative side notches */}
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-8 bg-black rounded-r-full"></div>
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-4 h-8 bg-black rounded-l-full"></div>
-        </div>
+        <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+        Healing Being Transformed
+        </h2>
+
+        <div className="flex flex-wrap gap-5 justify-center mt-4 w-full text-2xl text-center">
+  <p className="max-w-3xl">
+  Elite recovery methods are being made accessible to all— enabling faster healing and peak performance.
+  </p>
+</div>
+
+      </article>
+    </section>
 
         {/* Therapy Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 border border-green-400 bg-gradient-to-b from-black to-[#001f1f] rounded-b-2xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 border border-green-400 bg-gradient-to-b from-black to-[#001f1f] rounded-b-2xl overflow-hidden container mx-auto">
           {therapies.map((therapy, idx) => (
             <div
               key={idx}

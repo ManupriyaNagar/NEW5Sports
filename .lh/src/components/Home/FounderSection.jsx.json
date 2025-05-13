@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1747088021399,
@@ -64,6 +64,10 @@
                 {
                     "date": 1747089727688,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative py-2  px-20\">\n \n-<div className='bg-green-500 py-20 rounded-2xl'>\n+<div className='bg-green-500 py-20 rounded-2xlç'>\n <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n"
+                },
+                {
+                    "date": 1747139063104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative py-2  px-20\">\n \n-<div className='bg-green-500 py-20 rounded-2xlç'>\n+<div className='bg-green-500 py-20 rounded-2xl'>\n <div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n@@ -23,56 +23,4 @@\n \n     </section>\n   );\n }\n-// src/components/Home/FounderSection.jsx\n-'use client';\n-import React from 'react';\n-\n-\n-export default function FounderSection() {\n-  return ( \n-    <section className=\"relative py-2  px-20\">\n-\n-<div className='bg-green-500 py-20'>\n-<div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n-        <h2 className=\"text-3xl font-bold\">\n-          Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n-          in sports medicine and orthopedic care.\n-        </h2>\n-        <p className=\"text-lg\">\n-          Our visionary founders, Dr. Pooja Jhade and Dr. Nataraj H M, established \n-          a center that combines cutting-edge medical technology with personalized \n-          care—dedicated to helping athletes achieve peak performance.\n-        </p>\n-      </div>\n-</div>\n-\n-    </section>\n-  );\n-}\n-// src/components/Home/FounderSection.jsx\n-'use client';\n-import React from 'react';\n-\n-\n-export default function FounderSection() {\n-  return ( \n-    <section className=\"relative   px-20\">\n-\n-<div className='bg-green-500 py-20'>\n-<div className=\"relative z-10 max-w-3xl mx-auto px-6 text-center text-white space-y-4 bg-green-500 \">\n-        <h2 className=\"text-3xl font-bold\">\n-          Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n-          in sports medicine and orthopedic care.\n-        </h2>\n-        <p className=\"text-lg\">\n-          Our visionary founders, Dr. Pooja Jhade and Dr. Nataraj H M, established \n-          a center that combines cutting-edge medical technology with personalized \n-          care—dedicated to helping athletes achieve peak performance.\n-        </p>\n-      </div>\n-</div>\n-\n-    </section>\n-  );\n-}\n"
                 }
             ],
             "date": 1747088021399,

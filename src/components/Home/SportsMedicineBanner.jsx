@@ -1,4 +1,3 @@
-// src/components/Home/SportsMedicineBanner.jsx
 'use client';
 import React from 'react';
 import WavyBackground from '@/components/global/Background/WavyBackground';
@@ -12,9 +11,10 @@ const bulletPoints = [
 
 export default function SportsMedicineBanner() {
   return (
-    <section className="mt-16 flex justify-center">
-      <WavyBackground height={500} className="w-full max-w-[1350px]">
-        {/* Top content: image + text */}
+    <section className="mt-16 flex justify-center relative">
+      {/* WavyBackground */}
+      <WavyBackground height={500} className="w-full max-w-[1350px] z-10">
+        {/* Content inside wave */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 px-6 pt-8 text-white">
           {/* Image */}
           <div className="flex-shrink-0">
@@ -37,52 +37,47 @@ export default function SportsMedicineBanner() {
             </ul>
           </div>
         </div>
-
-        {/* Bottom buttons */}
-        <div
-  className="
-    absolute
-    left-1/2 bottom-0
-    transform -translate-x-1/2 translate-y-1/2
-    flex flex-wrap justify-center gap-6
- 
-  "
->
-  <a
-    href="tel:9353555755"
-    className="
-      bg-gradient-to-r from-lime-400 to-green-400
-      text-black font-bold
-      rounded-full
-      px-8 py-4
-      shadow-xl
-      hover:from-lime-300 hover:to-green-300
-      transform hover:scale-105
-      transition
-      text-center z-50
-    "
-  >
-    📞 Call Us Anytime<br />
-    <span className="block text-2xl">9353555755</span>
-  </a>
-  <a
-    href="#learn-more"
-    className="
-      bg-white text-black font-bold
-      rounded-full
-      px-8 py-4
-      shadow-xl
-      hover:bg-gray-100
-      transform hover:scale-105
-      transition
-      text-center
-    "
-  >
-    Learn More →
-  </a>
-</div>
-
       </WavyBackground>
+
+      {/* Floating Buttons ABOVE wave */}
+      <div
+        className="
+          absolute
+          bottom-0 left-1/2
+          transform -translate-x-1/2 translate-y-1/2
+          flex flex-wrap justify-center gap-6
+          z-20
+        "
+      >
+        <a
+          href="tel:9353555755"
+          className="
+            bg-gradient-to-r from-lime-400 to-green-400
+            text-black font-bold
+            rounded-full
+            px-6 py-3
+            shadow-xl
+            hover:from-lime-300 hover:to-green-300
+            transform hover:scale-105
+            transition text-center
+          ">Call Us Any Time<br />
+
+        </a>
+        <a
+          href="#learn-more"
+          className="
+            bg-white text-black font-bold
+            rounded-full
+            px-6 py-3
+            shadow-xl
+            hover:bg-gray-100
+            transform hover:scale-105
+            transition text-center
+          "
+        >
+          Learn More →
+        </a>
+      </div>
     </section>
   );
 }

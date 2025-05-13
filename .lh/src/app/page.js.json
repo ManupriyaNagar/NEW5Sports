@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 25,
+            "activePatchIndex": 31,
             "patches": [
                 {
                     "date": 1747076108233,
@@ -108,6 +108,30 @@
                 {
                     "date": 1747089343794,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <FounderSection />\n       <FeatureCard\n         topTitle=\"Healing Being Transformed\"\n         topText=\"Elite recovery methods are being made accessible to all—enabling faster healing and peak performance.\"\n-        topImage=\"/news.jpg\"\n+        topImage=\"/news1.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n \n"
+                },
+                {
+                    "date": 1747139048277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,20 @@\n \n \n \n import AboutUsSection from \"@/components/Home/AboutSection\";\n+import AthletesRecoveryProgram from \"@/components/Home/AtheleteRecoveryProgram\";\n import FeatureCard from \"@/components/Home/FeatureCard\";\n import FounderSection from \"@/components/Home/FounderSection\";\n+import HealingSection from \"@/components/Home/HealingSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n+import PartneredSection from \"@/components/Home/PartneredSection\";\n+import PerformanceSection from \"@/components/Home/PerformanceSection\";\n+import RecoverySection from \"@/components/Home/RecoverySection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n import SportsMedicineBanner from \"@/components/Home/SportsMedicineBanner\";\n import InfoGrid from \"@/components/Home/SportsUnlock\";\n+import WhyChooseUs from \"@/components/Home/WhyChooseUS\";\n \n \n import Image from \"next/image\";\n \n@@ -17,20 +23,29 @@\n   return (\n     <div className=\"\">\n      <HeroSection/>\n      <SportsInfoCards/>\n+  \n      <InfoGrid/>\n+       <PerformanceSection/>\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n+     <FounderSection />\n+     <HealingSection/>\n   \n-      <FounderSection />\n+    \n       <FeatureCard\n         topTitle=\"Healing Being Transformed\"\n         topText=\"Elite recovery methods are being made accessible to all—enabling faster healing and peak performance.\"\n         topImage=\"/news1.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n+      <PartneredSection/>\n+      <RecoverySection/>\n+      <WhyChooseUs/>\n+      <AthletesRecoveryProgram/>\n+      \n \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747139438549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,16 @@\n         topImage=\"/news1.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n-      <PartneredSection/>\n+      <PartneredSection\n+              topTitle=\"Healing Being Transformed\"\n+              topText=\"Elite recovery methods are being made accessible to all—enabling faster healing and peak performance.\"\n+              topImage=\"/news1.jpg\"\n+              bottomTitle=\"Advanced Machines for Testing\"\n+              bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n+      \n+      />\n       <RecoverySection/>\n       <WhyChooseUs/>\n       <AthletesRecoveryProgram/>\n       \n"
+                },
+                {
+                    "date": 1747140234853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n       \n       />\n       <RecoverySection/>\n       <WhyChooseUs/>\n-      <AthletesRecoveryProgram/>\n+\n       \n \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1747140279015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n       \n       />\n       <RecoverySection/>\n       <WhyChooseUs/>\n-\n+      <AthletesRecoveryProgram/>\n       \n \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1747140436810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import FeatureCard from \"@/components/Home/FeatureCard\";\n import FounderSection from \"@/components/Home/FounderSection\";\n import HealingSection from \"@/components/Home/HealingSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n+import MeetOurExperts from \"@/components/Home/MeetOurExperts\";\n import PartneredSection from \"@/components/Home/PartneredSection\";\n import PerformanceSection from \"@/components/Home/PerformanceSection\";\n import RecoverySection from \"@/components/Home/RecoverySection\";\n import SportsInfoCards from \"@/components/Home/SportsInfoCard\";\n@@ -50,8 +51,9 @@\n       />\n       <RecoverySection/>\n       <WhyChooseUs/>\n       <AthletesRecoveryProgram/>\n+      <MeetOurExperts/>\n       \n \n     </div>\n   );\n"
+                },
+                {
+                    "date": 1747141050454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \n \n import AboutUsSection from \"@/components/Home/AboutSection\";\n import AthletesRecoveryProgram from \"@/components/Home/AtheleteRecoveryProgram\";\n+import FAQ from \"@/components/Home/Faq\";\n import FeatureCard from \"@/components/Home/FeatureCard\";\n import FounderSection from \"@/components/Home/FounderSection\";\n import HealingSection from \"@/components/Home/HealingSection\";\n import HeroSection from \"@/components/Home/HeroSection\";\n@@ -52,9 +53,9 @@\n       <RecoverySection/>\n       <WhyChooseUs/>\n       <AthletesRecoveryProgram/>\n       <MeetOurExperts/>\n-      \n+      <FAQ/>\n \n     </div>\n   );\n }\n"
                 }
             ],
             "date": 1747076108233,
