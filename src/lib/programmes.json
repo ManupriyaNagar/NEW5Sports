@@ -1,0 +1,59 @@
+{
+  "consultations": [
+    {
+      "id": "emerging-athlete-development",
+      "title": "Emerging Athlete Development",
+      "description": "Custom programs for young athletes, focusing on skill mastery, nutrition, and injury prevention.",
+      "image": "/programmes1.png",
+      "consultations": [
+        {
+          "id": "rehabilitation-programme",
+          "title": "Emerging Athlete Development",
+          "intro": "We specialise in offering high quality physiotherapy and rehabilitation support to individuals of all ages following injury and orthopaedic surgery. Using the latest rehabilitation techniques and equipment our expert team will help you achieve the best outcome."
+        },
+        {
+          "id": "acl-at-goperform",
+          "pageTitle": "ACL at GoPerform",
+          "subtitle": "Rehabilitation Packages",
+          "heading": "ACL, Ankle, Knee, Hip, Shoulder and Spinal Surgery",
+          "description": "We offer a comprehensive rehabilitation service from pre-surgery through to full recovery. The same applies for those who are recovering from serious injury via the non-surgical route.",
+          "price": "£POA (ranging from single sessions through to a comprehensive package)",
+          "details": "We work closely with surgeons and health providers to offer flexible, bespoke rehabilitation packages determined by the needs of each individual. In the first instance we recommend booking an initial physiotherapy appointment via the booking button below. If you have any questions please contact the office or drop in for a visit. You don't need to be sporty, we work with everyone.",
+          "extra": "Our team have a particular specialism in ACL rehabilitation having spent decades working in professional sport. We have good relationships with orthopaedic surgeons locally and nationally and typically have 15-20 individuals working with us on their ACL recovery at any time.",
+          "podcastText": "We recently recorded a podcast episode where Luke summarised what to expect from the ACL recovery process. You can check it out by searching \"GoPerform Podcast\" (episode 12) or listen below:",
+          "podcastEmbed": "<iframe src=\"https://player.example.com/episode12\" width=\"100%\" height=\"200\"></iframe>"
+        },
+        {
+          "id": "rehab-membership",
+          "pageTitle": "Rehab Membership",
+          "description": "Access our facilities and staff on a daily basis to ensure the best possible injury outcomes.",
+          "price": "£445/month",
+          "features": [
+            "Initial physiotherapy assessment",
+            "4 one-to-one physiotherapy sessions per month",
+            "Weekly soft tissue and manual therapy treatment",
+            "Weekly strength and conditioning sessions with our coaches",
+            "Daily access to GoPerform to conduct your rehabilitation",
+            "Use of all specialist equipment including AlterG, GameReady, Normatec and Altitude training",
+            "Online support"
+          ],
+          "idealFor": "Individuals looking to make a full return to sports participation and competition through a comprehensive support package. You can check out a video with one of our ACL rehabilitation members here."
+        }
+      ]
+    },
+    {
+      "id": "elevate-pro-athlete-development",
+      "title": "Elevate: Pro Athlete Development",
+      "description": "Elite training for top athletes, pushing performance with advanced techniques and mental conditioning.",
+      "image": "/programmes2.png",
+      "consultations": []
+    },
+    {
+      "id": "vo2-max-enhancement",
+      "title": "VO2 Max Enhancement",
+      "description": "Skyrocket your endurance with programs designed to boost cardiovascular efficiency and stamina.",
+      "image": "/programmes3.png",
+      "consultations": []
+    }
+  ]
+}
