@@ -1,66 +1,129 @@
-import React from 'react';
-import CardComponent from '@/components/global/card/CardComponent';
+'use client';
 
-const whyChooseUsCards = [
+import { motion } from 'framer-motion';
+import { CheckCircle } from 'lucide-react';
+import { useTheme } from './../../components/contex/ThemeContext';
+
+const features = [
   {
-    title: ['Trusted by Elite Athletes & Teams'],
+    icon: <CheckCircle className="w-10 h-10" />,
+    title: 'Trusted by Elite Athletes & Teams',
     description: 'Preferred by top athletes and professional sports teams for our specialized care.',
-    iconType: 'down',
   },
   {
-    title: ['11 Specialized Medical Fields'],
-    description:
-      'A multidisciplinary team offering cutting-edge treatments across multiple domains.',
-    iconType: 'down',
+    icon: <CheckCircle className="w-10 h-10" />,
+    title: '11 Specialized Medical Fields',
+    description: 'A multidisciplinary team offering cutting-edge treatments across multiple domains.',
   },
   {
-    title: ['Advanced Diagnostic & Treatment Technology'],
-    description:
-      'Equipped with the latest innovations for precise assessment and faster recovery.',
-    iconType: 'down',
+    icon: <CheckCircle className="w-10 h-10" />,
+    title: 'Advanced Diagnostic & Treatment Technology',
+    description: 'Equipped with the latest innovations for precise assessment and faster recovery.',
+  },
+  {
+    icon: <CheckCircle className="w-10 h-10" />,
+    title: 'World-Class Rehab & Performance Center',
+    description: 'A state-of-the-art facility designed for rehabilitation, fitness, and peak performance.',
+  },
+  {
+    icon: <CheckCircle className="w-10 h-10" />,
+    title: 'Proven Recovery Success',
+    description: 'Over 100+ athletes successfully rehabilitated and returned to peak condition.',
   },
 ];
 
-const WhyChooseUS = () => {
+export default function WhyChooseUs() {
+  const { darkMode } = useTheme();
+
   return (
-    <section className="px-4 md:px-20 relative">
-      {/* Cards floating above */}
-
-
-      {/* Notched Header */}
-      <section className="flex w-full text-black max-md:flex-col mt-40 mb-10 z-10 relative">
-        <article className="relative flex flex-col py-20 w-full bg-white border border-lime-400 rounded-[32px] overflow-visible">
-          {/* Left notch */}
-          <div className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2" />
-          {/* Right notch */}
-          <div className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2" />
-
-          <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl mb-2">
-            Why Choose Us?
-          </h2>
-          <div className="flex flex-wrap justify-center mt-3 text-2xl text-center mb-2">
-            <p className="max-w-4xl">
-              Discover what makes us the{' '}
-              <span className="text-green-600 font-bold">#1 Sports Medicine & Rehab Center in India.</span>
-            </p>
+    <section
+      className={`relative py-20 transition-colors duration-500 ${
+        darkMode
+          ? 'bg-gradient-to-b from-black to-black text-white'
+          : 'bg-gray-100 text-gray-900'
+      }`}
+    >
+      <div className="">
+        {/* Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <div className="relative inline-block px-4 py-2 mb-4">
+            <span
+              className={`absolute inset-0 w-full h-full rounded-lg skew-y-1 ${
+                darkMode ? '' : 'bg-green-500'
+              }`}
+            ></span>
+            <h2 className="text-2xl md:text-5xl font-extrabold uppercase drop-shadow-lg relative tracking-wide">
+              <strong>Why Choose Us?</strong>
+            </h2>
           </div>
-        </article>
-      </section>
 
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20  mt-[22rem] w-full flex justify-center">
-        <div className="flex flex-wrap justify-center gap-6">
-          {whyChooseUsCards.map((item, idx) => (
-            <CardComponent
-              key={idx}
-              title={item.title}
-              description={item.description}
-              iconType={item.iconType}
-            />
-          ))}
+          <p
+            className={`text-3xl md:font-size-1.5rem mx-auto mt-4 ${
+              darkMode ? 'text-gray-300' : 'text-gray-700'
+            }`}
+          >
+            Discover what makes us the <span className="text-green-500">#1 Sports Medicine & Rehab Center</span> in India.
+          </p>
+        </motion.div>
+
+        {/* Horizontal Scroll (Marquee Style) */}
+        <div className="relative overflow-hidden w-full py-4">
+          <motion.div
+            className="flex space-x-8 w-full"
+            animate={{ x: ['0%', '-100%'] }}
+            transition={{
+              repeat: Infinity,
+              duration: 40,
+              ease: 'linear',
+            }}
+          >
+            {[...features, ...features].map((feature, index) => (
+              <motion.div
+                key={index}
+                className={`flex-shrink-0 w-[280px] md:w-[300px] p-6 rounded-2xl transition-transform duration-300 shadow-xl hover:scale-105 group ${
+                  darkMode
+                    ? 'bg-white/10 border border-gray-700 backdrop-blur-md'
+                    : 'bg-white border border-gray-200'
+                }`}
+              >
+                <div className="flex flex-col items-center text-center">
+                  {/* Icon */}
+                  <div
+                    className={`mb-5 flex items-center justify-center w-16 h-16 rounded-full shadow-md ${
+                      darkMode ? 'bg-green-600 text-white' : 'bg-green-100 text-green-700'
+                    }`}
+                  >
+                    {feature.icon}
+                  </div>
+
+                  {/* Title */}
+                  <h3
+                    className={`text-lg font-bold uppercase tracking-tight mb-3 ${
+                      darkMode ? 'text-green-400' : 'text-green-700'
+                    }`}
+                  >
+                    {feature.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p
+                    className={`text-sm leading-relaxed ${
+                      darkMode ? 'text-gray-300' : 'text-gray-600'
+                    }`}
+                  >
+                    {feature.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>
   );
-};
-
-export default WhyChooseUS;
+}

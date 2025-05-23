@@ -1,6 +1,26 @@
 'use client';
 import React from 'react';
-import WavyBackground from '@/components/global/Background/WavyBackground';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import WavyBackground from './../../components/global/Background/WavyBackground';
+
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 
 const bulletPoints = [
   '360° care for orthopedics and sports athletes all under one roof.',
@@ -11,69 +31,55 @@ const bulletPoints = [
 
 export default function SportsMedicineBanner() {
   return (
-    <section className="mt-16 flex justify-center relative">
-      {/* WavyBackground */}
-      <WavyBackground height={500} className="w-full max-w-[1350px] z-10">
-        {/* Content inside wave */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 px-6 pt-8 text-white">
-          {/* Image */}
-          <div className="flex-shrink-0">
-            <img
+    <section className="flex flex-col items-center relative bg-black pt-16 pb-24">
+      {/* Wavy background */}
+      <WavyBackground height={400} className="w-full max-w-[1350px] z-10">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row items-center lg:items-start gap-6 md:gap-8 lg:gap-12 px-4 sm:px-6 lg:px-12 pt-8 text-white"
+        >
+          {/* Athlete image */}
+          <motion.div
+            variants={itemVariants}
+            className="w-28 h-28 sm:w-48 sm:h-48 lg:w-96 lg:h-96 flex-shrink-0"
+          >
+            <Image
               src="/3.png"
               alt="Athlete running"
-              className="h-[300px] lg:h-[400px] object-contain"
+              width={400}
+              height={400}
+              className="object-contain "
             />
-          </div>
+          </motion.div>
 
-          {/* Text + bullets */}
-          <div className="flex-1">
-            <h2 className="text-4xl font-bold mb-4">
+          {/* Text content */}
+          <motion.div variants={itemVariants} className="flex-1 text-center lg:text-left mb-60">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               Pioneering Sports Medicine for Athletes
             </h2>
-            <ul className="space-y-3 mb-4 list-disc list-inside text-lg">
+            <ul className="space-y-2 sm:space-y-3 mb-4 list-disc list-inside text-sm sm:text-base md:text-lg text-gray-200 text-justify px-2">
               {bulletPoints.map((txt, i) => (
                 <li key={i}>{txt}</li>
               ))}
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </WavyBackground>
 
-      {/* Floating Buttons ABOVE wave */}
-      <div
-        className="
-          absolute
-          bottom-0 left-1/2
-          transform -translate-x-1/2 translate-y-1/2
-          flex flex-wrap justify-center gap-6
-          z-20
-        "
-      >
+      {/* Floating CTAs */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 z-20 px-4 w-full max-w-[500px]">
         <a
-          href="tel:9353555755"
-          className="
-            bg-gradient-to-r from-lime-400 to-green-400
-            text-black font-bold
-            rounded-full
-            px-6 py-3
-            shadow-xl
-            hover:from-lime-300 hover:to-green-300
-            transform hover:scale-105
-            transition text-center
-          ">Call Us Any Time<br />
-
+          href="tel:+919353555755"
+          className="w-full sm:w-auto bg-gradient-to-r from-lime-400 to-lime-200 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:from-lime-300 hover:to-lime-100 transform hover:scale-105 transition text-center text-sm sm:text-base"
+        >
+          Call Us Any Time
         </a>
         <a
           href="#learn-more"
-          className="
-            bg-white text-black font-bold
-            rounded-full
-            px-6 py-3
-            shadow-xl
-            hover:bg-gray-100
-            transform hover:scale-105
-            transition text-center
-          "
+          className="w-full sm:w-auto bg-lime-400 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:bg-lime-500 transform hover:scale-105 transition text-center text-sm sm:text-base"
         >
           Learn More →
         </a>

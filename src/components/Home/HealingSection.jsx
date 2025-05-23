@@ -3,21 +3,21 @@ import Image from "next/image";
 const therapies = [
   {
     title: "TECAR THERAPY",
-    image: "/tecar.jpg", // Replace with actual image path
+    image: "/qqq3.jpeg", // Replace with actual image path
     description:
       "A revolutionary treatment that enhances tissue repair, reducing pain and accelerating healing through deep heat energy.",
     border: "border-r",
   },
   {
     title: "LASER THERAPY",
-    image: "/laser.jpg", // Replace with actual image path
+    image: "/qqq1.jpeg", // Replace with actual image path
     description:
       "A non-invasive technique that promotes tissue regeneration, reduces inflammation, and speeds up recovery from injuries.",
     border: "border-r",
   },
   {
     title: "SHOCKWAVE THERAPY",
-    image: "/shockwave.jpg", // Replace with actual image path
+    image: "/qqq2.jpeg", // Replace with actual image path
     description:
       "Uses high-energy sound waves to treat musculoskeletal pain, improve blood flow, and stimulate healing in damaged tissues.",
     border: "",
@@ -70,7 +70,7 @@ export default function HealingSection() {
                   alt={therapy.title}
                   width={400}
                   height={200}
-                  className="rounded-md w-full object-cover h-[150px]"
+                  className="rounded-md w-full object-cover h-[230px]"
                 />
               </div>
               <h3

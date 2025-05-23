@@ -1,0 +1,18 @@
+{
+    "sourceFile": "public/arthritis.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1747854869814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1747854869814,
+            "name": "Commit-0",
+            "content": "[\n    {\n      \"title\": \"Preserve Joints. Prolong Movement. Prevent Surgery.\",\n      \"description\": \"Arthritis doesn’t have to be the end of your active lifestyle. With advanced Joint Preservation Techniques, we target the early stages of joint damage to reduce pain, restore mobility, and delay or eliminate the need for surgery. From viscosupplementation and physiotherapy to cartilage restoration and regenerative injections, our approach is designed to keep you moving freely—longer, stronger, and without compromise.\",\n      \"image\": \"/arthi.jpg\"\n    }\n  ]"
+        }
+    ]
+}

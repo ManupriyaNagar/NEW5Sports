@@ -115,34 +115,60 @@ export default function SportsNutritionPage() {
 
           {/* Sports Nutrition Program Showcase */}
           {sportsNutritionData.map((service, index) => (
-            <motion.div
-              key={service.title}
-              variants={itemVariants}
-              className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 py-8 sm:py-12 px-4 sm:px-6 "
-            >
-              <div className="md:w-1/2">
-                <h3 className="text-2xl sm:text-5xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400 dark:from-green-400 dark:to-green-200 mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-base sm:text-xl font-medium text-gray-700 dark:text-gray-300">
-                  {service.description}
-                </p>
-              </div>
+  <motion.div
+    key={service.title}
+    variants={itemVariants}
+    className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 py-8 sm:py-12 px-4 sm:px-6 "
+  >
+    <div className="md:w-1/2">
+      <h3 className="text-2xl sm:text-5xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400 dark:from-green-400 dark:to-green-200 mb-4">
+        {service.title}
+      </h3>
+      <p className="text-base sm:text-xl font-medium text-gray-700 dark:text-gray-300">
+        {service.description}
+      </p>
 
+      {/* Pricing Section */}
+      {service.pricing && service.pricing.length > 0 && (
+        <div className="mt-6">
+          <h4 className="text-lg font-semibold mb-3">Pricing Packages</h4>
+          <ul className="space-y-2 text-gray-800 dark:text-gray-300">
+            {service.pricing.map((pkg, idx) => (
+              <li key={idx} className="flex justify-between border-b border-gray-300 dark:border-gray-700 pb-2">
+                <span>{pkg.duration}</span>
+                <span>
+                  {pkg.offerPrice ? (
+                    <>
+                      <span className="line-through mr-2 text-red-500">{pkg.price}</span>
+                      <span className="font-bold text-green-600">{pkg.offerPrice}</span>
+                    </>
+                  ) : (
+                    <span>{pkg.price}</span>
+                  )}
+                </span>
+                {pkg.note && (
+                  <span className="ml-4 text-sm font-semibold text-green-700">{pkg.note}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
 
-              
-              <div className="md:w-1/2 relative h-64 sm:h-80">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover rounded-lg"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority={false}
-                />
-              </div>
-            </motion.div>
-          ))}
+    <div className="md:w-1/2 relative h-64 sm:h-80">
+      <Image
+        src={service.image}
+        alt={service.title}
+        fill
+        className="object-cover rounded-lg"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority={false}
+      />
+    </div>
+  </motion.div>
+))}
+
    </div>
           {/* Key Benefits Section */}
           <motion.div

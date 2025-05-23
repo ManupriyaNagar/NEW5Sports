@@ -69,31 +69,24 @@ export default function ProgrammeDetailClient({ programme }) {
                 <p className="text-gray-300 mb-4">
                   <strong>Ideal for:</strong> {opt.idealFor}
                 </p>
-                <div className="flex flex-col gap-2">
-                  {opt.bookings.map((txt, i) => (
-                    <button
-                      key={i}
-                      onClick={() => openModal(txt)}
-                      className="text-lime-400 hover:text-lime-300 text-left"
-                    >
-                      {txt}
-                    </button>
-                  ))}
-                </div>
+               <div className="flex flex-col gap-2">
+  {opt.bookings?.map((txt, i) => (
+    <button
+      key={i}
+      onClick={() => openModal(txt)}
+      className="text-lime-400 hover:text-lime-300 text-left"
+    >
+      {txt}
+    </button>
+  ))}
+</div>
+
               </div>
             ))}
           </div>
         </div>
 
-        {/* Back Link */}
-        <div className="text-center">
-          <Link
-            href="/Atheletes/injury"
-            className="text-lime-400 hover:text-lime-300 underline"
-          >
-            ← Back to programmes
-          </Link>
-        </div>
+
 
         {/* Sticky Quick Book */}
         <div className="fixed bottom-6 right-6">

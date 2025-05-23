@@ -7,7 +7,7 @@ export default function OrthopedicCareSection() {
       {/* Section Wrapper */}
       {[
        {
-          title: "// SURGICAL SECOND OPINION",
+          title: " SURGICAL SECOND OPINION",
           subtitle: "Not Sure What to Do Next? We’ll Help You Decide.",
           content: `Surgery is a big decision—make it an informed one. Our experts provide honest, independent reviews of your case to explore all options.`,
           note: `We’re not here to sell surgery—we’re here to guide you toward your best outcome.`,

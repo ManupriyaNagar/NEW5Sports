@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X, ChevronDown, ChevronUp, ChevronRight } from 'lucide-react';
 
-import { useTheme } from '@/components/contex/ThemeContext';
+import { useTheme } from './../../components/contex/ThemeContext';
 
 const navItems = [
   {
@@ -29,7 +29,7 @@ const navItems = [
   },
   {
     name: 'ORTHOPEDIC & SURGERY',
-    href: '/Orthopedicss',
+    href: '/',
     submenu: [
       { name: 'Orthobiologicals & regenerative therapies', href: '/Orthopedicss/orthobiological' },
       { name: 'Arthritis & joint preservation techniques', href: '/Orthopedicss/arthritis' },
@@ -42,20 +42,19 @@ const navItems = [
   },
   {
     name: 'Programs',
-    href: '/programs',
+    href: '',
     submenu: [
-      { name: 'Sports Physio Program', href: '/programs/sports' },
+      { name: 'Sports Physio Program', href: '/programs/sports-page' },
       { name: 'Surgical Prehab & Rehab', href: '/programs/surgical' },
-      { name: 'Emerging Athelete Program', href: '/programs/emerging' },
-      { name: 'Athelete Development Program', href: '/programs/atheletedevelopment' },
+      { name: 'Athelete Development Program', href: '/programs/athelete-develpoment' },
     ],
   },
   {
     name: 'Testing',
-    href: '/Testing',
+    href: '/testing',
     submenu: [
-      { name: 'Sports Testing', href: '/Testing/gallery' },
-      { name: 'VO₂ MAX & LACTATE THRESHOLD', href: '/Vo2MaxTestSection' },
+      { name: 'Sports Testing', href: '/testing/sports-testing' },
+      { name: 'VO₂ MAX & LACTATE THRESHOLD', href: '/testing/vo2-max-page' },
       { name: 'RESTING METABOLIC RATE & BODY COMPOSITION', href: '/Testing#Metabolic' },
       { name: 'MUSCLE OXYGEN MONITORING', href: '/programs#strength' },
     ],
@@ -101,36 +100,40 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-4 z-50 mx-auto w-[95%] rounded-full py-3 px-6 transition-colors duration-500 ${
-    darkMode
-      ? 'bg-white border border-gray-300 shadow-md'
-      : 'bg-black shadow-lg'
-  }`}
+      className={`sticky top-4 z-50 mx-auto w-[95%] md:rounded-full py-3 px-6 transition-colors duration-500 ${
+        darkMode
+          ? 'bg-white border border-gray-300 shadow-md'
+          : 'bg-black shadow-lg'
+      }`}
     >
       <style jsx>{`
         .submenu-slide {
-          transform: translateX(100%);
-          transition: transform 0.3s ease-in-out;
+          transform: translateY(-10px);
+          opacity: 0;
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
         .submenu-slide.open {
-          transform: translateX(0);
+          transform: translateY(0);
+          opacity: 1;
         }
         .submenu-container {
           overflow: hidden;
         }
       `}</style>
-      <div className="px-6 flex justify-between items-center">
+      <div className="px-4 sm:px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <img src="/logo5.png" alt="Logo" className="h-14" />
+          <img src="/logo5.png" alt="RBSH Studio Logo" className="h-12 sm:h-14" />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8 items-center font-semibold text-gray-800 uppercase text-base relative">
+        <nav className="hidden md:flex gap-6 lg:gap-8 items-center font-semibold text-gray-800 uppercase text-sm lg:text-base relative">
           {navItems.map((item, index) => (
             <div key={index} className="group relative">
               <Link
                 href={item.href}
-                className="hover:text-green-600 transition-colors duration-200 flex items-center gap-1"
+                className={`hover:text-green-600 transition-colors duration-200 flex items-center gap-1 ${
+                  darkMode ? 'text-gray-800' : 'text-white'
+                }`}
               >
                 {item.name}
                 {item.submenu && (
@@ -145,7 +148,7 @@ export default function Header() {
                     <div key={subIdx} className="relative group/sub">
                       <Link
                         href={sub.href}
-                        className="px-4 py-2 hover:bg-green-100 text-sm flex justify-between items-center"
+                        className="px-4 py-2 hover:bg-green-100 text-sm flex justify-between items-center text-gray-700"
                       >
                         {sub.name}
                         {sub.submenu && <ChevronRight className="w-4 h-4" />}
@@ -158,7 +161,7 @@ export default function Header() {
                             <Link
                               key={subsubIdx}
                               href={subsub.href}
-                              className="px-4 py-2 hover:bg-green-100 text-sm"
+                              className="px-4 py-2 hover:bg-green-100 text-sm text-gray-700"
                             >
                               {subsub.name}
                             </Link>
@@ -170,15 +173,13 @@ export default function Header() {
                 </div>
               )}
             </div>
-            
           ))}
           <Link
-  href="/contact-us"
-  className="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full transition duration-300"
->
-  Contact Us
-</Link>
-
+            href="/contact-us"
+            className="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-4 lg:px-6 py-2 rounded-full transition duration-300"
+          >
+            Contact Us
+          </Link>
         </nav>
 
         {/* Mobile Toggle */}
@@ -192,17 +193,17 @@ export default function Header() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div
-          className={`md:hidden px-4 pt-4 pb-6 transition-all duration-300 space-y-4 ${
-            darkMode ? 'bg-black text-white' : 'bg-white text-gray-900'
-          }`}
+          className={`md:hidden px-4 pt-4 pb-6 transition-all duration-300 space-y-3 ${
+            darkMode ? 'bg-white text-gray-900' : 'bg-black text-white'
+          } rounded-b-lg shadow-md`}
         >
           {navItems.map((item, i) => (
             <div key={i}>
               <button
                 onClick={() => toggleSubMenu(i)}
-                className="w-full flex justify-between items-center py-2 font-medium"
+                className="w-full flex justify-between items-center py-2 font-medium text-sm uppercase"
               >
-                {item.name}
+                <span>{item.name}</span>
                 {item.submenu && (
                   expandedMenu === i ? (
                     <ChevronUp className="w-4 h-4" />
@@ -217,40 +218,26 @@ export default function Header() {
                     <div key={subIndex}>
                       <button
                         onClick={() => toggleSubSubMenu(subIndex)}
-                        className="w-full text-left flex justify-between items-center py-1"
+                        className="w-full text-left flex justify-between items-center py-1 text-gray-700"
                       >
-                        {sub.name}
+               
                         {sub.submenu && (
                           expandedSubMenu === subIndex ? (
-                            <ChevronUp className="w академия-4 h-4" />
+                            <ChevronUp className="w-4 h-4" />
                           ) : (
                             <ChevronDown className="w-4 h-4" />
                           )
                         )}
                       </button>
-                      {sub.submenu && (
-                        <div
-                          className={`submenu-slide ${
-                            expandedSubMenu === subIndex ? 'open' : ''
-                          }`}
-                        >
-                          {sub.submenu.map((subsub, subsubIdx) => (
-                            <Link
-                              key={subsubIdx}
-                              href={subsub.href}
-                              className="block hover:text-green-500 ml-2 py-1"
-                            >
-                              • {subsub.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
+                
                       {!sub.submenu && (
                         <Link
                           href={sub.href}
-                          className="block hover:text-green-500 ml-2 py-1"
+                          className={`block hover:text-green-500 py-1 text-gray-600 ${
+                            darkMode ? 'text-gray-600' : 'text-gray-300'
+                          }`}
                         >
-                          • {sub.name}
+                          {sub.name}
                         </Link>
                       )}
                     </div>
@@ -261,7 +248,7 @@ export default function Header() {
           ))}
           <Link
             href="/contact-us"
-            className="block mt-4 bg-green-600 text-white text-center px-4 py-2 rounded-md uppercase font-bold"
+            className="block mt-4 bg-green-600 text-white text-center px-4 py-2 rounded-md uppercase font-bold text-sm"
           >
             Call Us
           </Link>

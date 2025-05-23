@@ -59,13 +59,20 @@ const Orthobiologicals = () => {
         />
 
         <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
-        Orthopedics & Surgery
+        SURGICAL SECOND OPINION
         </h2>
 
         <div className="flex flex-wrap gap-5 justify-center mt-2 w-full text-2xl text-center">
-  <p className="max-w-3xl">
-  At the forefront of movement and recovery, our Orthopedics & Surgery department delivers expert care for bone, joint, and muscle conditions—restoring mobility, alleviating pain, and improving quality of life.
+  <p className="max-w-6xl">
+Not Sure What to Do Next? We’ll Help You Decide.
+  Surgery is a big decision—make it an informed one. Our experts provide honest, independent reviews of your case to explore all options.
+        We’re not here to sell surgery—we’re here to guide you toward your best outcome.
+          expertPanel
   </p>
+
+
+
+  
 </div>
 
       </article>

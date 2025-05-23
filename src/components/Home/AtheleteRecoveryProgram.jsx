@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AthletesRecoveryProgram() {
   return (
-    <section className="bg-black rounded-t-3xl text-center px-4 py-12 relative mt-80">
+    <section className="bg-black rounded-t-3xl text-center px-4 py-12 relative ">
       {/* Side cutouts */}
 
       {/* Header */}
@@ -50,7 +50,7 @@ export default function AthletesRecoveryProgram() {
         <div>
           <div className="rounded-xl overflow-hidden border border-blue-400 p-1">
             <Image
-              src="/images/recovery1.jpg" // replace with actual image path
+              src="/pp5.png" // replace with actual image path
               alt="Recovery Specialist"
               width={400}
               height={400}
@@ -63,7 +63,7 @@ export default function AthletesRecoveryProgram() {
         <div>
           <div className="rounded-xl overflow-hidden border border-lime-400 p-1">
             <Image
-              src="/images/recovery2.jpg" // replace with actual image path
+              src="/pp4.png" // replace with actual image path
               alt="Recovery Insights"
               width={400}
               height={400}
@@ -98,7 +98,7 @@ export default function AthletesRecoveryProgram() {
         <div>
           <div className="rounded-xl overflow-hidden border border-blue-400 p-1">
             <Image
-              src="/images/recovery1.jpg" // replace with actual image path
+              src="/pp2.png" 
               alt="Recovery Specialist"
               width={400}
               height={400}
@@ -110,7 +110,7 @@ export default function AthletesRecoveryProgram() {
           <div>
           <div className="rounded-xl overflow-hidden border border-lime-400 p-1">
             <Image
-              src="/images/recovery2.jpg" // replace with actual image path
+              src="/pp1.png" 
               alt="Recovery Insights"
               width={400}
               height={400}
@@ -120,7 +120,7 @@ export default function AthletesRecoveryProgram() {
         </div>
         <div className="flex flex-col gap-6">
           <h3 className="text-xl font-bold text-white">
-           04 React Faster and Move with More Power When It c:\Users\Manupriya\OneDrive\Desktop\5-sports-hospotal\5-Sports-Hospital\public\curved-line.pngMatters Most
+           04 React Faster and Move with More Power When It
           </h3>
           <p className="text-gray-300">
             In those high-pressure momenets, milliseconds count. that's why our recovery program includes methods to enhance your reaction time and build expolsive power,helping you stay sharp and make the game-changing move when it matters.
@@ -138,7 +138,7 @@ export default function AthletesRecoveryProgram() {
         <div>
           <div className="rounded-xl overflow-hidden border border-blue-400 p-1">
             <Image
-              src="/images/recovery1.jpg" // replace with actual image path
+              src="/pp5.png" // replace with actual image path
               alt="Recovery Specialist"
               width={400}
               height={400}

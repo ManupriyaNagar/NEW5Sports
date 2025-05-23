@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/programs/surgical/[id]/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1747548560208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1747548560208,
+            "name": "Commit-0",
+            "content": "// app/programs/[id]/page.jsx\n\nimport ProgramClient from './../../../../components/programmes/ProgramClient';\nimport data from '../../../../../public/data.json'; \n\n// Generate static parameters for the dynamic route\nexport async function generateStaticParams() {\n  const programIds = Object.keys(data.sections.programDetails).map((id) => ({\n    id,\n  }));\n  return programIds;\n}\n\n// Server Component to fetch data and render the Client Component\nexport default async function ProgramPage({ params }) {\n  const { id } = params;\n\n  // Fetch or access data.json (in this case, using imported data)\n  const program = data.sections.programDetails[id];\n\n  // Handle case where program is not found\n  if (!program) {\n    return (\n      <section className=\"bg-white min-h-screen py-12 px-4 md:px-10 text-gray-900\">\n        <div className=\"max-w-5xl mx-auto text-red-500 text-center py-12\">\n          Error: Programme with id \"{id}\" not found\n        </div>\n      </section>\n    );\n  }\n\n  // Pass the program data to the Client Component\n  return <ProgramClient initialData={program} />;\n}"
+        }
+    ]
+}

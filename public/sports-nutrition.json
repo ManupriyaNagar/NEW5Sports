@@ -1,7 +1,29 @@
 [
-    {
-      "title": "Fuel for Performance",
-      "description": "Our expert sports nutritionists create customized plans for muscle gain, fat loss, endurance sports fueling, injury recovery support, and supplementation strategies to ensure you perform better and recover faster on training and game days.",
-      "image": "/programmes3.png"
-    }
-  ]
+  {
+    "title": "Fuel for Performance",
+    "description": "Our expert sports nutritionists create customized plans for muscle gain, fat loss, endurance sports fueling, injury recovery support, and supplementation strategies to ensure you perform better and recover faster on training and game days.",
+    "image": "/programmes3.png",
+    "pricing": [
+   {
+  "duration": "1 Month",
+  "price": "₹8,000",
+  "offerPrice": "₹7,000",
+  "note": "12.5% OFF"
+},
+
+      {
+        "duration": "3 Months",
+        "price": "₹24000",
+        "offerPrice": "₹19,000",
+        "note": "20% OFF"
+      },
+      {
+        "duration": "6 Months",
+        "price": "₹48,000",
+        "offerPrice": "₹36,000",
+        "note": "25% OFF"
+      }
+     
+    ]
+  }
+]

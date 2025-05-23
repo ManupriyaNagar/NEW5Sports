@@ -2,7 +2,7 @@
   {
     "id": "physiotherapy",
     "title": "Physiotherapy",
-    "description": "Personalized treatment plans to restore movement, reduce pain, and improve function.",
+    "description": "Tailored treatment plans to relieve pain, restore mobility, and enhance overall function.",
     "image": "/programmes3.png",
     "buttonText": "Book a Session",
     "buttonLink": "/book/q",
@@ -10,66 +10,70 @@
       {
         "id": "initial",
         "title": "Initial Consultation",
-        "price": "£85 / £110 (Clinical Director Luke Anthony)",
+        "price": "₹700",
         "duration": "50 minutes",
-        "details": "Includes a comprehensive injury assessment with a rehabilitation plan",
-        "idealFor": "Anyone with an injury needing assessment and a comprehensive rehabilitation plan",
-        "bookings": ["BOOK ONLINE", "BOOK ONLINE (Luke Anthony)"]
+        "details": "A thorough assessment of your condition, followed by a personalised rehabilitation plan.",
+        "idealFor": "Individuals with a new or existing injury seeking professional evaluation and guidance."
       },
-      
       {
         "id": "follow-up",
-        "title": "Follow-up",
-        "price": "£58 / £62 (Clinical Director Luke Anthony)",
+        "title": "Follow-Up Session",
+        "price": "Free (within 10 days)",
         "duration": "40 minutes",
-        "details": "A follow-up appointment includes a re-assessment and progression of rehab exercises.",
-        "idealFor": "Ongoing treatment and rehabilitation to support your recovery",
-        "bookings": ["BOOK ONLINE", "BOOK ONLINE (Luke Anthony)"]
+        "details": "Includes re-assessment and progression of your rehabilitation exercises.",
+        "idealFor": "Ongoing support and follow-up care for faster recovery."
       },
       {
         "id": "online",
-        "title": "Online appointment",
-        "price": "£60 initial consultation | £45 follow up",
-        "duration": "40 mins (initial) / 30 mins (follow-up)",
-        "details": "Remote video consultations via secure telehealth link.",
-        "idealFor": "Remote assessments",
-        "bookings": ["Initial: BOOK ONLINE", "Follow-Up: BOOK ONLINE"]
+        "title": "Online Appointment",
+        "price": "₹700 (initial consultation)",
+        "duration": "15 minutes (initial) / 30 minutes (follow-up)",
+        "details": "Consult with our physiotherapists via a secure video call from the comfort of your home.",
+        "idealFor": "Patients preferring remote consultations or unable to visit in person."
       },
       {
-        "id": "pro-athlete",
-        "title": "Pro-Athlete Assessment",
-        "price": "£180",
-        "duration": "85 minutes",
-        "details": "Comprehensive injury assessment with manual therapy and rehab plan.",
-        "idealFor": "Professional athletes needing advanced sports-based physiotherapy.",
-        "bookings": ["BOOK ONLINE"]
+        "id": "treatment",
+        "title": "Physiotherapy Treatment",
+        "price": "₹1000",
+        "duration": "45 minutes",
+        "details": "Hands-on treatment session based on your rehabilitation plan.",
+        "idealFor": "In-person therapy sessions to improve movement and reduce discomfort."
       }
     ]
   },
   {
     "id": "sports-injuries",
     "title": "Sports Injuries",
-    "description": "Specialized care for athletes to recover from injuries and return to peak performance.",
+    "description": "Specialised care for athletes to recover from injuries and return to peak performance.",
     "image": "/programmes2.png",
     "buttonText": "Book a Session",
     "buttonLink": "/book/physiothere",
     "consultations": [
       {
         "id": "acute-injury",
-        "title": "Acute Injury Care",
-        "price": "£70",
-        "duration": "45 minutes",
-        "details": "Immediate treatment for sprains, strains, and fractures.",
-        "idealFor": "Athletes with recent sports injuries",
+        "title": "Acute Injury Assessment",
+        "price": "₹700",
+        "duration": "15 minutes",
+        "details": "Immediate evaluation and treatment for sprains, strains, and minor fractures.",
+        "idealFor": "Athletes who have recently sustained an injury during sports or training.",
         "bookings": ["BOOK ONLINE"]
       },
       {
         "id": "chronic-injury",
-        "title": "Chronic Injury Management",
-        "price": "£65",
-        "duration": "40 minutes",
-        "details": "Long-term management of overuse and recurring injuries.",
-        "idealFor": "Athletes with persistent pain or tissue damage",
+        "title": "Chronic Injury Assessment",
+        "price": "₹700",
+        "duration": "15 minutes",
+        "details": "Comprehensive care for long-term or recurring sports injuries.",
+        "idealFor": "Athletes experiencing persistent pain or discomfort from previous injuries.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "treatment",
+        "title": "Sports Injury Treatment",
+        "price": "₹1000 - ₹3000",
+        "duration": "45 - 90 minutes",
+        "details": "Personalised rehabilitation therapy using advanced sports physiotherapy techniques.",
+        "idealFor": "Athletes requiring structured recovery to regain strength, flexibility, and performance.",
         "bookings": ["BOOK ONLINE"]
       }
     ]
@@ -85,20 +89,18 @@
       {
         "id": "post-surgery",
         "title": "Post-Surgery Rehab",
-        "price": "£75",
+        "price": "₹1000",
         "duration": "50 minutes",
-        "details": "Guided recovery after orthopedic surgery.",
-        "idealFor": "Patients after joint replacement or repair",
-        "bookings": ["BOOK ONLINE"]
+        "details": "Guided physiotherapy for safe and effective recovery after orthopedic surgery.",
+        "idealFor": "Patients recovering from joint replacements, ligament repairs, or fractures."
       },
       {
         "id": "functional-training",
         "title": "Functional Training",
-        "price": "£60",
-        "duration": "45 minutes",
-        "details": "Exercise programs to restore everyday movement and strength.",
-        "idealFor": "Anyone rebuilding mobility post-injury",
-        "bookings": ["BOOK ONLINE"]
+        "price": "₹1000",
+        "duration": "60 minutes",
+        "details": "Customized workout plans to regain everyday movement, posture, and balance.",
+        "idealFor": "Individuals recovering from injuries and rebuilding daily strength and functionality."
       }
     ]
   }

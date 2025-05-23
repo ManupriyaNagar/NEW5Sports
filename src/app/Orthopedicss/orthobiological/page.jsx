@@ -54,6 +54,36 @@ const keyBenefits = [
   },
 ];
 
+// Data for Orthobiologics Cards
+const orthobiologics = [
+  {
+    title: "Platelet Rich Plasma (PRP)",
+    duration: "1 to 1.5 hours",
+    injections: "Usually 3 injections in 3-week intervals",
+    cost: "₹14,000 - ₹21,000",
+    procedureCharge: "₹4,000",
+  },
+  {
+    title: "Growth Factor Concentrate",
+    duration: "1 to 1.5 hours",
+    injections: "Usually 3 injections in 3-week intervals",
+    cost: "₹14,000 - ₹21,000",
+    procedureCharge: "₹4,000",
+  },
+  {
+    title: "Bone Marrow Concentrate (BMAC)",
+    duration: "2 to 2.5 hours",
+    cost: "₹55,000",
+    procedureCharge: "₹20,000",
+  },
+  {
+    title: "Stem Cells",
+    duration: "1 hour",
+    cost: "₹1,50,000",
+    procedureCharge: "₹10,000",
+  },
+];
+
 export default function SportsPsychologyPage() {
   return (
     <div className={`min-h-screen ${spaceGrotesk.variable}`}>
@@ -67,39 +97,24 @@ export default function SportsPsychologyPage() {
           className=""
         >
           {/* Breadcrumb Navigation */}
-       
-
-
-
-
-
-
-          <section className="flex  w-full text-black px-20 max-md:flex-col">
-      {/* Main Article with notches */}
-      <article className="relative flex flex-col py-10 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
-        {/* Left notch */}
-        <div
-          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
-                     transform -translate-y-1/2"
-        />
-        {/* Right notch */}
-        <div
-          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
-                     transform -translate-y-1/2"
-        />
-
-        <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
-        Orthobiologicals & Regenerative Therapy
-        </h2>
-
-        <div className="flex flex-wrap gap-5 justify-center mt-12 w-full text-2xl text-center">
-  <p className="max-w-3xl">
-  Harness the power of your body to heal naturally. Our Orthobiologicals & Regenerative Therapies use cutting-edge science to stimulate tissue repair—delivering faster recovery and lasting results.
-  </p>
-</div>
-
-      </article>
-    </section>
+          <section className="flex w-full text-black px-20 max-md:flex-col">
+            <article className="relative flex flex-col py-10 w-full bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible">
+              <div
+                className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2"
+              />
+              <div
+                className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2"
+              />
+              <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+                Orthobiologicals & Regenerative Therapy
+              </h2>
+              <div className="flex flex-wrap gap-5 justify-center mt-2 w-full text-2xl text-center">
+                <p className="max-w-3xl">
+                  Harness the power of your body to heal naturally. Our Orthobiologicals & Regenerative Therapies use cutting-edge science to stimulate tissue repair—delivering faster recovery and lasting results.
+                </p>
+              </div>
+            </article>
+          </section>
 
           {/* Sports Psychology Program Showcase */}
           {sportsPsychologyData.map((service, index) => (
@@ -121,7 +136,7 @@ export default function SportsPsychologyPage() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover rounded-lg "
+                  className="object-cover rounded-lg"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority={false}
                 />
@@ -135,7 +150,7 @@ export default function SportsPsychologyPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-12 sm:mt-16  container mx-auto"
+            className="mt-12 sm:mt-16 container mx-auto"
           >
             <motion.h3
               variants={itemVariants}
@@ -165,47 +180,68 @@ export default function SportsPsychologyPage() {
               ))}
             </div>
           </motion.div>
-        </motion.div>
 
-        {/* Additional Content Section */}
-        <div className="text-white py-16 px-6 md:px-20  ">
-          {/* Header */}
-          <div className="mb-12 text-center">
-            <h2 className="text-lime-400 text-4xl font-bold mb-2">
-              Orthobiologicals & Regenerative Therapies
-            </h2>
-            <h3 className="text-2xl font-semibold text-white">
-              Heal Naturally. Train Continuously.
-            </h3>
-          </div>
+          {/* Orthobiologics Cards Section */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="mt-12 sm:mt-16 container mx-auto"
+          >
+            <motion.h3
+              variants={itemVariants}
+              className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-center text-white"
+            >
+              Types of Orthobiologics
+            </motion.h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 ">
+              {orthobiologics.map((ortho, index) => (
+                <motion.div
+                  key={ortho.title}
+                  variants={itemVariants}
+                  className="p-6 bg-gradient-to-b from-black to-[#001f1f] border border-lime-400 rounded-xl shadow-lg hover:shadow-lime-400/20 transition-shadow duration-300"
+                >
+                  <h4 className="text-xl sm:text-2xl font-bold uppercase text-white mb-4 text-center">
+                    {ortho.title}
+                  </h4>
+                  <ul className="space-y-3 text-gray-200 text-sm sm:text-base font-medium">
+                    <li className="flex items-center justify-between">
+                      <span className="text-lime-400">Duration:</span>
+                      <span>{ortho.duration}</span>
+                    </li>
+                    {ortho.injections && (
+                      <li className="flex items-center justify-between">
+                        <span className="text-lime-400">Injections:</span>
+                        <span>{ortho.injections}</span>
+                      </li>
+                    )}
+                    <li className="flex items-center justify-between">
+                      <span className="text-lime-400">Cost:</span>
+                      <span>{ortho.cost}</span>
+                    </li>
+                    <li className="flex items-center justify-between">
+                      <span className="text-lime-400">Procedure Charge:</span>
+                      <span>{ortho.procedureCharge}</span>
+                    </li>
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
 
-          {/* Content */}
-          <div className="max-w-7xl mx-auto space-y-8">
-            <p className="text-lg text-gray-200">
-              We believe the human body holds the power to heal itself—when guided correctly. Our Orthobiologicals and
-              Regenerative Therapies use cutting-edge science to stimulate natural tissue repair and regeneration. These
-              therapies are especially effective for athletes or active individuals suffering from joint degeneration,
-              tendon injuries, or cartilage damage.
-            </p>
-
-            <p className="text-lg text-gray-200">
-              Using components like <span className="text-white font-medium">Platelet-Rich Plasma (PRP)</span>,{' '}
-              <span className="text-white font-medium">Bone Marrow Concentrate</span>, and{' '}
-              <span className="text-white font-medium">Stem Cells</span>, we enhance the body’s own healing capabilities.
-              These treatments are minimally invasive, outpatient-friendly, and offer shorter recovery time compared to
-              surgery.
-            </p>
-
-            {/* Highlight Box */}
-            <div className="bg-[#001f1f] border-l-4 border-lime-400 px-6 py-4 rounded-lg">
-              <h4 className="text-xl text-lime-400 font-semibold">When to Consider This?</h4>
-              <p className="text-lg text-gray-200 mt-2">
-                If you're facing recurring tendonitis, mild arthritis, or joint pain that hasn't improved with
-                physiotherapy—this could be your next step.
-              </p>
+          {/* Additional Content Section */}
+          <div className="text-white py-16 px-6 md:px-20">
+            <div className="max-w-7xl mx-auto space-y-8">
+              <div className="bg-[#001f1f] border-l-4 border-lime-400 px-6 py-4 rounded-lg">
+                <h4 className="text-xl text-lime-400 font-semibold">When to Consider This?</h4>
+                <p className="text-lg text-gray-200 mt-2">
+                  If you're facing recurring tendonitis, mild arthritis, or joint pain that hasn't improved with physiotherapy—this could be your next step.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

@@ -40,7 +40,7 @@ const services = [
   },
 ];
 
-export default function Athletes() {
+export default function Hero() {
   return (
     <section className="py-16 px-4 md:px-12 bg-gray-50">
       <div className="max-w-7xl mx-auto">

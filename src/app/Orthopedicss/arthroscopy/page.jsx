@@ -52,83 +52,63 @@ const keyBenefits = [
   },
 ];
 
-  
-
 export default function SportsPsychologyPage() {
   const procedures = [
     "Knee and shoulder injuries",
     "Loose cartilage or bone fragments",
     "Ligament reconstructions",
   ];
+
   return (
     <div className={`min-h-screen ${spaceGrotesk.variable}`}>
       {/* Sports Psychology Section */}
-      <section className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30v4h-2V4h-4V2h4V-2h2v2h4v2h-4z' fill='%239CA3AF' fill-opacity='0.4'/%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
+      <section className="relative py-16 sm:py-20 md:py-24 bg-black">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto px-4 sm:px-6 lg:px-8"
+          className=" px-4 sm:px-6 lg:px-8"
         >
           {/* Breadcrumb Navigation */}
-          <motion.nav
-            variants={itemVariants}
-            className="flex justify-center text-sm sm:text-base mb-6"
-            aria-label="Breadcrumb"
-          >
-            <Link
-              href="/"
-              className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-            >
-              Home
-            </Link>
-            <span className="mx-2 text-gray-500">/</span>
-            <Link
-              href="/athletes"
-              className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors"
-            >
-              Orthopedic & Surgery
-            </Link>
-            <span className="mx-2 text-gray-500">/</span>
-            <span className="text-green-600 dark:text-green-500">Arthroscopy</span>
-          </motion.nav>
+       
 
-          {/* Section Title */}
-          <motion.h2
+          {/* Notched Heading Section */}
+          <motion.section
             variants={itemVariants}
-            className="text-4xl sm:text-5xl font-bold tracking-tight mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400 dark:from-green-400 dark:to-green-200"
+            className="flex w-full text-black px-20 max-md:flex-col max-md:px-4"
           >
-            Arthroscopy
-          </motion.h2>
-
-          {/* Section Description */}
-          <motion.p
-            variants={itemVariants}
-            className="text-2xl sm:text-3xl leading-relaxed mb-10 text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
-          >
-            Why open up when a keyhole can do the job? Arthroscopy uses tiny incisions and a camera to diagnose and treat joint problems with minimal disruption. Faster healing, less pain, and a quicker return to movement—it’s surgery, reinvented.
-            <span className="text-green-500">*</span>.
-          </motion.p>
+            <article className="relative flex flex-col py-10 w-full bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible">
+              <div
+                className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2 max-md:-left-4 max-md:w-[40px] max-md:h-[40px]"
+              />
+              <div
+                className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2 max-md:-right-4 max-md:w-[40px] max-md:h-[40px]"
+              />
+              <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+                Arthroscopy
+              </h2>
+              <div className="flex flex-wrap gap-5 justify-center mt-2 w-full text-2xl text-center max-md:text-xl">
+                <p className="max-w-6xl">
+                  Why open up when a keyhole can do the job? Arthroscopy uses tiny incisions and a camera to diagnose and treat joint problems with minimal disruption. Faster healing, less pain, and a quicker return to movement—it’s surgery, reinvented.
+                  <span className="text-black">*</span>.
+                </p>
+              </div>
+            </article>
+          </motion.section>
 
           {/* Sports Psychology Program Showcase */}
           {sportsPsychologyData.map((service, index) => (
             <motion.div
               key={service.title}
               variants={itemVariants}
-              className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 py-8 sm:py-12 px-4 sm:px-6   transition-shadow duration-300"
+              className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 py-8 sm:py-12 container mx-auto transition-shadow duration-300"
             >
               <div className="md:w-1/2">
-                <h3 className="text-2xl sm:text-5xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400 dark:from-green-400 dark:to-green-200 mb-4">
+                <h3 className="text-2xl sm:text-5xl font-bold uppercase text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-base sm:text-xl font-medium text-gray-700 dark:text-gray-300">
+                <p className="text-base sm:text-xl font-medium text-gray-200">
                   {service.description}
                 </p>
               </div>
@@ -151,30 +131,30 @@ export default function SportsPsychologyPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-12 sm:mt-16"
+            className="mt-12 sm:mt-16 container mx-auto"
           >
             <motion.h3
               variants={itemVariants}
-              className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400 dark:from-green-400 dark:to-green-200"
+              className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-center text-white"
             >
-              Key Benefits of Sports Psychology
+              Key Benefits of Arthroscopy
             </motion.h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {keyBenefits.map((benefit, index) => (
                 <motion.div
                   key={benefit.number}
                   variants={itemVariants}
-                  className="p-6 sm:p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-green-500/20 transition-shadow duration-300"
+                  className="p-6 sm:p-8 bg-gradient-to-b from-black to-[#001f1f] border border-lime-400 rounded-xl shadow-lg hover:shadow-lime-400/20 transition-shadow duration-300"
                 >
                   <div className="flex justify-center mb-4">
-                    <span className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 text-2xl sm:text-3xl font-bold">
+                    <span className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-lime-400 text-black text-2xl sm:text-3xl font-bold">
                       {benefit.number}
                     </span>
                   </div>
-                  <h4 className="text-lg sm:text-xl font-bold uppercase text-gray-900 dark:text-gray-100 mb-2 text-center">
+                  <h4 className="text-lg sm:text-xl font-bold uppercase text-white mb-2 text-center">
                     {benefit.heading}
                   </h4>
-                  <p className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 text-center">
+                  <p className="text-sm sm:text-base font-medium text-gray-200 text-center">
                     {benefit.description}
                   </p>
                 </motion.div>
@@ -183,32 +163,57 @@ export default function SportsPsychologyPage() {
           </motion.div>
         </motion.div>
 
-        <section className="bg-black py-12 px-6 md:px-16 lg:px-24">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-2">
-          Arthroscopy
-        </h2>
-        <p className="text-xl text-blue-600 font-semibold mb-4">
-          Small Incisions. Big Impact.
-        </p>
-        <p className="text-gray-100 text-lg mb-8">
-          Arthroscopy allows us to diagnose and treat joint issues using a camera and tiny instruments.
-        </p>
+        {/* Arthroscopy Details Section */}
+        <section className="bg-black py-12 container mx-auto">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+              Arthroscopy
+            </h2>
+            <p className="text-xl text-lime-400 font-semibold mb-4">
+              Small Incisions. Big Impact.
+            </p>
+            <p className="text-gray-200 text-lg mb-8">
+              Arthroscopy allows us to diagnose and treat joint issues using a camera and tiny instruments.
+            </p>
 
-        <div className="grid gap-4 md:grid-cols-2 text-left mb-8">
-          {procedures.map((item, index) => (
-            <div key={index} className="flex items-start gap-3">
-              <CheckCircle className="text-green-600 mt-1" size={22} />
-              <p className="text-gray-200 text-base">{item}</p>
+            <div className="grid gap-4 md:grid-cols-2 text-left mb-8">
+              {procedures.map((item, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="text-lime-400 mt-1" size={22} />
+                  <p className="text-gray-200 text-base">{item}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        <p className="text-lg font-medium text-gray-100">
-          Why opt for open surgery when a keyhole could do the trick?
-        </p>
-      </div>
-    </section>
+            {/* Cost, Duration, Injection Cost, and Tagline Card */}
+            <motion.div
+              variants={itemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="p-6 bg-gradient-to-b from-black to-[#001f1f] border border-lime-400 rounded-xl shadow-lg hover:shadow-lime-400/20 transition-shadow duration-300"
+            >
+              <ul className="space-y-3 text-gray-200 text-base font-medium mb-4">
+                <li className="flex">
+                  <span className="text-lime-400 w-32">Cost:</span>
+                  <span>₹1,50,000 - ₹3,00,000</span>
+                </li>
+                <li className="flex">
+                  <span className="text-lime-400 w-32">Duration:</span>
+                  <span>1 to 2 days in hospital</span>
+                </li>
+                <li className="flex">
+                  <span className="text-lime-400 w-32">Cost of Injection:</span>
+                  <span>
+                    <s className="text-gray-500">₹22,000</s>{' '}
+                    <span className="text-lime-400">₹15,000</span>
+                  </span>
+                </li>
+              </ul>
+             
+            </motion.div>
+          </div>
+        </section>
       </section>
     </div>
   );

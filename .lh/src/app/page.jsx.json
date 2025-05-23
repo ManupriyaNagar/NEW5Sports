@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/app/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1747828878287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747828969110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n-    <div className=\"\">\n+    <div className=\"bg-black\">\n      <HeroSection/>\n      <SportsInfoCards/>\n   \n      <InfoGrid/>\n"
+                },
+                {
+                    "date": 1747895813250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n import PerformanceSection from \"./../components/Home/PerformanceSection\";\n import RecoverySection from \"./../components/Home/RecoverySection\";\n import SportsInfoCards from \"./../components/Home/SportsInfoCard\";\n import SportsMedicineBanner from \"./../components/Home/SportsMedicineBanner\";\n-import InfoGrid from \"./../components/Home/SportsUnlock\";\n+// import InfoGrid from \"./../components/Home/SportsUnlock\";\n import WhyChooseUs from \"./../components/Home/WhyChooseUS\";\n \n \n import Image from \"next/image\";\n@@ -26,9 +26,9 @@\n     <div className=\"bg-black\">\n      <HeroSection/>\n      <SportsInfoCards/>\n   \n-     <InfoGrid/>\n+     {/* <InfoGrid/> */}\n        <PerformanceSection/>\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n"
+                },
+                {
+                    "date": 1747896538307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   \n      {/* <InfoGrid/> */}\n        <PerformanceSection/>\n      <AboutUsSection/>\n-     <SportsMedicineBanner />\n+\n      <FounderSection />\n      <HealingSection/>\n   \n     \n"
+                },
+                {
+                    "date": 1747896558584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   \n      {/* <InfoGrid/> */}\n        <PerformanceSection/>\n      <AboutUsSection/>\n-\n+     <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n   \n     \n"
+                },
+                {
+                    "date": 1747896592765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,13 +49,9 @@\n               bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n           \n       \n       />\n-      <RecoverySection/>\n-      <WhyChooseUs/>\n-      <AthletesRecoveryProgram/>\n-      <MeetOurExperts/>\n-      <FAQ/>\n \n+\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747896600763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,25 +33,14 @@\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n   \n-    \n-      <FeatureCard\n-        topTitle=\"Proud Partners with Vald Test\"\n-        topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n-        topImage=\"/vald.jpg\"\n-        bottomTitle=\"Advanced Machines for Testing\"\n-        bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n-      />\n-      <PartneredSection\n-              topTitle=\"Partnered with a Leading Firm\"\n-              topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n-              topImage=\"/test1.png\"\n-              bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n-          \n-      \n-      />\n \n+      <RecoverySection/>\n+      <WhyChooseUs/>\n+      <AthletesRecoveryProgram/>\n+      <MeetOurExperts/>\n+      <FAQ/>\n \n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1747896608303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,15 +27,26 @@\n      <HeroSection/>\n      <SportsInfoCards/>\n   \n      {/* <InfoGrid/> */}\n-       <PerformanceSection/>\n-     <AboutUsSection/>\n-     <SportsMedicineBanner />\n-     <FounderSection />\n-     <HealingSection/>\n+\n   \n-\n+    \n+      <FeatureCard\n+        topTitle=\"Proud Partners with Vald Test\"\n+        topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n+        topImage=\"/vald.jpg\"\n+        bottomTitle=\"Advanced Machines for Testing\"\n+        bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n+      />\n+      <PartneredSection\n+              topTitle=\"Partnered with a Leading Firm\"\n+              topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n+              topImage=\"/test1.png\"\n+              bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n+          \n+      \n+      />\n       <RecoverySection/>\n       <WhyChooseUs/>\n       <AthletesRecoveryProgram/>\n       <MeetOurExperts/>\n"
+                },
+                {
+                    "date": 1747896624565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,13 @@\n      <HeroSection/>\n      <SportsInfoCards/>\n   \n      {/* <InfoGrid/> */}\n-\n+       <PerformanceSection/>\n+     <AboutUsSection/>\n+     <SportsMedicineBanner />\n+     <FounderSection />\n+     <HealingSection/>\n   \n     \n       <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n"
+                },
+                {
+                    "date": 1747896634076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   \n      {/* <InfoGrid/> */}\n        <PerformanceSection/>\n      <AboutUsSection/>\n-     <SportsMedicineBanner />\n+   \n      <FounderSection />\n      <HealingSection/>\n   \n     \n"
+                },
+                {
+                    "date": 1747896656421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   \n      {/* <InfoGrid/> */}\n        <PerformanceSection/>\n      <AboutUsSection/>\n-   \n+     <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n   \n     \n"
+                }
+            ],
+            "date": 1747828878287,
+            "name": "Commit-0",
+            "content": "\n\n\n\nimport AboutUsSection from \"./../components/Home/AboutSection\";\nimport AthletesRecoveryProgram from \"./../components/Home/AtheleteRecoveryProgram\";\nimport FAQ from \"./../components/Home/Faq\";\nimport FeatureCard from \"./../components/Home/FeatureCard\";\nimport FounderSection from \"./../components/Home/FounderSection\";\nimport HealingSection from \"./../components/Home/HealingSection\";\nimport HeroSection from \"./../components/Home/HeroSection\";\nimport MeetOurExperts from \"./../components/Home/MeetOurExperts\";\nimport PartneredSection from \"./../components/Home/PartneredSection\";\nimport PerformanceSection from \"./../components/Home/PerformanceSection\";\nimport RecoverySection from \"./../components/Home/RecoverySection\";\nimport SportsInfoCards from \"./../components/Home/SportsInfoCard\";\nimport SportsMedicineBanner from \"./../components/Home/SportsMedicineBanner\";\nimport InfoGrid from \"./../components/Home/SportsUnlock\";\nimport WhyChooseUs from \"./../components/Home/WhyChooseUS\";\n\n\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className=\"\">\n     <HeroSection/>\n     <SportsInfoCards/>\n  \n     <InfoGrid/>\n       <PerformanceSection/>\n     <AboutUsSection/>\n     <SportsMedicineBanner />\n     <FounderSection />\n     <HealingSection/>\n  \n    \n      <FeatureCard\n        topTitle=\"Proud Partners with Vald Test\"\n        topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n        topImage=\"/vald.jpg\"\n        bottomTitle=\"Advanced Machines for Testing\"\n        bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n      />\n      <PartneredSection\n              topTitle=\"Partnered with a Leading Firm\"\n              topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n              topImage=\"/test1.png\"\n              bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n          \n      \n      />\n      <RecoverySection/>\n      <WhyChooseUs/>\n      <AthletesRecoveryProgram/>\n      <MeetOurExperts/>\n      <FAQ/>\n\n    </div>\n  );\n}\n"
+        }
+    ]
+}

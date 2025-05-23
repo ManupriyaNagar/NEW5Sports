@@ -1,7 +1,7 @@
 // src/components/Home/InfoGrid.jsx
 'use client';
 import React from 'react';
-import WavyBackground from '@/components/global/Background/WavyBackground';
+
 
 const cardData = [
   {

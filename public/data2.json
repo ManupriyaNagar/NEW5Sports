@@ -1,0 +1,265 @@
+{
+  "sections": {
+    "programmes": [
+      {
+        "id": "pain-management",
+        "heading": "Pain Management Program",
+        "paragraph": "Relieve chronic and acute pain with personalized solutions, perfect for staying active in cricket or daily life.",
+        "imageUrl": "/pain4.png",
+        "linkText": "EXPLORE NOW"
+      },
+      {
+        "id": "strength-enhancement",
+        "heading": "Strength Enhancement Program",
+        "paragraph": "Build power and resilience for sports like kabaddi, cricket, or your fitness journey.",
+        "imageUrl": "/pain2.png",
+        "linkText": "EXPLORE NOW"
+      },
+      {
+        "id": "athlete-development",
+        "heading": "Athlete Development Program",
+        "paragraph": "Nurture your talent to excel in badminton, athletics, or marathons with expert coaching.",
+        "imageUrl": "/pain6.png",
+        "linkText": "EXPLORE NOW"
+      },
+      {
+        "id": "team-athlete",
+        "heading": "Team Athlete Development Program",
+        "paragraph": "Elevate your team’s performance in cricket, kabaddi, or football with tailored training.",
+        "imageUrl": "/pain.png",
+        "linkText": "EXPLORE NOW"
+      },
+      {
+        "id": "rehab-membership",
+        "heading": "Rehab Membership",
+        "paragraph": "Accelerate recovery with daily access to world-class facilities, ideal for returning to sports.",
+        "imageUrl": "/rehab-membership.png",
+        "linkText": "EXPLORE NOW"
+      },
+      {
+        "id": "elevate-program",
+        "heading": "Elevate Programme",
+        "paragraph": "World-class support for Indian athletes and fitness enthusiasts to dominate their goals.",
+        "imageUrl": "/elevate-program.png",
+        "linkText": "EXPLORE NOW"
+      }
+    ],
+    "programDetails": {
+      "rehabilitation-program": {
+        "id": "rehabilitation-program",
+        "title": "Rehabilitation Programme",
+        "description": [
+          "Recover stronger with our world-class physiotherapy and rehabilitation programme, tailored for individuals healing from injuries or surgeries.",
+          "Inspired by the grit of Indian athletes, our expert team uses cutting-edge techniques to help you return to cricket, kabaddi, or daily activities with confidence."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£POA (Price on Application)"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "paragraphs": [
+            "Personalized recovery plans developed with leading surgeons and healthcare providers to ensure optimal outcomes.",
+            "Ideal for post-surgical recovery or managing injuries from sports like cricket, kabaddi, or daily activities, focusing on restoring strength, mobility, and performance.",
+            "Start with an initial physiotherapy assessment to create a tailored roadmap to recovery, designed to get you back to your active lifestyle."
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Individuals recovering from injuries or surgeries, aiming to return to sports like cricket or an active lifestyle."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "The rehabilitation programme got me back on the cricket field faster than I expected!",
+          "author": "Vikram P.",
+          "role": "Amateur Cricketer"
+        }
+      },
+      "pain-management": {
+        "id": "pain-management",
+        "title": "Pain Management Program",
+        "description": [
+          "Find relief from chronic and acute pain with personalized solutions, helping you stay active in sports or daily life."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£POA"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "paragraphs": [
+            "Advanced diagnostics, hands-on therapy, and minimally invasive techniques to relieve pain and improve mobility.",
+            "Tailored for individuals managing pain from sports injuries, work stress, or chronic conditions, ensuring you can enjoy cricket, kabaddi, or daily activities pain-free."
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Anyone seeking relief from pain to enjoy sports, fitness, or daily life without limitations."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "This programme helped me manage my back pain and get back to playing badminton!",
+          "author": "Anjali R.",
+          "role": "Badminton Enthusiast"
+        }
+      },
+      "strength-enhancement": {
+        "id": "strength-enhancement",
+        "title": "Strength Enhancement Program",
+        "description": [
+          "Build explosive power and resilience to dominate in sports like cricket, kabaddi, or your personal fitness goals."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£POA"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "paragraphs": [
+            "Resistance training, functional workouts, and sport-specific drills to enhance strength and performance.",
+            "Perfect for athletes aiming to improve batting power, sprint speed, or gym performance, with coaching tailored to your unique goals."
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Athletes and fitness enthusiasts looking to boost strength for sports or daily activities."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "The strength programme gave me the power I needed for my kabaddi raids!",
+          "author": "Rahul T.",
+          "role": "Kabaddi Player"
+        }
+      },
+      "athlete-development": {
+        "id": "athlete-development",
+        "title": "Athlete Development Program",
+        "description": [
+          "Unleash your potential with a programme designed to nurture talent and elevate performance in sports like badminton, athletics, or marathons."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£POA"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "paragraphs": [
+            "Structured training, personalized nutrition plans, and recovery strategies to help you excel, whether you’re a budding athlete or a seasoned competitor.",
+            "Expert coaching from professionals who’ve trained national and international athletes, tailored to your sport or fitness aspirations."
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Aspiring and professional athletes seeking to enhance performance and achieve their sporting dreams."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "This programme took my marathon running to the next level!",
+          "author": "Priya M.",
+          "role": "Marathon Runner"
+        }
+      },
+      "team-athlete": {
+        "id": "team-athlete",
+        "title": "Team Athlete Development Program",
+        "description": [
+          "Elevate your team’s performance with coordinated training designed for success in sports like cricket, kabaddi, or football."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£POA"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "paragraphs": [
+            "Team-focused drills, conditioning, and strategy sessions to boost collective performance and unity.",
+            "Ideal for local sports clubs, school teams, or corporate teams aiming to dominate in competitive play."
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Sports teams seeking to improve coordination, strength, and performance in competitive settings."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "Our cricket team’s performance skyrocketed after this programme!",
+          "author": "Sanjay K.",
+          "role": "Cricket Team Captain"
+        }
+      },
+      "rehabMembership": {
+        "id": "rehab-membership",
+        "title": "Rehab Membership",
+        "description": [
+          "Accelerate your recovery with daily access to state-of-the-art facilities and expert support, perfect for returning to sports like cricket or kabaddi."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£445/month"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "items": [
+            "Initial physiotherapy assessment to create a personalized recovery plan",
+            "4 one-to-one physiotherapy sessions per month for hands-on treatment",
+            "Weekly soft tissue and manual therapy to relieve pain and improve mobility",
+            "Weekly strength and conditioning sessions to rebuild strength",
+            "Daily access to GoPerform’s world-class facilities, including gym and recovery zones",
+            "Use of specialist equipment like AlterG anti-gravity treadmill, GameReady, Normatec, Compex, and altitude training systems",
+            "Online support for guidance and progress tracking"
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Individuals recovering from injuries or surgeries, aiming to return to sports like cricket, kabaddi, or fitness activities."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "The rehab membership helped me recover from a knee injury and get back to football!",
+          "author": "Amit S.",
+          "role": "Football Player"
+        }
+      },
+      "elevate-program": {
+        "id": "elevate-program",
+        "title": "Elevate Programme",
+        "description": [
+          "Join a vibrant community of Indian athletes and fitness enthusiasts with world-class support to achieve your goals, from cricket pitches to gym floors.",
+          "Tailored training, comprehensive support, and no minimum contract – perfect for dominating in sports or personal fitness."
+        ],
+        "price": {
+          "label": "PRICE",
+          "value": "£195/month"
+        },
+        "details": {
+          "label": "WHAT’S INCLUDED",
+          "items": [
+            "Individually tailored training programme via our app, designed for your goals",
+            "Unlimited group strength & conditioning sessions with expert coaching",
+            "Unlimited group classes (circuits, boxing, Olympic lifting, mobility & core) to enhance versatility",
+            "Regular performance testing (strength, power, body composition) to track progress",
+            "50% discount on VO2 Max and Resting Metabolic Rate testing for advanced insights",
+            "1x FREE sports massage per month to aid recovery",
+            "Weekly injury drop-in clinics for immediate support",
+            "Full open gym access to our Performance Centre with cutting-edge equipment",
+            "Nutrition consultancy and support to fuel your performance",
+            "20% discount on physiotherapy, soft tissue, and sports massage treatments",
+            "Access to altitude training system and Alter-G anti-gravity treadmill for elite training",
+            "Full use of recovery equipment (Normatec, GameReady, Theragun) for faster recovery",
+            "GoPerform Training T-shirt to represent our community"
+          ]
+        },
+        "idealFor": {
+          "label": "IDEAL FOR",
+          "description": "Athletes, runners, and fitness enthusiasts, from cricketers to marathon runners, seeking structured support to dominate their goals."
+        },
+        "testimonial": {
+          "label": "TESTIMONIAL",
+          "quote": "GoPerform’s Elevate Programme transformed my cricket game with personalized training and amazing support!",
+          "author": "Arjun S.",
+          "role": "Amateur Cricketer"
+        }
+      }
+    }
+  }
+}

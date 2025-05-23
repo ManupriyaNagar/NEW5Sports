@@ -1,0 +1,216 @@
+[
+  {
+    "id": "1",
+    "title": "Injury Testing",
+    "description": "Comprehensive diagnostics to identify the root cause of pain or dysfunction for swift recovery.",
+    "image": "/programmeslab1.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/injury-testing",
+    "consultations": [
+      {
+        "id": "initial-injury-assessment",
+        "title": "Initial Injury Assessment",
+        "price": "£75",
+        "duration": "60 minutes",
+        "details": "Thorough evaluation using advanced diagnostics to create a personalized recovery plan.",
+        "idealFor": "Athletes or individuals with acute or chronic pain seeking a precise diagnosis.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "rehabilitation-support-package",
+        "title": "Rehabilitation Support Package",
+        "price": "£350/month",
+        "duration": "Varies",
+        "details": "Weekly therapy sessions, advanced recovery tools, and personalized rehabilitation plans.",
+        "idealFor": "Athletes committed to structured recovery with minimal re-injury risk.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Performance Testing",
+    "description": "Evaluate strength, agility, and endurance to optimize training and boost athletic performance.",
+    "image": "/programmeslab2.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/performance-testing",
+    "consultations": [
+      {
+        "id": "performance-baseline-assessment",
+        "title": "Performance Baseline Assessment",
+        "price": "700 Rs ",
+        "duration": "20 minutes",
+        "details": "Full evaluation of physical attributes with a detailed report and training recommendations.",
+        "idealFor": "Athletes starting a new training cycle or setting performance goals.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "performance-coaching-membership",
+        "title": "Performance Coaching Membership",
+        "price": "Rs 400/month",
+        "duration": "Varies",
+        "details": "Monthly coaching, weekly sessions, and personalized training plans with analytics.",
+        "idealFor": "Athletes aiming to elevate their competitive edge with data-driven training.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "VO2 Max",
+    "description": "Measure aerobic capacity to enhance endurance and cardiovascular health.",
+    "image": "/programmeslab3.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/vo2-max",
+    "consultations": [
+      {
+        "id": "vo2-max-consultation",
+        "title": "VO2 Max Consultation",
+        "price": "5000 +Taxes",
+        "duration": "60 minutes",
+        "details": "VO2 Max test with a detailed report on aerobic capacity and training recommendations.",
+        "idealFor": "Endurance athletes looking to improve cardiovascular fitness.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "endurance-training-program",
+        "title": "Endurance Training Program",
+        "price": "Rs 6000/month",
+        "duration": "Varies",
+        "details": "Monthly VO2 Max tests, weekly training sessions, and personalized plans.",
+        "idealFor": "Runners, cyclists, or triathletes aiming for high-intensity performance.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Lactate Threshold",
+    "description": "Identify your lactate threshold to fine-tune training intensity and improve endurance.",
+    "image": "/programmeslab4.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/lactate-threshold",
+    "consultations": [
+      {
+        "id": "lactate-threshold-consultation",
+        "title": "Lactate Threshold Consultation",
+        "price": "Rs 6000",
+        "duration": "30 - 45  minutes",
+        "details": "Blood lactate testing with a report on training zones and pacing strategies.",
+        "idealFor": "Endurance athletes seeking personalized training intensities.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "endurance-lactate-package",
+        "title": "Endurance Training Package",
+        "price": "£250/month",
+        "duration": "Varies",
+        "details": "Monthly lactate tests, weekly coaching, and customized endurance plans.",
+        "idealFor": "Athletes preparing for marathons or triathlons.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Fitness Blood Test",
+    "description": "Analyze biomarkers to optimize health, nutrition, and training for peak performance.",
+    "image": "/programmeslab7.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/fitness-blood-test",
+    "consultations": [
+      {
+        "id": "blood-test-consultation",
+        "title": "Blood Test Consultation",
+        "price": "£60",
+        "duration": "30 minutes",
+        "details": "Blood sample analysis with personalized health and training recommendations.",
+        "idealFor": "Athletes optimizing health and recovery through data-driven insights.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "health-optimization-membership",
+        "title": "Health Optimization Membership",
+        "price": "£250/month",
+        "duration": "Varies",
+        "details": "Monthly blood tests, bi-weekly consultations, and personalized plans.",
+        "idealFor": "Individuals committed to long-term health and performance.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Radiology",
+    "description": "Advanced imaging to diagnose musculoskeletal issues with precision.",
+    "image": "/programmeslab5.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/radiology",
+    "consultations": [
+      {
+        "id": "xray-consultation",
+        "title": "X-rays",
+        "price": "Rs 400 ",
+        "duration": "15 minutes",
+        "details": "X-ray imaging with a consultation to diagnose bone-related issues.",
+        "idealFor": "Individuals with bone pain or injuries.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "mri-consultation",
+        "title": "MRI Scan",
+        "price": "As Requirment",
+        "duration": "45 minutes",
+        "details": "High-resolution MRI scan with a consultation for soft-tissue diagnosis.",
+        "idealFor": "People with ligament tears or chronic joint pain.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "usg-consultation",
+        "title": "Ultrasound (USG)",
+           "price": "As Requirment",
+        "duration": "30 minutes",
+        "details": "Non-invasive ultrasound to assess soft tissue conditions"	,
+        "idealFor": "Anyone needing quick evaluation of joint or muscle issues.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "radiology-package-monitoring",
+        "title": "Radiology Monitoring Package",
+         "price": "As Requirment",
+        "duration": "Varies",
+        "details": "Initial scan, two follow-up sessions, and progress tracking.",
+        "idealFor": "Patients needing structured follow-up imaging.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "3D Posture Lab",
+    "description": "Analyze movement and alignment to enhance efficiency and prevent injuries.",
+    "image": "/programmeslab6.png",
+    "buttonText": "Book a Session",
+    "buttonLink": "/book/3d-posture-lab",
+    "consultations": [
+      {
+        "id": "posture-analysis-consultation",
+        "title": "Posture Analysis Consultation",
+        "price": "Rs 6000",
+        "duration": "60 minutes",
+        "details": "3D motion capture analysis with a customized corrective exercise program.",
+        "idealFor": "Athletes improving movement efficiency and preventing injuries.",
+        "bookings": ["BOOK ONLINE"]
+      },
+      {
+        "id": "posture-improvement-program",
+        "title": "Posture Improvement Program",
+        "price": "Rs 750/month",
+        "duration": "Varies",
+        "details": "Monthly assessments, weekly sessions, and corrective exercise plans.",
+        "idealFor": "Individuals committed to improving posture and stability.",
+        "bookings": ["BOOK ONLINE"]
+      }
+    ]
+  }
+]

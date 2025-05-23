@@ -87,6 +87,11 @@ const FAQ = () => {
       answer:
         'Yes, you can prepay the full year if you prefer not to use direct debit.'
     },
+     {
+      question: 'Is my program individualized for me?',
+      answer:
+        'Yes. Every program is tailored to your unique needs based on the Elite Athlete GamePlan™ assessment.'
+    }
   ];
 
   const toggleFAQ = (index) => {
@@ -115,32 +120,27 @@ const FAQ = () => {
 
 
 
-      <section className="flex  w-full text-black px-20 max-md:flex-col">
-      {/* Main Article with notches */}
-      <article className="relative flex flex-col py-10 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
-        {/* Left notch */}
-        <div
-          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
-                     transform -translate-y-1/2"
-        />
-        {/* Right notch */}
-        <div
-          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
-                     transform -translate-y-1/2"
-        />
+    <section className="flex flex-col md:flex-row w-full bg-black text-black px-2 md:px-20 py-8">
+    {/* Main Article with notches */}
+    <article className="relative flex flex-col py-8 w-full bg-lime-400 border border-white rounded-2xl overflow-visible p-4 md:p-10">
+      {/* Left notch: hidden on mobile */}
+      <div
+        className="hidden md:block absolute -left-8 top-1/2 w-12 h-12 bg-black rounded-full transform -translate-y-1/2"
+      />
+      {/* Right notch: hidden on mobile */}
+      <div
+        className="hidden md:block absolute -right-8 top-1/2 w-12 h-12 bg-black rounded-full transform -translate-y-1/2"
+      />
 
-        <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+      <h2 className="self-center text-3xl md:text-6xl font-bold leading-tight text-center">
         Frequently Asked Questions
-        </h2>
+      </h2>
 
-        <div className="flex flex-wrap gap-5 justify-center mt-1 w-full text-2xl text-center">
-  <p className="max-w-3xl">
-  Everything you need to know about training, rehab, memberships, and recovery at 5 Sports Hospital.
-  </p>
-</div>
-
-      </article>
-    </section>
+      <p className="mt-4 text-base md:text-2xl text-center max-w-3xl mx-auto hidden md:block">
+        Everything you need to know about training, rehab, memberships, and recovery at 5 Sports Hospital.
+      </p>
+    </article>
+  </section>
 
 
 

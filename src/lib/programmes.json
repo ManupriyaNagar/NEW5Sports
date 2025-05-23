@@ -1,43 +1,50 @@
 {
-  "consultations": [
+  "consultations": [ 
     {
       "id": "emerging-athlete-development",
-      "title": "Emerging Athlete Development",
+      "title": "Emerge: Emerging Athlete Development",
       "description": "Custom programs for young athletes, focusing on skill mastery, nutrition, and injury prevention.",
       "image": "/programmes1.png",
+      "buttonText": "Book a Session",
+      "buttonLink": "/book/emerging-athlete",
       "consultations": [
         {
           "id": "rehabilitation-programme",
           "title": "Emerging Athlete Development",
-          "intro": "We specialise in offering high quality physiotherapy and rehabilitation support to individuals of all ages following injury and orthopaedic surgery. Using the latest rehabilitation techniques and equipment our expert team will help you achieve the best outcome."
+          "intro": "High-quality physiotherapy and rehabilitation support for individuals of all ages following injury or surgery.",
+          "details": "Using the latest rehabilitation techniques and equipment, our expert team will help you achieve the best outcome.",
+          "idealFor": "Young athletes looking to develop skills and prevent injuries.",
+          "bookings": ["BOOK ONLINE"]
         },
         {
           "id": "acl-at-goperform",
-          "pageTitle": "ACL at GoPerform",
+          "title": "ACL Rehabilitation",
           "subtitle": "Rehabilitation Packages",
-          "heading": "ACL, Ankle, Knee, Hip, Shoulder and Spinal Surgery",
-          "description": "We offer a comprehensive rehabilitation service from pre-surgery through to full recovery. The same applies for those who are recovering from serious injury via the non-surgical route.",
-          "price": "£POA (ranging from single sessions through to a comprehensive package)",
-          "details": "We work closely with surgeons and health providers to offer flexible, bespoke rehabilitation packages determined by the needs of each individual. In the first instance we recommend booking an initial physiotherapy appointment via the booking button below. If you have any questions please contact the office or drop in for a visit. You don't need to be sporty, we work with everyone.",
-          "extra": "Our team have a particular specialism in ACL rehabilitation having spent decades working in professional sport. We have good relationships with orthopaedic surgeons locally and nationally and typically have 15-20 individuals working with us on their ACL recovery at any time.",
-          "podcastText": "We recently recorded a podcast episode where Luke summarised what to expect from the ACL recovery process. You can check it out by searching \"GoPerform Podcast\" (episode 12) or listen below:",
-          "podcastEmbed": "<iframe src=\"https://player.example.com/episode12\" width=\"100%\" height=\"200\"></iframe>"
+          "description": "Comprehensive rehabilitation from pre-surgery through to full recovery, including non-surgical routes.",
+          "price": "Price on Application",
+          "details": "Bespoke packages tailored to individual needs, working closely with surgeons and health providers. Book an initial physiotherapy appointment to start.",
+          "extra": "Specializing in ACL rehabilitation with decades of experience in professional sport, supporting 15-20 individuals at any time.",
+          "podcastText": "Listen to our podcast episode on ACL recovery by searching 'GoPerform Podcast' (episode 12) or below:",
+   
+          "idealFor": "Athletes recovering from ACL or other orthopedic surgeries.",
+          "bookings": ["BOOK ONLINE"]
         },
         {
           "id": "rehab-membership",
-          "pageTitle": "Rehab Membership",
-          "description": "Access our facilities and staff on a daily basis to ensure the best possible injury outcomes.",
+          "title": "Rehab Membership",
+          "description": "Daily access to facilities and staff for optimal injury recovery.",
           "price": "£445/month",
           "features": [
             "Initial physiotherapy assessment",
             "4 one-to-one physiotherapy sessions per month",
             "Weekly soft tissue and manual therapy treatment",
             "Weekly strength and conditioning sessions with our coaches",
-            "Daily access to GoPerform to conduct your rehabilitation",
-            "Use of all specialist equipment including AlterG, GameReady, Normatec and Altitude training",
+            "Daily access to GoPerform for rehabilitation",
+            "Use of specialist equipment including AlterG, GameReady, Normatec, and Altitude training",
             "Online support"
           ],
-          "idealFor": "Individuals looking to make a full return to sports participation and competition through a comprehensive support package. You can check out a video with one of our ACL rehabilitation members here."
+          "idealFor": "Individuals aiming for a full return to sports through comprehensive support.",
+          "bookings": ["BOOK ONLINE"]
         }
       ]
     },
@@ -46,14 +53,52 @@
       "title": "Elevate: Pro Athlete Development",
       "description": "Elite training for top athletes, pushing performance with advanced techniques and mental conditioning.",
       "image": "/programmes2.png",
-      "consultations": []
+      "buttonText": "Book a Session",
+      "buttonLink": "/book/elevate-pro",
+      "consultations": [
+        {
+          "id": "pro-assessment",
+          "title": "Pro Athlete Assessment",
+          "price": "£150",
+          "details": "Comprehensive assessment of physical and mental performance to create a tailored training plan.",
+          "idealFor": "Professional athletes seeking to optimize their performance.",
+          "bookings": ["BOOK ONLINE"]
+        },
+        {
+          "id": "pro-training-program",
+          "title": "Pro Training Program",
+          "price": "£600/month",
+          "details": "Monthly coaching, advanced training sessions, and mental conditioning for elite performance.",
+          "idealFor": "Top athletes aiming for competitive excellence.",
+          "bookings": ["BOOK ONLINE"]
+        }
+      ]
     },
     {
       "id": "vo2-max-enhancement",
       "title": "VO2 Max Enhancement",
       "description": "Skyrocket your endurance with programs designed to boost cardiovascular efficiency and stamina.",
       "image": "/programmes3.png",
-      "consultations": []
+      "buttonText": "Book a Session",
+      "buttonLink": "/book/vo2-max",
+      "consultations": [
+        {
+          "id": "vo2-max-test",
+          "title": "VO2 Max Test",
+          "price": "£120",
+          "details": "Measure your aerobic capacity with a detailed report and training recommendations.",
+          "idealFor": "Athletes looking to improve endurance and stamina.",
+          "bookings": ["BOOK ONLINE"]
+        },
+        {
+          "id": "endurance-program",
+          "title": "Endurance Training Program",
+          "price": "£350/month",
+          "details": "Monthly VO2 Max tests, weekly training sessions, and personalized endurance plans.",
+          "idealFor": "Runners, cyclists, or triathletes aiming for peak cardiovascular performance.",
+          "bookings": ["BOOK ONLINE"]
+        }
+      ]
     }
   ]
 }

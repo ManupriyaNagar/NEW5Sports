@@ -3,28 +3,40 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 6,
             "patches": [
                 {
-                    "date": 1747083438879,
+                    "date": 1747547177204,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
                 },
                 {
-                    "date": 1747083444620,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   return (\n     <html lang=\"en\">\n       <body>\n         <ThemeProvider>\n-   \n+          <Header/>\n           {children}\n         </ThemeProvider>\n       </body>\n     </html>\n"
+                    "date": 1747547194774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import Header from '@/components/global/header';\n+import './globals.css';\n+import { ThemeProvider } from '@/components/contex/ThemeContext';\n+import Footer from '@/components/global/Footer';\n+\n+export const metadata = {\n+  title: 'Your App',\n+  description: 'App description',\n+};\n+\n+export default function RootLayout({ children }) {\n+  return (\n+    <html lang=\"en\">\n+      <body>\n+        <ThemeProvider>\n+          <Header/>\n+          {children}\n+          <Footer/>\n+        </ThemeProvider>\n+      </body>\n+    </html>\n+  );\n+}\n"
                 },
                 {
-                    "date": 1747140733199,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import Header from '@/components/global/header';\n import './globals.css';\n import { ThemeProvider } from '@/components/contex/ThemeContext';\n+import { Footprints } from 'lucide-react';\n \n export const metadata = {\n   title: 'Your App',\n   description: 'App description',\n@@ -13,8 +14,9 @@\n       <body>\n         <ThemeProvider>\n           <Header/>\n           {children}\n+          <Footprints/>\n         </ThemeProvider>\n       </body>\n     </html>\n   );\n"
+                    "date": 1747547622572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import Header from '@/components/global/header';\n+import './globals.css';\n+import { ThemeProvider } from './../components/contex/ThemeContext';\n+import Footer from '@/components/global/Footer';\n+\n+export const metadata = {\n+  title: 'Your App',\n+  description: 'App description',\n+};\n+\n+export default function RootLayout({ children }) {\n+  return (\n+    <html lang=\"en\">\n+      <body>\n+        <ThemeProvider>\n+          <Header/>\n+          {children}\n+          <Footer/>\n+        </ThemeProvider>\n+      </body>\n+    </html>\n+  );\n+}\n"
                 },
                 {
-                    "date": 1747140749099,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import Header from '@/components/global/header';\n import './globals.css';\n import { ThemeProvider } from '@/components/contex/ThemeContext';\n-import { Footprints } from 'lucide-react';\n+import Footer from '@/components/global/Footer';\n \n export const metadata = {\n   title: 'Your App',\n   description: 'App description',\n@@ -14,9 +14,9 @@\n       <body>\n         <ThemeProvider>\n           <Header/>\n           {children}\n-          <Footprints/>\n+          <Footer/>\n         </ThemeProvider>\n       </body>\n     </html>\n   );\n"
+                    "date": 1747547645776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import Header from '@/components/global/header';\n import './globals.css';\n import { ThemeProvider } from './../components/contex/ThemeContext';\n-import Footer from '@/components/global/Footer';\n+import Footer from './../components/global/Footer';\n \n export const metadata = {\n   title: 'Your App',\n   description: 'App description',\n@@ -20,50 +20,4 @@\n       </body>\n     </html>\n   );\n }\n-import Header from '@/components/global/header';\n-import './globals.css';\n-import { ThemeProvider } from '@/components/contex/ThemeContext';\n-import Footer from '@/components/global/Footer';\n-\n-export const metadata = {\n-  title: 'Your App',\n-  description: 'App description',\n-};\n-\n-export default function RootLayout({ children }) {\n-  return (\n-    <html lang=\"en\">\n-      <body>\n-        <ThemeProvider>\n-          <Header/>\n-          {children}\n-          <Footer/>\n-        </ThemeProvider>\n-      </body>\n-    </html>\n-  );\n-}\n-import Header from '@/components/global/header';\n-import './globals.css';\n-import { ThemeProvider } from '@/components/contex/ThemeContext';\n-import Footer from '@/components/global/Footer';\n-\n-export const metadata = {\n-  title: 'Your App',\n-  description: 'App description',\n-};\n-\n-export default function RootLayout({ children }) {\n-  return (\n-    <html lang=\"en\">\n-      <body>\n-        <ThemeProvider>\n-          <Header/>\n-          {children}\n-          <Footer/>\n-        </ThemeProvider>\n-      </body>\n-    </html>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1747547663848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Header from '@/components/global/header';\n+import Header from './../components/global/header';\n import './globals.css';\n import { ThemeProvider } from './../components/contex/ThemeContext';\n import Footer from './../components/global/Footer';\n \n"
+                },
+                {
+                    "date": 1747826803921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { ThemeProvider } from './../components/contex/ThemeContext';\n import Footer from './../components/global/Footer';\n \n export const metadata = {\n-  title: 'Your App',\n+  title: '5 Sports Hospital',\n   description: 'App description',\n };\n \n export default function RootLayout({ children }) {\n"
+                },
+                {
+                    "date": 1747828866703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import Footer from './../components/global/Footer';\n \n export const metadata = {\n   title: '5 Sports Hospital',\n-  description: 'App description',\n+  description: 'INDIA’S FIRST INTEGRATED SPORTS MEDICINE & REHAB CENTER',\n };\n \n export default function RootLayout({ children }) {\n   return (\n"
                 }
             ],
-            "date": 1747083438879,
+            "date": 1747547177204,
             "name": "Commit-0",
-            "content": "import Header from '@/components/global/header';\nimport './globals.css';\nimport { ThemeProvider } from '@/components/contex/ThemeContext';\n\nexport const metadata = {\n  title: 'Your App',\n  description: 'App description',\n};\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <ThemeProvider>\n   \n          {children}\n        </ThemeProvider>\n      </body>\n    </html>\n  );\n}\n"
+            "content": "import Header from '@/components/global/header';\nimport './globals.css';\nimport { ThemeProvider } from '@/components/contex/ThemeContext';\nimport Footer from '@/components/global/Footer';\n\nexport const metadata = {\n  title: 'Your App',\n  description: 'App description',\n};\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <ThemeProvider>\n          <Header/>\n          {children}\n          <Footer/>\n        </ThemeProvider>\n      </body>\n    </html>\n  );\n}\n"
         }
     ]
 }

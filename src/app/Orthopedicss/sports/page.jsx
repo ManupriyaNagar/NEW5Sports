@@ -71,27 +71,28 @@ export default function SportsPsychologyPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto"
+          className="container mx-auto px-4 sm:px-6 lg:px-8"
         >
+          {/* Breadcrumb Navigation */}
+         
+
           {/* Header Section with Notches */}
           <section className="flex w-full text-black max-md:flex-col">
             <article className="relative flex flex-col py-10 w-full bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible">
               {/* Left notch */}
               <div
-                className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2"
+                className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2 max-md:-left-4 max-md:w-[40px] max-md:h-[40px]"
               />
               {/* Right notch */}
               <div
-                className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2"
+                className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2 max-md:-right-4 max-md:w-[40px] max-md:h-[40px]"
               />
-
-              <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+              <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl text-center">
                 Sports Injury & Ligament Surgery
               </h2>
-
-              <div className="flex flex-wrap gap-5 justify-center mt-2 w-full text-2xl text-center">
-                <p className="max-w-3xl">
-                  Injuries may sideline you—but they don't define you. Our expert-led surgeries for ACL tears, ligament damage, and joint trauma are designed not just to heal, but to rebuild strength and performance. From diagnosis to rehab, we help athletes return stronger, faster, and smarter.
+              <div className="flex flex-wrap gap-5 justify-center mt-2 w-full text-2xl text-center max-md:text-xl">
+                <p className="max-w-6xl">
+                  Injuries may sideline you—but they don’t define you. Our expert-led surgeries for ACL tears, ligament damage, and joint trauma are designed not just to heal, but to rebuild strength and performance. From diagnosis to rehab, we help athletes return stronger, faster, and smarter.
                 </p>
               </div>
             </article>
@@ -117,7 +118,7 @@ export default function SportsPsychologyPage() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover rounded-lg border border-green-400"
+                  className="object-cover rounded-lg border border-lime-400"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority={false}
                 />
@@ -137,14 +138,14 @@ export default function SportsPsychologyPage() {
               variants={itemVariants}
               className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-center text-white"
             >
-              Key Benefits of Sports Psychology
+              Key Benefits of Sports Injury & Ligament Surgery
             </motion.h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {keyBenefits.map((benefit, index) => (
                 <motion.div
                   key={benefit.number}
                   variants={itemVariants}
-                  className="p-6 sm:p-8 bg-gradient-to-b from-black to-[#001f1f] border border-green-400 rounded-xl shadow-lg hover:shadow-green-400/20 transition-shadow duration-300"
+                  className="p-6 sm:p-8 bg-gradient-to-b from-black to-[#001f1f] border border-lime-400 rounded-xl shadow-lg hover:shadow-lime-400/20 transition-shadow duration-300"
                 >
                   <div className="flex justify-center mb-4">
                     <span className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-lime-400 text-black text-2xl sm:text-3xl font-bold">
@@ -163,30 +164,77 @@ export default function SportsPsychologyPage() {
           </motion.div>
 
           {/* Treatments Section */}
-          <div className="max-w-5xl mx-auto text-center py-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-              Sports Injuries & Ligament Surgery
-            </h2>
-            <p className="text-xl text-lime-400 font-semibold mb-4">
-              From ACL Tears to Muscle Repairs – We’ve Got You
-            </p>
-            <p className="text-gray-200 text-lg mb-8">
-              Specialized care tailored for athletes—our experts ensure you don’t just heal, you come back stronger.
-            </p>
+          <section className="bg-black py-12 px-6 md:px-16 lg:px-24">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="max-w-6xl mx-auto text-center"
+            >
+              {/* Notched Heading */}
+              <div className="relative flex flex-col py-10 w-full">
+                <div
+                  className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full transform -translate-y-1/2 max-md:-left-4 max-md:w-[40px] max-md:h-[40px]"
+                />
+                <div
+                  className="absolute -right-8 top-1/2 w-[60px] h-[60px]  rounded-full transform -translate-y-1/2 max-md:-right-4 max-md:w-[40px] max-md:h-[40px]"
+                />
+                <h2 className="self-center text-3xl md:text-4xl font-bold text-white leading-none max-md:text-2xl">
+                  Sports Injuries & Ligament Surgery
+                </h2>
+                <p className="text-xl text-white font-semibold mt-2">
+                  From ACL Tears to Muscle Repairs – We’ve Got You
+                </p>
+                <p className="text-lg text-white mt-1 max-w-5xl mx-auto">
+                  Specialized care tailored for athletes—our experts ensure you don’t just heal, you come back stronger.
+                </p>
+              </div>
 
-            <div className="grid gap-4 md:grid-cols-2 text-left mb-8">
-              {treatments.map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="text-lime-400 mt-1" size={22} />
-                  <p className="text-gray-200 text-base">{item}</p>
-                </div>
-              ))}
-            </div>
+              {/* Treatments List */}
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid gap-4 md:grid-cols-2 text-left mb-8 mt-8"
+              >
+                {treatments.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    className="flex items-start gap-3"
+                  >
+                    <CheckCircle className="text-lime-400 mt-1" size={22} />
+                    <p className="text-gray-200 text-base">{item}</p>
+                  </motion.div>
+                ))}
+              </motion.div>
 
-            <p className="text-lg font-medium text-gray-200">
-              Every plan is personalized for your sport, timeline, and performance goals.
-            </p>
-          </div>
+              {/* Cost, Duration, and Tagline Card */}
+              <motion.div
+                variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="p-6 bg-gradient-to-b from-black to-[#001f1f] border border-lime-400 rounded-xl shadow-lg hover:shadow-lime-400/20 transition-shadow duration-300"
+              >
+                <ul className="space-y-3 text-gray-200 text-base font-medium mb-4">
+                  <li className="flex">
+                    <span className="text-lime-400 w-32">Cost:</span>
+                    <span>₹1,50,000 - ₹3,00,000</span>
+                  </li>
+                  <li className="flex">
+                    <span className="text-lime-400 w-32">Duration:</span>
+                    <span>1 to 2 days in hospital</span>
+                  </li>
+                </ul>
+                <p className="text-lg font-medium text-gray-100">
+                  Every plan is personalized for your sport, timeline, and performance goals.
+                </p>
+              </motion.div>
+            </motion.div>
+          </section>
         </motion.div>
       </section>
     </div>

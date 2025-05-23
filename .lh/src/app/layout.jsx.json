@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/layout.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1747829529375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747830324880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import Footer from './../components/global/Footer';\n import { ThemeProvider } from './../components/contex/ThemeContext';\n \n export const metadata = {\n-title: '5 Sports Hospital',\n+title: '5 Sports Health',\n description: 'INDIA’S FIRST INTEGRATED SPORTS MEDICINE & REHAB CENTER',\n icons: {\n icon: [\n { url: '/favicon.svg', type: 'image/svg+xml' },\n"
+                },
+                {
+                    "date": 1747896573132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n <body>\n <ThemeProvider>\n <Header />\n {children}\n-<Footer />\n+\n </ThemeProvider>\n </body>\n </html>\n );\n"
+                }
+            ],
+            "date": 1747829529374,
+            "name": "Commit-0",
+            "content": "import './globals.css';\nimport Header from './../components/global/header';\nimport Footer from './../components/global/Footer';\nimport { ThemeProvider } from './../components/contex/ThemeContext';\n\nexport const metadata = {\ntitle: '5 Sports Hospital',\ndescription: 'INDIA’S FIRST INTEGRATED SPORTS MEDICINE & REHAB CENTER',\nicons: {\nicon: [\n{ url: '/favicon.svg', type: 'image/svg+xml' },\n// Optional fallback for older browsers:\n\n],\n},\n};\n\nexport default function RootLayout({ children }) {\nreturn (\n<html lang=\"en\">\n<body>\n<ThemeProvider>\n<Header />\n{children}\n<Footer />\n</ThemeProvider>\n</body>\n</html>\n);\n}"
+        }
+    ]
+}

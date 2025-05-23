@@ -1,7 +1,27 @@
 [
-    {
-      "title": "Mind Over Muscle",
-      "description": "Our Sports Psychology Program helps athletes manage performance anxiety, improve focus and concentration, boost confidence and motivation, recover from injury trauma, and enhance team dynamics through mental conditioning drills, visualization, mindfulness practices, goal setting, and coping strategies for high-pressure moments.",
-      "image": "/programmes3.png"
-    }
-  ]
+  {
+    "title": "Mind Over Muscle",
+    "description": "Our Sports Psychology Program helps athletes manage performance anxiety, improve focus and concentration, boost confidence and motivation, recover from injury trauma, and enhance team dynamics through mental conditioning drills, visualization, mindfulness practices, goal setting, and coping strategies for high-pressure moments.",
+    "image": "/programmes3.png",
+    "pricing": [
+      {
+        "duration": "1 Session",
+        "price": "₹3,000",
+        "offerPrice": "",
+        "note": ""
+      },
+      {
+        "duration": "5 Sessions",
+        "price": "₹15,000",
+        "offerPrice": "12,000",
+        "note": "20% OFF"
+      },
+      {
+        "duration": "10 Sessions",
+        "price": "₹30,000",
+        "offerPrice": "₹24,000",
+        "note": "20% OFF"
+      }
+    ]
+  }
+]

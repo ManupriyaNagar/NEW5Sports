@@ -1,0 +1,18 @@
+{
+    "sourceFile": "public/robotic.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1747855450644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1747855450644,
+            "name": "Commit-0",
+            "content": "[\n    {\n      \"title\": \"Precision Beyond Human Hands: Robotic Knee Replacement\",\n      \"description\": \"Experience the future of joint care with robotic knee replacement — a breakthrough in surgical precision and personalized treatment. By combining advanced robotics with the surgeon’s expertise, this procedure ensures unmatched accuracy, smaller incisions, quicker recovery, and longer-lasting results. Whether you're an athlete returning to peak performance or someone reclaiming everyday mobility, robotic knee surgery offers a transformative step toward a pain-free, active life.\",\n      \"image\": \"/robot.jpg\"\n    }\n  ]"
+        }
+    ]
+}
