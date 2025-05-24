@@ -11,7 +11,7 @@ const Card = ({ title = [], description, iconType }) => {
     <article
       className={`
         relative bg-lime-400 border border-white
-        h-[283px] rounded-[32px] w-[420px]
+        h-[150px] rounded-[32px] w-[420px]
         transform transition-transform duration-300
         ${isHovered ? 'scale-105' : 'scale-100'}
       `}

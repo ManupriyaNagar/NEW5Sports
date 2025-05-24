@@ -20,7 +20,7 @@ export default function GetInTouch() {
 
   return (
     <section
-      className={`py-20 px-4   transition-colors duration-500 ${
+      className={`py-20 px-4   transition-colors duration-500   ${
         darkMode ? 'bg-black text-white' : 'bg-gray-50 text-gray-900'
       }`}
     >
@@ -34,7 +34,7 @@ export default function GetInTouch() {
         {/* Header */}
 
 
-        <section className="flex  w-full text-black md:px-20 max-md:flex-col">
+        <section className="flex  w-full text-black md:px-20 max-md:flex-col"    id="get-in-touch">
       {/* Main Article with notches */}
       <article className="relative flex flex-col py-10 w-full   bg-gray-100 border border-white border-solid rounded-[32px] overflow-visible ">
         {/* Left notch */}

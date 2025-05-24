@@ -54,14 +54,14 @@ const keyBenefits = [
   },
 ];
 
-// Data for Other Techniques (left side)
+// Updated Data for Other Techniques (left side)
 const otherTechniques = [
   {
     title: "Viscosupplementation",
     description: "Injections that improve joint lubrication, reduce friction, and enhance shock absorption.",
     details: [
       { label: "Duration", value: "30 to 35 minutes" },
-      { label: "Cost of Injection", value: "₹15,000 (was ₹22,000)" },
+      { label: "Cost of Injection", originalCost: "₹22,000", offerCost: "₹15,000" }, // Split into originalCost and offerCost
       { label: "Procedure Charge", value: "₹4,000" },
     ],
   },
@@ -85,7 +85,7 @@ const otherTechniques = [
   },
 ];
 
-// Data for Regenerative Medicine (right side, nested)
+// Updated Data for Regenerative Medicine (right side, nested)
 const regenerativeMedicine = {
   title: "Regenerative Medicine",
   description: "Harness your body’s healing potential using PRP and stem cells to repair damaged tissues.",
@@ -95,7 +95,8 @@ const regenerativeMedicine = {
       description: "A type of regenerative therapy using your own blood to promote healing.",
       duration: "1 to 1.5 hours",
       injections: "Usually 3 injections in 3-week intervals",
-      cost: "₹14,000 - ₹21,000",
+      originalCost: "₹21,000", // Original price to be shown with strikethrough
+      offerCost: "₹15,000", // Offer price to be highlighted
       procedureCharge: "₹4,000",
     },
     {
@@ -103,22 +104,23 @@ const regenerativeMedicine = {
       description: "Uses concentrated growth factors to stimulate tissue repair.",
       duration: "1 to 1.5 hours",
       injections: "Usually 3 injections in 3-week intervals",
-      cost: "₹14,000 - ₹21,000",
+      originalCost: "₹21,000", // Original price to be shown with strikethrough
+      offerCost: "₹15,000", // Offer price to be highlighted
       procedureCharge: "₹4,000",
     },
     {
       title: "Bone Marrow Concentrate (BMAC)",
       description: "Extracts stem cells from bone marrow to aid in tissue regeneration.",
       duration: "2 to 2.5 hours",
-      cost: "₹55,000",
+      cost: "₹55,000", // No offer, so use the original cost field
       procedureCharge: "₹20,000",
     },
     {
       title: "Stem Cells",
       description: "Utilizes stem cells to repair and regenerate damaged joint tissues.",
       duration: "1 hour",
-      cost: "₹1,50,000",
-      procedureCharge: "₹10,000", // Fixed the incomplete "Procedu" to "Procedure Charge"
+      cost: "₹1,50,000", // No offer, so use the original cost field
+      procedureCharge: "₹10,000",
     },
   ],
 };
@@ -135,9 +137,6 @@ export default function SportsPsychologyPage() {
           viewport={{ once: true }}
           className="container mx-auto px-4 sm:px-6 lg:px-8"
         >
-          {/* Breadcrumb Navigation */}
-        
-
           {/* Main Heading with Notches */}
           <section className="flex w-full text-black max-md:flex-col">
             <article className="relative flex flex-col py-10 w-full bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible">
@@ -281,7 +280,15 @@ export default function SportsPsychologyPage() {
                       {technique.details.map((detail, idx) => (
                         <li key={idx} className="flex">
                           <span className="text-lime-400 w-32">{detail.label}:</span>
-                          <span>{detail.value}</span>
+                          {detail.originalCost && detail.offerCost ? (
+                            <div className="flex items-center gap-2">
+                              <span className="text-gray-400 line-through">{detail.originalCost}</span>
+                              <span className="text-green-400 font-bold">{detail.offerCost}</span>
+                              <span className="text-green-400 text-xs">(Offer)</span>
+                            </div>
+                          ) : (
+                            <span>{detail.value}</span>
+                          )}
                         </li>
                       ))}
                     </ul>
@@ -324,7 +331,17 @@ export default function SportsPsychologyPage() {
                         )}
                         <li className="flex">
                           <span className="text-lime-400 w-32">Cost:</span>
-                          <span>{ortho.cost}</span>
+                          <div className="flex items-center gap-2">
+                            {ortho.originalCost && ortho.offerCost ? (
+                              <>
+                                <span className="text-gray-400 line-through">{ortho.originalCost}</span>
+                                <span className="text-green-400 font-bold">{ortho.offerCost}</span>
+                                <span className="text-green-400 text-xs">(Offer)</span>
+                              </>
+                            ) : (
+                              <span>{ortho.cost}</span>
+                            )}
+                          </div>
                         </li>
                         <li className="flex">
                           <span className="text-lime-400 w-32">Procedure Charge:</span>

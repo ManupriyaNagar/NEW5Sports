@@ -67,7 +67,7 @@ export default function WhyChooseUs() {
               darkMode ? 'text-gray-300' : 'text-gray-700'
             }`}
           >
-            Discover what makes us the <span className="text-green-500">#1 Sports Medicine & Rehab Center</span> in India.
+            Discover what makes us the <span className="text-lime-500">#1 Sports Medicine & Rehab Center</span> in India.
           </p>
         </motion.div>
 
@@ -95,7 +95,7 @@ export default function WhyChooseUs() {
                   {/* Icon */}
                   <div
                     className={`mb-5 flex items-center justify-center w-16 h-16 rounded-full shadow-md ${
-                      darkMode ? 'bg-green-600 text-white' : 'bg-green-100 text-green-700'
+                      darkMode ? 'bg-lime-600 text-white' : 'bg-green-100 text-green-700'
                     }`}
                   >
                     {feature.icon}
@@ -104,7 +104,7 @@ export default function WhyChooseUs() {
                   {/* Title */}
                   <h3
                     className={`text-lg font-bold uppercase tracking-tight mb-3 ${
-                      darkMode ? 'text-green-400' : 'text-green-700'
+                      darkMode ? 'text-lime-400' : 'text-green-700'
                     }`}
                   >
                     {feature.title}

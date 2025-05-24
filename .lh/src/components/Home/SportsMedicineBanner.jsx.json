@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 21,
+            "activePatchIndex": 43,
             "patches": [
                 {
                     "date": 1747547015921,
@@ -92,6 +92,94 @@
                 {
                     "date": 1747897973164,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n+    <section className=\"flex flex-col items-center relative bg-black  pb-24\">\n       {/* Wavy background */}\n       <WavyBackground height={400} className=\"w-full max-w-[1350px] z-10\">\n         <motion.div\n           variants={containerVariants}\n"
+                },
+                {
+                    "date": 1747997920683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"flex flex-col items-center relative bg-black  pb-24\">\n+    <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Wavy background */}\n       <WavyBackground height={400} className=\"w-full max-w-[1350px] z-10\">\n         <motion.div\n           variants={containerVariants}\n@@ -69,9 +69,9 @@\n         </motion.div>\n       </WavyBackground>\n \n       {/* Floating CTAs */}\n-      <div className=\"absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 z-20 px-4 w-full max-w-[500px]\">\n+      <div className=\"absolute bottom-0  transform -translate-x-1/2 translate-y-1/2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 z-20 px-4 w-full max-w-[500px]\">\n         <a\n           href=\"tel:+919353555755\"\n           className=\"w-full sm:w-auto bg-gradient-to-r from-lime-400 to-lime-200 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:from-lime-300 hover:to-lime-100 transform hover:scale-105 transition text-center text-sm sm:text-base\"\n         >\n"
+                },
+                {
+                    "date": 1747997939650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,21 +69,8 @@\n         </motion.div>\n       </WavyBackground>\n \n       {/* Floating CTAs */}\n-      <div className=\"absolute bottom-0  transform -translate-x-1/2 translate-y-1/2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 z-20 px-4 w-full max-w-[500px]\">\n-        <a\n-          href=\"tel:+919353555755\"\n-          className=\"w-full sm:w-auto bg-gradient-to-r from-lime-400 to-lime-200 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:from-lime-300 hover:to-lime-100 transform hover:scale-105 transition text-center text-sm sm:text-base\"\n-        >\n-          Call Us Any Time\n-        </a>\n-        <a\n-          href=\"#learn-more\"\n-          className=\"w-full sm:w-auto bg-lime-400 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:bg-lime-500 transform hover:scale-105 transition text-center text-sm sm:text-base\"\n-        >\n-          Learn More →\n-        </a>\n-      </div>\n+     \n     </section>\n   );\n }\n"
+                },
+                {
+                    "date": 1747998129616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import React from 'react';\n import Image from 'next/image';\n import { motion } from 'framer-motion';\n import WavyBackground from './../../components/global/Background/WavyBackground';\n+import herobg from './../../../../public/herobg.png';\n \n // Animation variants\n const containerVariants = {\n   hidden: { opacity: 0, y: 50 },\n@@ -31,10 +32,14 @@\n \n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n-      {/* Wavy background */}\n-      <WavyBackground height={400} className=\"w-full max-w-[1350px] z-10\">\n+      {/* Pass backgroundImage prop to WavyBackground */}\n+      <WavyBackground\n+        height={400}\n+        className=\"w-full max-w-[1350px] z-10\"\n+        backgroundImage={herobg}\n+      >\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n@@ -50,9 +55,9 @@\n               src=\"/3.png\"\n               alt=\"Athlete running\"\n               width={400}\n               height={400}\n-              className=\"object-contain \"\n+              className=\"object-contain\"\n             />\n           </motion.div>\n \n           {/* Text content */}\n@@ -67,10 +72,7 @@\n             </ul>\n           </motion.div>\n         </motion.div>\n       </WavyBackground>\n-\n-      {/* Floating CTAs */}\n-     \n     </section>\n   );\n }\n"
+                },
+                {
+                    "date": 1747998147205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\n import Image from 'next/image';\n import { motion } from 'framer-motion';\n import WavyBackground from './../../components/global/Background/WavyBackground';\n-import herobg from './../../../../public/herobg.png';\n+import herobg from './../../../public/herobg.png';\n \n // Animation variants\n const containerVariants = {\n   hidden: { opacity: 0, y: 50 },\n"
+                },
+                {
+                    "date": 1748007922167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n       <WavyBackground\n         height={400}\n-        className=\"w-full max-w-[1350px] z-10\"\n+        className=\"w-full max-w-[1350px] z-10 bg-amber-500\"\n         backgroundImage={herobg}\n       >\n         <motion.div\n           variants={containerVariants}\n"
+                },
+                {
+                    "date": 1748007968900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n-      <WavyBackground\n-        height={400}\n-        className=\"w-full max-w-[1350px] z-10 bg-amber-500\"\n-        backgroundImage={herobg}\n-      >\n+   <WavyBackground\n+  height={400}\n+  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n+  backgroundImage={herobg}\n+/>\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748007985710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n-   <WavyBackground\n-  height={400}\n-  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n-  backgroundImage={herobg}\n-/>\n+      <WavyBackground\n+        height={400}\n+        className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n+        backgroundImage={herobg}\n+      >\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008073807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n-      <WavyBackground\n-        height={400}\n-        className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n-        backgroundImage={herobg}\n-      >\n+   <WavyBackground\n+  height={400}\n+  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n+  backgroundImage={herobg}\n+/>\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008083174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n-   <WavyBackground\n-  height={400}\n-  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n-  backgroundImage={herobg}\n-/>\n+      <WavyBackground\n+        height={400}\n+        className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n+        backgroundImage={herobg}\n+      >\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008089321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n-      <WavyBackground\n-        height={400}\n-        className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n-        backgroundImage={herobg}\n-      >\n+<WavyBackground\n+  height={400}\n+  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n+  backgroundImage={herobg}\n+>\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008103784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n <WavyBackground\n   height={400}\n-  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b from-black to-green-900\"\n+  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b f to-green-900\"\n   backgroundImage={herobg}\n >\n         <motion.div\n           variants={containerVariants}\n"
+                },
+                {
+                    "date": 1748008111261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n       {/* Pass backgroundImage prop to WavyBackground */}\n <WavyBackground\n   height={400}\n-  className=\"w-full max-w-[1350px] z-10 bg-gradient-to-b f to-green-900\"\n+  className=\"w-full max-w-[1350px] z-10   bg-green-900\"\n   backgroundImage={herobg}\n >\n         <motion.div\n           variants={containerVariants}\n"
+                },
+                {
+                    "date": 1748008188720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,14 +32,18 @@\n \n export default function SportsMedicineBanner() {\n   return (\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n-      {/* Pass backgroundImage prop to WavyBackground */}\n-<WavyBackground\n-  height={400}\n-  className=\"w-full max-w-[1350px] z-10   bg-green-900\"\n-  backgroundImage={herobg}\n->\n+\n+\n+    \n+<div className=\"bg-gradient-to-b from-black to-green-900 w-full max-w-[1350px]\">\n+  <WavyBackground\n+    height={400}\n+    className=\"w-full max-w-[1350px] z-10\"\n+    backgroundImage={herobg}\n+  >\n+\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008197392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,10 @@\n   <WavyBackground\n     height={400}\n     className=\"w-full max-w-[1350px] z-10\"\n     backgroundImage={herobg}\n-  >\n-\n+  />\n+</div>\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008209227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,15 +35,15 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n \n \n     \n-<div className=\"bg-gradient-to-b from-black to-green-900 w-full max-w-[1350px]\">\n+\n   <WavyBackground\n     height={400}\n     className=\"w-full max-w-[1350px] z-10\"\n     backgroundImage={herobg}\n-  />\n-</div>\n+  >\n+\n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n           whileInView=\"visible\"\n"
+                },
+                {
+                    "date": 1748008266908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n+    <section className=\"flex flex-col items-center relative   bg-gradient-to-b from-black to-green-900 bg-black pt-16 pb-24\">\n \n \n     \n \n"
+                },
+                {
+                    "date": 1748008277577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"flex flex-col items-center relative   bg-gradient-to-b from-black to-green-900 bg-black pt-16 pb-24\">\n+    <section className=\"flex flex-col items-center relative   bg-gradient-to-b from-black to-green-900 pt-16 pb-24\">\n \n \n     \n \n"
+                },
+                {
+                    "date": 1748008284490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"flex flex-col items-center relative   bg-gradient-to-b from-black to-green-900 pt-16 pb-24\">\n+    <section className=\"flex flex-col items-center relative    bg-black pt-16 pb-24\">\n \n \n     \n \n"
+                },
+                {
+                    "date": 1748008302561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,18 +31,18 @@\n ];\n \n export default function SportsMedicineBanner() {\n   return (\n-    <section className=\"flex flex-col items-center relative    bg-black pt-16 pb-24\">\n+    <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n \n \n     \n-\n+<div className=\"bg-gradient-to-b from-black to-green-900 w-full max-w-[1350px]\">\n   <WavyBackground\n     height={400}\n     className=\"w-full max-w-[1350px] z-10\"\n     backgroundImage={herobg}\n-  >\n+  />\n \n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n@@ -76,7 +76,8 @@\n             </ul>\n           </motion.div>\n         </motion.div>\n       </WavyBackground>\n+      </div>\n     </section>\n   );\n }\n"
+                },
+                {
+                    "date": 1748008320804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,14 +35,14 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n \n \n     \n-<div className=\"bg-gradient-to-b from-black to-green-900 w-full max-w-[1350px]\">\n+<div className=\"bg-gradient-to-b from-black to-green-900 w-full max-w-[1350px] rounded-3xl\">\n   <WavyBackground\n     height={400}\n     className=\"w-full max-w-[1350px] z-10\"\n     backgroundImage={herobg}\n-  />\n+  >\n \n         <motion.div\n           variants={containerVariants}\n           initial=\"hidden\"\n"
+                },
+                {
+                    "date": 1748008333087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n \n \n     \n-<div className=\"bg-gradient-to-b from-black to-green-900 w-full max-w-[1350px] rounded-3xl\">\n+<div className=\"bg-gradient-to-b from-black to-lime-900 w-full max-w-[1350px] rounded-3xl\">\n   <WavyBackground\n     height={400}\n     className=\"w-full max-w-[1350px] z-10\"\n     backgroundImage={herobg}\n"
+                },
+                {
+                    "date": 1748008341428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     <section className=\"flex flex-col items-center relative bg-black pt-16 pb-24\">\n \n \n     \n-<div className=\"bg-gradient-to-b from-black to-lime-900 w-full max-w-[1350px] rounded-3xl\">\n+<div className=\"bg-gradient-to-b from-black to-lime-800 w-full max-w-[1350px] rounded-3xl\">\n   <WavyBackground\n     height={400}\n     className=\"w-full max-w-[1350px] z-10\"\n     backgroundImage={herobg}\n"
                 }
             ],
             "date": 1747547015921,

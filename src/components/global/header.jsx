@@ -12,8 +12,8 @@ const navItems = [
     href: '/about-page',
     submenu: [
       { name: 'About Us', href: '/about-page#team' },
-      { name: 'Our Team', href: '/about-page#mission' },
-      { name: 'Get In Touch', href: '/about-page#mission' },
+      { name: 'Our Team', href: '/about-page#x' },
+      { name: 'Get In Touch', href: '/about-page#get-in-touch' },
     ],
   },
   {

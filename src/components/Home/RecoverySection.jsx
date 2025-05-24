@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function RecoverySection() {
   return (
-    <section className="bg-black text-white px-4 py-16">
+    <section className="bg-black text-white px-4 py-16 relative">
       <div className="max-w-6xl mx-auto space-y-20">
 
         {/* Top Block */}

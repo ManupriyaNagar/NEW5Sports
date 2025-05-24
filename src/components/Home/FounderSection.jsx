@@ -1,11 +1,11 @@
 // src/components/Home/FounderSection.jsx
 'use client';
 import React from 'react';
-
+import bgimg from '../../../public/herobg.png';
 
 export default function FounderSection() {
   return ( 
-    <section className="relative py-2  px-5  md:px-20">
+    <section className="relative  px-5  md:px-20">
 
 <div className='bg-green-500 py-20 rounded-2xl'> 
 <div className="relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify">

@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import WavyBackground from './../../components/global/Background/WavyBackground';
+import herobg from './../../../public/herobg.png';
 
 // Animation variants
 const containerVariants = {
@@ -32,8 +33,16 @@ const bulletPoints = [
 export default function SportsMedicineBanner() {
   return (
     <section className="flex flex-col items-center relative bg-black pt-16 pb-24">
-      {/* Wavy background */}
-      <WavyBackground height={400} className="w-full max-w-[1350px] z-10">
+
+
+    
+<div className="bg-gradient-to-b from-black to-lime-800 w-full max-w-[1350px] rounded-3xl">
+  <WavyBackground
+    height={400}
+    className="w-full max-w-[1350px] z-10"
+    backgroundImage={herobg}
+  >
+
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -51,7 +60,7 @@ export default function SportsMedicineBanner() {
               alt="Athlete running"
               width={400}
               height={400}
-              className="object-contain "
+              className="object-contain"
             />
           </motion.div>
 
@@ -68,21 +77,6 @@ export default function SportsMedicineBanner() {
           </motion.div>
         </motion.div>
       </WavyBackground>
-
-      {/* Floating CTAs */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 z-20 px-4 w-full max-w-[500px]">
-        <a
-          href="tel:+919353555755"
-          className="w-full sm:w-auto bg-gradient-to-r from-lime-400 to-lime-200 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:from-lime-300 hover:to-lime-100 transform hover:scale-105 transition text-center text-sm sm:text-base"
-        >
-          Call Us Any Time
-        </a>
-        <a
-          href="#learn-more"
-          className="w-full sm:w-auto bg-lime-400 text-black font-bold rounded-lg px-4 py-3 shadow-xl hover:bg-lime-500 transform hover:scale-105 transition text-center text-sm sm:text-base"
-        >
-          Learn More →
-        </a>
       </div>
     </section>
   );

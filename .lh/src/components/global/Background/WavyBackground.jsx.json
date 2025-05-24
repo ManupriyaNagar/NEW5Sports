@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/components/global/Background/WavyBackground.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1747997997336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747998076484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/global/Background/WavyBackground.jsx\n 'use client';\n import React from 'react';\n-\n+import  backgroundImage from './../../../../public/herobg.png'\n const WavyBackground = ({\n   height = 400,\n   lines = 30,\n   maxAmplitude = 20,\n"
+                },
+                {
+                    "date": 1747998121855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,25 @@\n // src/components/global/Background/WavyBackground.jsx\n 'use client';\n import React from 'react';\n-import  backgroundImage from './../../../../public/herobg.png'\n+import defaultBackgroundImage from './../../../../public/herobg.png';\n+\n const WavyBackground = ({\n   height = 400,\n   lines = 30,\n   maxAmplitude = 20,\n   className = '',\n-  backgroundImage = '',\n+  backgroundImage = null,\n   children,\n }) => {\n   const yPositions = Array.from({ length: lines }, (_, i) =>\n     (i * height) / (lines - 1)\n   );\n \n+  // Use passed backgroundImage or fallback to default\n+  const bgImageUrl =\n+    backgroundImage?.src || (typeof backgroundImage === 'string' && backgroundImage) || defaultBackgroundImage.src;\n+\n   return (\n     <div\n       className={`\n         relative overflow-hidden rounded-3xl\n@@ -22,9 +27,9 @@\n         ${className}\n       `}\n       style={{\n         height,\n-        backgroundImage: `linear-gradient(to bottom, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.7)), url(${backgroundImage})`,\n+        backgroundImage: `linear-gradient(to bottom, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.7)), url(${bgImageUrl})`,\n       }}\n     >\n       {/* SVG waves */}\n       <svg\n"
+                },
+                {
+                    "date": 1747998178806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // src/components/global/Background/WavyBackground.jsx\n 'use client';\n import React from 'react';\n-import defaultBackgroundImage from './../../../../public/herobg.png';\n \n+\n const WavyBackground = ({\n   height = 400,\n   lines = 30,\n   maxAmplitude = 20,\n"
+                },
+                {
+                    "date": 1747998188834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // src/components/global/Background/WavyBackground.jsx\n 'use client';\n import React from 'react';\n+import defaultBackgroundImage from './../../../../public/herobg.png';\n \n-\n const WavyBackground = ({\n   height = 400,\n   lines = 30,\n   maxAmplitude = 20,\n"
+                },
+                {
+                    "date": 1747998239538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,19 +19,30 @@\n   const bgImageUrl =\n     backgroundImage?.src || (typeof backgroundImage === 'string' && backgroundImage) || defaultBackgroundImage.src;\n \n   return (\n-    <div\n-      className={`\n-        relative overflow-hidden rounded-3xl\n-        bg-cover bg-center bg-no-repeat\n-        ${className}\n-      `}\n-      style={{\n-        height,\n-        backgroundImage: `linear-gradient(to bottom, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.7)), url(${bgImageUrl})`,\n-      }}\n-    >\n+<div\n+  className={`\n+    relative overflow-hidden rounded-3xl\n+    bg-cover bg-center bg-no-repeat\n+    ${className}\n+  `}\n+  style={{\n+    height,\n+    backgroundImage: `\n+      linear-gradient(\n+        180deg,\n+        rgba(0, 128, 128, 0.6) 0%,\n+        rgba(0, 0, 128, 0.7) 50%,\n+        rgba(0, 0, 0, 0.8) 100%\n+      ),\n+      url(${bgImageUrl})\n+    `,\n+  }}\n+>\n+  {/* ... */}\n+</div>\n+\n       {/* SVG waves */}\n       <svg\n         className=\"absolute inset-0 w-full h-full\"\n         viewBox={`0 0 100 ${height}`}\n"
+                },
+                {
+                    "date": 1747998264391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,30 +19,19 @@\n   const bgImageUrl =\n     backgroundImage?.src || (typeof backgroundImage === 'string' && backgroundImage) || defaultBackgroundImage.src;\n \n   return (\n-<div\n-  className={`\n-    relative overflow-hidden rounded-3xl\n-    bg-cover bg-center bg-no-repeat\n-    ${className}\n-  `}\n-  style={{\n-    height,\n-    backgroundImage: `\n-      linear-gradient(\n-        180deg,\n-        rgba(0, 128, 128, 0.6) 0%,\n-        rgba(0, 0, 128, 0.7) 50%,\n-        rgba(0, 0, 0, 0.8) 100%\n-      ),\n-      url(${bgImageUrl})\n-    `,\n-  }}\n->\n-  {/* ... */}\n-</div>\n-\n+    <div\n+      className={`\n+        relative overflow-hidden rounded-3xl\n+        bg-cover bg-center bg-no-repeat\n+        ${className}\n+      `}\n+      style={{\n+        height,\n+        backgroundImage: `linear-gradient(to bottom, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.7)), url(${bgImageUrl})`,\n+      }}\n+    >\n       {/* SVG waves */}\n       <svg\n         className=\"absolute inset-0 w-full h-full\"\n         viewBox={`0 0 100 ${height}`}\n"
+                }
+            ],
+            "date": 1747997997336,
+            "name": "Commit-0",
+            "content": "// src/components/global/Background/WavyBackground.jsx\n'use client';\nimport React from 'react';\n\nconst WavyBackground = ({\n  height = 400,\n  lines = 30,\n  maxAmplitude = 20,\n  className = '',\n  backgroundImage = '',\n  children,\n}) => {\n  const yPositions = Array.from({ length: lines }, (_, i) =>\n    (i * height) / (lines - 1)\n  );\n\n  return (\n    <div\n      className={`\n        relative overflow-hidden rounded-3xl\n        bg-cover bg-center bg-no-repeat\n        ${className}\n      `}\n      style={{\n        height,\n        backgroundImage: `linear-gradient(to bottom, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.7)), url(${backgroundImage})`,\n      }}\n    >\n      {/* SVG waves */}\n      <svg\n        className=\"absolute inset-0 w-full h-full\"\n        viewBox={`0 0 100 ${height}`}\n        preserveAspectRatio=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        {yPositions.map((y, idx) => {\n          const amp = maxAmplitude * (idx / (lines - 1));\n          const d = `M0,${y} Q50,${y + amp} 100,${y}`;\n          return (\n            <path\n              key={idx}\n              d={d}\n              stroke=\"rgba(0,0,0,0.6)\"\n              strokeWidth=\"0.5\"\n              fill=\"none\"\n            />\n          );\n        })}\n      </svg>\n\n      {/* Content wrapper */}\n      <div className=\"relative z-10 flex flex-col justify-between h-full\">\n        {children}\n      </div>\n    </div>\n  );\n};\n\nexport default WavyBackground;\n"
+        }
+    ]
+}

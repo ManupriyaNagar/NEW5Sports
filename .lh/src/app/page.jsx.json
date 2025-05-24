@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1747828878287,
@@ -48,6 +48,54 @@
                 {
                     "date": 1747896656421,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   \n      {/* <InfoGrid/> */}\n        <PerformanceSection/>\n      <AboutUsSection/>\n-   \n+     <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n   \n     \n"
+                },
+                {
+                    "date": 1747991409253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     <div className=\"bg-black\">\n      <HeroSection/>\n      <SportsInfoCards/>\n   \n-     {/* <InfoGrid/> */}\n+     <InfoGrid/>\n        <PerformanceSection/>\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n"
+                },
+                {
+                    "date": 1747991415553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n import PerformanceSection from \"./../components/Home/PerformanceSection\";\n import RecoverySection from \"./../components/Home/RecoverySection\";\n import SportsInfoCards from \"./../components/Home/SportsInfoCard\";\n import SportsMedicineBanner from \"./../components/Home/SportsMedicineBanner\";\n-// import InfoGrid from \"./../components/Home/SportsUnlock\";\n+import InfoGrid from \"./../components/Home/SportsUnlock\";\n import WhyChooseUs from \"./../components/Home/WhyChooseUS\";\n \n \n import Image from \"next/image\";\n"
+                },
+                {
+                    "date": 1748017270465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,17 +32,19 @@\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n-  \n-    \n-      <FeatureCard\n+  <div className=\"py-20\">\n+  <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n         topImage=\"/vald.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n+  </div>\n+    \n+    \n       <PartneredSection\n               topTitle=\"Partnered with a Leading Firm\"\n               topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n               topImage=\"/test1.png\"\n"
+                },
+                {
+                    "date": 1748017281255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n-  <div className=\"py-20\">\n+  <div className=\"py-20 bg-black\">\n   <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n         topImage=\"/vald.jpg\"\n"
+                },
+                {
+                    "date": 1748017301324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n-  <div className=\"py-20 bg-black\">\n+  <div className=\"py-20 bg-black z-10\">\n   <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n         topImage=\"/vald.jpg\"\n"
+                },
+                {
+                    "date": 1748017310895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n-  <div className=\"py-20 bg-black z-10\">\n+  <div className=\" bg-black z-10\">\n   <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n         topImage=\"/vald.jpg\"\n"
+                },
+                {
+                    "date": 1748017331078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,15 +33,17 @@\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n   <div className=\" bg-black z-10\">\n+    <div className=\"py-20\">\n   <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n         topImage=\"/vald.jpg\"\n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n+      </div>\n   </div>\n     \n     \n       <PartneredSection\n"
+                },
+                {
+                    "date": 1748017427388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n   <div className=\" bg-black z-10\">\n-    <div className=\"py-20\">\n+    <div className=\"py-20  relative\">\n   <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n-        topImage=\"/vald.jpg\"\n+        topImage=\"/vald.jpg\" \n         bottomTitle=\"Advanced Machines for Testing\"\n         bottomText=\"Our state-of-the-art testing equipment helps us assess performance, strength, and recovery in real-time, allowing us to deliver the most effective rehab solutions.\"\n       />\n       </div>\n"
+                },
+                {
+                    "date": 1748017441705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n      <AboutUsSection/>\n      <SportsMedicineBanner />\n      <FounderSection />\n      <HealingSection/>\n-  <div className=\" bg-black z-10\">\n+  <div className=\" bg-black z-10 relative\">\n     <div className=\"py-20  relative\">\n   <FeatureCard\n         topTitle=\"Proud Partners with Vald Test\"\n         topText=\"At 5 Sports Hospital, we use advanced testing technologies from Vald Test, ensuring precise diagnostics and optimized treatment plans for every athlete.\"\n"
+                },
+                {
+                    "date": 1748017645639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n               topTitle=\"Partnered with a Leading Firm\"\n               topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n               topImage=\"/test1.png\"\n               bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n-          \n+              bottomText=\"bnm\"\n       \n       />\n       <RecoverySection/>\n       <WhyChooseUs/>\n"
+                },
+                {
+                    "date": 1748017703868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,11 @@\n       <PartneredSection\n               topTitle=\"Partnered with a Leading Firm\"\n               topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n               topImage=\"/test1.png\"\n-              bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n-              bottomText=\"bnm\"\n+            bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n+bottomText=\"Achieve excellence with personalized, science-backed sports rehabilitation.\"\n+\n       \n       />\n       <RecoverySection/>\n       <WhyChooseUs/>\n"
+                },
+                {
+                    "date": 1748017725593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n       <PartneredSection\n               topTitle=\"Partnered with a Leading Firm\"\n               topText=\"5 Sports Hospital proudly uses machines and recovery technology from a renowned US-based firm, ensuring world-class treatment for all athletess.\"\n               topImage=\"/test1.png\"\n-            bottomTitle=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n-bottomText=\"Achieve excellence with personalized, science-backed sports rehabilitation.\"\n+            bottomText=\"By combining cutting-edge technology with expert care, we empower athletes to reach their fullest potential in record time.\"\n+bottomTitle=\"Achieve excellence with personalized, science-backed sports rehabilitation.\"\n \n       \n       />\n       <RecoverySection/>\n"
                 }
             ],
             "date": 1747828878287,

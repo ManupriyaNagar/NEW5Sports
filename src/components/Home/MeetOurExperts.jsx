@@ -28,7 +28,7 @@ const MeetOurExperts = () => {
     {
       name: 'Dr Nataraj H M',
       role: 'Knee & Shoulder Specialist HOD-Orthopaedics',
-      image: '/doctor2.png',
+      image: '/NatarajDP.png',
       expertise: [
         'Robotic Knee Replacement',
         'Robotic Partial Knee Replacement',

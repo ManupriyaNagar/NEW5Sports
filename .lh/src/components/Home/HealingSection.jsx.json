@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1747852929795,
@@ -36,6 +36,22 @@
                 {
                     "date": 1747857580498,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n const therapies = [\n   {\n     title: \"TECAR THERAPY\",\n-    image: \"/qqq3.png\", // Replace with actual image path\n+    image: \"/qqq3.jpeg\", // Replace with actual image path\n     description:\n       \"A revolutionary treatment that enhances tissue repair, reducing pain and accelerating healing through deep heat energy.\",\n     border: \"border-r\",\n   },\n@@ -16,9 +16,9 @@\n     border: \"border-r\",\n   },\n   {\n     title: \"SHOCKWAVE THERAPY\",\n-    image: \"/qqq2.png\", // Replace with actual image path\n+    image: \"/qqq2.jpeg\", // Replace with actual image path\n     description:\n       \"Uses high-energy sound waves to treat musculoskeletal pain, improve blood flow, and stimulate healing in damaged tissues.\",\n     border: \"\",\n     titleColor: \"text-green-400\",\n"
+                },
+                {
+                    "date": 1748009140685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n ];\n \n export default function HealingSection() {\n   return (\n-    <section className=\"bg-black text-white py-16 px-4\">\n+    <section className=\"bg-black text-white px-4\">\n       <div className=\" text-center\">\n         {/* Header */}\n         <section className=\"flex  w-full text-black px-16 max-md:flex-col\">\n       {/* Main Article with notches */}\n"
+                },
+                {
+                    "date": 1748009187233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n ];\n \n export default function HealingSection() {\n   return (\n-    <section className=\"bg-black text-white px-4\">\n+    <section className=\"bg-black text-white px-4 realtive\">\n       <div className=\" text-center\">\n         {/* Header */}\n         <section className=\"flex  w-full text-black px-16 max-md:flex-col\">\n       {/* Main Article with notches */}\n"
+                },
+                {
+                    "date": 1748009199545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n ];\n \n export default function HealingSection() {\n   return (\n-    <section className=\"bg-black text-white px-4 realtive\">\n+    <section className=\"bg-black text-white px-4 relative\">\n       <div className=\" text-center\">\n         {/* Header */}\n         <section className=\"flex  w-full text-black px-16 max-md:flex-col\">\n       {/* Main Article with notches */}\n"
+                },
+                {
+                    "date": 1748009246096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n ];\n \n export default function HealingSection() {\n   return (\n-    <section className=\"bg-black text-white px-4 relative\">\n+    <section className=\"bg-black text-white px-4 relative py-20\">\n       <div className=\" text-center\">\n         {/* Header */}\n         <section className=\"flex  w-full text-black px-16 max-md:flex-col\">\n       {/* Main Article with notches */}\n"
                 }
             ],
             "date": 1747852929795,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1747547001888,
@@ -52,6 +52,22 @@
                 {
                     "date": 1747852443847,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,19 +93,19 @@\n             >\n               <h2 className=\"text-xl font-bold mb-4 uppercase tracking-tight drop-shadow-sm text-center text-white\">\n                 {card.title}\n               </h2>\n-            <p className=\"leading-relaxed text-gray-200 text-center text-justify\">\n+   <div className=\"text-justify text-gray-200 leading-relaxed\">\n+  <strong className=\"text-lime-400\">{card.highlight}</strong>\n+  <br />\n+  <br />\n+  <span className=\"font-medium\">Test:</span> {card.test}\n+  <br />\n+  <span className=\"font-medium\">Why It Matters:</span> {card.why}\n+  <br />\n+  <span className=\"font-medium\">Who Benefits:</span> {card.who}\n+</div>\n \n-                <strong className=\"text-lime-400\">{card.highlight}</strong>\n-                <br />\n-                <br />\n-                <span className=\"font-medium\">Test:</span> {card.test}\n-                <br />\n-                <span className=\"font-medium\">Why It Matters:</span> {card.why}\n-                <br />\n-                <span className=\"font-medium\">Who Benefits:</span> {card.who}\n-              </p>\n \n               {expanded[card.id] ? (\n                 <div className=\"mt-4 text-gray-200 whitespace-pre-line\">\n                   <p className=\"leading-relaxed\">{card.extra}</p>\n"
+                },
+                {
+                    "date": 1748008598304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     },\n   };\n \n   return (\n-    <section className=\"py-20 bg-gradient-to-b from-black to-gray-900 text-white relative\">\n+    <section className=\"py-20 bg-gradient-to-b from-black to-gray-900 text-white relative sticky top-0\">\n       <motion.div\n         initial={{ opacity: 0, y: 20 }}\n         whileInView={{ opacity: 1, y: 0 }}\n         viewport={{ once: true }}\n"
+                },
+                {
+                    "date": 1748008791870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     },\n   };\n \n   return (\n-    <section className=\"py-20 bg-gradient-to-b from-black to-gray-900 text-white relative sticky top-0\">\n+    <section className=\"py-20 bg-gradient-to-b from-black to-gray-900 text-white  top-0\">\n       <motion.div\n         initial={{ opacity: 0, y: 20 }}\n         whileInView={{ opacity: 1, y: 0 }}\n         viewport={{ once: true }}\n"
+                },
+                {
+                    "date": 1748009024975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     },\n   };\n \n   return (\n-    <section className=\"py-20 bg-gradient-to-b from-black to-gray-900 text-white  top-0\">\n+    <section className=\"py-20 bg-gradient-to-b from-black to-black text-white relative \">\n       <motion.div\n         initial={{ opacity: 0, y: 20 }}\n         whileInView={{ opacity: 1, y: 0 }}\n         viewport={{ once: true }}\n"
+                },
+                {
+                    "date": 1748019503486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     title: \"Cardiac Health\",\n     highlight: \"Heart + Lungs = Your Endurance Power Unleashed\",\n     test: \"Comprehensive Health Assessment\",\n     why: \"Efficient heart and lung function = Better endurance, recovery, and overall stamina for peak performance.\",\n-    who: \"Endurance athletes, long-distance runners, cyclists, and those focused on improving stamina and aerobic capacity.\",\n+    who: \"Endurance athletes, long-distance runners, cyclists, and dedicated individuals focused on improving stamina and aerobic capacity.\",\n     extra: `We provide comprehensive testing to optimize your endurance. Understand your limits and create a plan to perform better, recover faster, and dominate your game. Ready to elevate? Contact us today!`,\n   },\n   {\n     id: \"muscle\",\n"
                 }
             ],
             "date": 1747547001888,

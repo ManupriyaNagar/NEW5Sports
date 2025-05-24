@@ -1,0 +1,94 @@
+{
+    "sourceFile": "src/app/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1748001067479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1748001576711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,12 @@\n .animate-gradient {\n   background: linear-gradient(90deg, #10b981, #d3fa22, #10b981);\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n+}\n+.shadow-gradient {\n+  transition: box-shadow 0.3s ease;\n+}\n+\n+.shadow-gradient:hover {\n+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1748001626135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n   animation: gradient 4s ease infinite;\n }\n .shadow-gradient {\n   transition: box-shadow 0.3s ease;\n+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748001631586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   animation: gradient 4s ease infinite;\n }\n .shadow-gradient {\n   transition: box-shadow 0.3s ease;\n-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n+\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748001867443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,16 +37,31 @@\n     background-position: 0% 50%;\n   }\n }\n \n+@keyframes gradient {\n+  0% {\n+    background-position: 0% 50%;\n+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n+  }\n+  50% {\n+    background-position: 100% 50%;\n+    box-shadow: 0 4px 15px rgba(132, 204, 22, 0.5), 0 4px 15px rgba(16, 185, 129, 0.5);\n+  }\n+  100% {\n+    background-position: 0% 50%;\n+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n+  }\n+}\n+\n .animate-gradient {\n-  background: linear-gradient(90deg, #10b981, #d3fa22, #10b981);\n+  background: linear-gradient(90deg, #10b981, #84cc16, #10b981);\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n }\n+\n .shadow-gradient {\n-  transition: box-shadow 0.3s ease;\n-\n+  animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748001887559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,31 +37,16 @@\n     background-position: 0% 50%;\n   }\n }\n \n-@keyframes gradient {\n-  0% {\n-    background-position: 0% 50%;\n-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n-  }\n-  50% {\n-    background-position: 100% 50%;\n-    box-shadow: 0 4px 15px rgba(132, 204, 22, 0.5), 0 4px 15px rgba(16, 185, 129, 0.5);\n-  }\n-  100% {\n-    background-position: 0% 50%;\n-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n-  }\n-}\n-\n .animate-gradient {\n-  background: linear-gradient(90deg, #10b981, #84cc16, #10b981);\n+  background: linear-gradient(90deg, #10b981, #d3fa22, #10b981);\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n }\n+.shadow-gradient {\n+  transition: box-shadow 0.3s ease;\n \n-.shadow-gradient {\n-  animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748001907064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,17 +36,16 @@\n   100% {\n     background-position: 0% 50%;\n   }\n }\n-\n .animate-gradient {\n-  background: linear-gradient(90deg, #10b981, #d3fa22, #10b981);\n+  background: linear-gradient(90deg, #10b981, #84cc16, #10b981);\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n }\n+\n .shadow-gradient {\n-  transition: box-shadow 0.3s ease;\n-\n+  animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748001925767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,16 +28,20 @@\n \n @keyframes gradient {\n   0% {\n     background-position: 0% 50%;\n+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n   }\n   50% {\n     background-position: 100% 50%;\n+    box-shadow: 0 4px 15px rgba(132, 204, 22, 0.5), 0 4px 15px rgba(16, 185, 129, 0.5);\n   }\n   100% {\n     background-position: 0% 50%;\n+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n   }\n }\n+\n .animate-gradient {\n   background: linear-gradient(90deg, #10b981, #84cc16, #10b981);\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n"
+                },
+                {
+                    "date": 1748003979694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,19 @@\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n }\n \n+\n+.animate-gradient-2 {\n+  button: linear-gradient(90deg, #10b981, #84cc16, #10b981);\n+\n+  animation: gradient 4s ease infinite;\n+}\n+\n+\n+\n+\n+\n .shadow-gradient {\n   animation: gradient 4s ease infinite;\n }\n \n"
+                },
+                {
+                    "date": 1748004099245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,21 +24,23 @@\n   color: var(--foreground);\n   font-family: Arial, Helvetica, sans-serif;\n }\n \n-\n @keyframes gradient {\n   0% {\n     background-position: 0% 50%;\n     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n+    color: #000000;\n   }\n   50% {\n     background-position: 100% 50%;\n     box-shadow: 0 4px 15px rgba(132, 204, 22, 0.5), 0 4px 15px rgba(16, 185, 129, 0.5);\n+    color: #FFFFFF;\n   }\n   100% {\n     background-position: 0% 50%;\n     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5), 0 4px 15px rgba(132, 204, 22, 0.5);\n+    color: #000000;\n   }\n }\n \n .animate-gradient {\n@@ -46,19 +48,8 @@\n   background-size: 200% 200%;\n   animation: gradient 4s ease infinite;\n }\n \n-\n-.animate-gradient-2 {\n-  button: linear-gradient(90deg, #10b981, #84cc16, #10b981);\n-\n-  animation: gradient 4s ease infinite;\n-}\n-\n-\n-\n-\n-\n .shadow-gradient {\n   animation: gradient 4s ease infinite;\n }\n \n"
+                },
+                {
+                    "date": 1748004146475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient {\n-  animation: gradient 4s ease infinite;\n+  animation: gradient 1s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748004152081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient {\n-  animation: gradient 1s ease infinite;\n+  animation: gradient 6s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748004161186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient {\n-  animation: gradient 6s ease infinite;\n+  animation: gradient 5s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748006431058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient {\n-  animation: gradient 5s ease infinite;\n+  animation: gradient 2s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748006440897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n   animation: gradient 4s ease infinite;\n }\n \n .shadow-gradient {\n-  animation: gradient 2s ease infinite;\n+  animation: gradient 1s ease infinite;\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n"
+                },
+                {
+                    "date": 1748012804897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,5 +54,16 @@\n }\n \n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n-}\n\\ No newline at end of file\n+}\n+\n+\n+@keyframes fadeInOut {\n+  0%, 20% { opacity: 0; }\n+  30%, 70% { opacity: 1; }\n+  80%, 100% { opacity: 0; }\n+}\n+\n+.animate-fadeInOut {\n+  animation: fadeInOut 1.5s ease-in-out infinite;\n+}\n"
+                },
+                {
+                    "date": 1748012844098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,6 +64,6 @@\n   80%, 100% { opacity: 0; }\n }\n \n .animate-fadeInOut {\n-  animation: fadeInOut 1.5s ease-in-out infinite;\n+  animation: fadeInOut 3.5s ease-in-out infinite;\n }\n"
+                },
+                {
+                    "date": 1748012850072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,6 +64,6 @@\n   80%, 100% { opacity: 0; }\n }\n \n .animate-fadeInOut {\n-  animation: fadeInOut 3.5s ease-in-out infinite;\n+  animation: fadeInOut 6.5s ease-in-out infinite;\n }\n"
+                },
+                {
+                    "date": 1748012865093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,6 +64,6 @@\n   80%, 100% { opacity: 0; }\n }\n \n .animate-fadeInOut {\n-  animation: fadeInOut 6.5s ease-in-out infinite;\n+  animation: fadeInOut 2.5s ease-in-out infinite;\n }\n"
+                },
+                {
+                    "date": 1748020144887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,14 +56,19 @@\n .shadow-gradient:hover {\n   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);\n }\n \n-\n @keyframes fadeInOut {\n-  0%, 20% { opacity: 0; }\n-  30%, 70% { opacity: 1; }\n-  80%, 100% { opacity: 0; }\n+  0%, 15% {\n+    opacity: 0;\n+  }\n+  25%, 75% {\n+    opacity: 1;\n+  }\n+  85%, 100% {\n+    opacity: 0;\n+  }\n }\n \n .animate-fadeInOut {\n-  animation: fadeInOut 2.5s ease-in-out infinite;\n+  animation: fadeInOut 3s ease-in-out infinite;\n }\n"
+                }
+            ],
+            "date": 1748001067479,
+            "name": "Commit-0",
+            "content": "@import \"tailwindcss\";\n\n:root {\n  --background: #ffffff;\n  --foreground: #171717;\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-geist-sans);\n  --font-mono: var(--font-geist-mono);\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --background: #0a0a0a;\n    --foreground: #ededed;\n  }\n}\n\nbody {\n  background: var(--background);\n  color: var(--foreground);\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n\n@keyframes gradient {\n  0% {\n    background-position: 0% 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0% 50%;\n  }\n}\n\n.animate-gradient {\n  background: linear-gradient(90deg, #10b981, #d3fa22, #10b981);\n  background-size: 200% 200%;\n  animation: gradient 4s ease infinite;\n}"
+        }
+    ]
+}

@@ -14,30 +14,33 @@ const SportsInfoCards = () => {
       hoverIcon: './mango1-hover.png',
       title: 'It’s Not Just About Skills',
       desc: 'Without building strength, speed & you fall behind.',
+      bgColor: darkMode ? 'bg-green-700' : 'bg-[#0D944F]', // Blue for first card
     },
     {
       icon: './mango2.png',
       hoverIcon: './mango2-hover.png',
       title: 'Neglecting Recovery Makes You Slower',
       desc: 'Skipping recovery today leads to weakness, injuries, and reduced performance tomorrow.',
+      bgColor: darkMode ? 'bg-[#D3FA22]' : 'bg-red-100', // Red for second card
     },
     {
       icon: './mango3.png',
       hoverIcon: './mango3-hover.png',
       title: 'Test your Limits',
       desc: 'Without assessing limits, you’re just guessing your capacity.',
+      bgColor: darkMode ? 'bg-[#54C8E9]' : 'bg-green-100', // Green for third card
     },
   ];
 
   return (
     <section
-      className={`md:py-20 transition-colors duration-500 ${
+      className={`md:py-20 transition-colors duration-500  sticky top-7 ${
         darkMode
           ? 'bg-gradient-to-b from-black via-black to-black text-white'
           : 'bg-gray-100 text-gray-900'
       } relative`}
     >
-      <div className="container mx-auto px-6  md:mt-0">
+      <div className="container mx-auto px-6 md:mt-0">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,8 +85,8 @@ const SportsInfoCards = () => {
               transition={{ delay: index * 0.1, duration: 0.4 }}
               className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center transition-transform duration-300 hover:scale-95 hover:shadow-xl ${
                 darkMode
-                  ? 'bg-white/10 border-gray-100'
-                  : 'bg-white border-gray-300'
+                  ? `${truth.bgColor} border-gray-100`
+                  : `${truth.bgColor} border-gray-300`
               } relative`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -98,12 +101,12 @@ const SportsInfoCards = () => {
               </div>
               <h3
                 className={`text-lg font-bold mb-2 uppercase ${
-                  darkMode ? 'text-white' : 'text-gray-900'
+                  darkMode ? 'text-black' : 'text-gray-900'
                 }`}
               >
                 {truth.title}
               </h3>
-              <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+              <p className={`${darkMode ? 'text-black' : 'text-gray-700'}`}>
                 {truth.desc}
               </p>
             </motion.div>

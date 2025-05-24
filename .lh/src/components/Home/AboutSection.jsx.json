@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1747828931468,
@@ -28,6 +28,30 @@
                 {
                     "date": 1747896764206,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <h2 className=\"self-center text-black text-4xl md:text-6xl font-bold leading-none text-center\">\n         About us\n       </h2>\n \n-      <p className=\"mt-4 text-lg md:text-2xl text-center max-w-3xl mx-auto\">\n+      <p className=\"mt-4 text-lg text-black md:text-2xl text-center max-w-3xl mx-auto\">\n         Learn more about our mission to redefine sports medicine and athlete care.\n       </p>\n     </article>\n   </section>\n"
+                },
+                {
+                    "date": 1748008973317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n 'use client';\n import React from 'react';\n \n const AboutUsSection = () => (\n-  <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 py-10\">\n+  <section className=\"\">\n     {/* Main Article with notches */}\n     <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full\">\n       {/* Left notch: hidden on mobile */}\n       <div\n"
+                },
+                {
+                    "date": 1748008984516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n 'use client';\n import React from 'react';\n \n const AboutUsSection = () => (\n-  <section className=\"\">\n+  <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 \">\n     {/* Main Article with notches */}\n     <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full\">\n       {/* Left notch: hidden on mobile */}\n       <div\n"
+                },
+                {
+                    "date": 1748008999190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const AboutUsSection = () => (\n   <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 \">\n     {/* Main Article with notches */}\n-    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full\">\n+    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full mt-5\">\n       {/* Left notch: hidden on mobile */}\n       <div\n         className=\"hidden md:block absolute -left-8 top-1/2 w-14 h-14 bg-black rounded-full\n                    transform -translate-y-1/2\"\n"
+                },
+                {
+                    "date": 1748009038439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n 'use client';\n import React from 'react';\n \n const AboutUsSection = () => (\n-  <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 \">\n+  <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 mt-10 \">\n     {/* Main Article with notches */}\n-    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full mt-5\">\n+    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full \">\n       {/* Left notch: hidden on mobile */}\n       <div\n         className=\"hidden md:block absolute -left-8 top-1/2 w-14 h-14 bg-black rounded-full\n                    transform -translate-y-1/2\"\n"
+                },
+                {
+                    "date": 1748009047560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n 'use client';\n import React from 'react';\n \n const AboutUsSection = () => (\n-  <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 mt-10 \">\n+  <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20  \">\n     {/* Main Article with notches */}\n-    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full \">\n+    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full  py-10\">\n       {/* Left notch: hidden on mobile */}\n       <div\n         className=\"hidden md:block absolute -left-8 top-1/2 w-14 h-14 bg-black rounded-full\n                    transform -translate-y-1/2\"\n"
+                },
+                {
+                    "date": 1748009053723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const AboutUsSection = () => (\n   <section className=\"flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20  \">\n     {/* Main Article with notches */}\n-    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full  py-10\">\n+    <article className=\"relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full  py-20\">\n       {/* Left notch: hidden on mobile */}\n       <div\n         className=\"hidden md:block absolute -left-8 top-1/2 w-14 h-14 bg-black rounded-full\n                    transform -translate-y-1/2\"\n"
                 }
             ],
             "date": 1747828931468,

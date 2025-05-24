@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 33,
             "patches": [
                 {
                     "date": 1747851421762,
@@ -68,6 +68,78 @@
                 {
                     "date": 1747898060923,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative py-2  px-5  md:px-20\">\n \n-<div className='bg-green-500 py-20 rounded-2xl'>\n-<div className=\"relative z-10 max-w-5xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500 \">\n+<div className='bg-green-500 py-20 rounded-2xl'> \n+<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
+                },
+                {
+                    "date": 1748009125907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative py-2  px-5  md:px-20\">\n+    <section className=\"relative py-2  px-5  \">\n \n <div className='bg-green-500 py-20 rounded-2xl'> \n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n"
+                },
+                {
+                    "date": 1748009132102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative py-2  px-5  \">\n+    <section className=\"relative  px-5  md:px-20\">\n \n <div className='bg-green-500 py-20 rounded-2xl'> \n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n"
+                },
+                {
+                    "date": 1748012364009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,15 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n-<div className='bg-green-500 py-20 rounded-2xl'> \n+      <div className=\" relative border-2 border-lime-400 rounded-4xl h-[25rem] overflow-visible  bg-blue-950 \"\n+         style={{\n+             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n+          backgroundSize: 'cover',\n+          backgroundPosition: 'center',\n+          backgroundRepeat: 'no-repeat',\n+        }}>\n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n"
+                },
+                {
+                    "date": 1748012388110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // src/components/Home/FounderSection.jsx\n 'use client';\n import React from 'react';\n+import bgimg from '../../../public/herobg.png';\n \n-\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n"
+                },
+                {
+                    "date": 1748012414349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,14 @@\n // src/components/Home/FounderSection.jsx\n 'use client';\n import React from 'react';\n-import bgimg from '../../../public/herobg.png';\n \n+\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n-      <div className=\" relative border-2 border-lime-400 rounded-4xl h-[25rem] overflow-visible  bg-blue-950 \"\n-         style={{\n-             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n-          backgroundSize: 'cover',\n-          backgroundPosition: 'center',\n-          backgroundRepeat: 'no-repeat',\n-        }}>\n+<div className='bg-green-500 py-20 rounded-2xl'> \n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n"
+                },
+                {
+                    "date": 1748012431037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,21 @@\n // src/components/Home/FounderSection.jsx\n 'use client';\n import React from 'react';\n+import bgimg from '../../../public/herobg.png';\n \n-\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n <div className='bg-green-500 py-20 rounded-2xl'> \n-<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n+       <div className=\" relative border-2 border-lime-400 rounded-4xl h-[25rem] overflow-visible  bg-blue-950 \"\n+         style={{\n+             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n+          backgroundSize: 'cover',\n+          backgroundPosition: 'center',\n+          backgroundRepeat: 'no-repeat',\n+        }}>\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
+                },
+                {
+                    "date": 1748012440191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n-<div className='bg-green-500 py-20 rounded-2xl'> \n+<div className=' py-20 rounded-2xl'> \n        <div className=\" relative border-2 border-lime-400 rounded-4xl h-[25rem] overflow-visible  bg-blue-950 \"\n          style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n"
+                },
+                {
+                    "date": 1748012449680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,15 @@\n // src/components/Home/FounderSection.jsx\n 'use client';\n import React from 'react';\n-import bgimg from '../../../public/herobg.png';\n \n+\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n-<div className=' py-20 rounded-2xl'> \n-       <div className=\" relative border-2 border-lime-400 rounded-4xl h-[25rem] overflow-visible  bg-blue-950 \"\n-         style={{\n-             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n-          backgroundSize: 'cover',\n-          backgroundPosition: 'center',\n-          backgroundRepeat: 'no-repeat',\n-        }}>\n+<div className='bg-green-500 py-20 rounded-2xl'> \n+<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
+                },
+                {
+                    "date": 1748012485010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,21 @@\n // src/components/Home/FounderSection.jsx\n 'use client';\n import React from 'react';\n+import bgimg from '../../../public/herobg.png';\n \n-\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n <div className='bg-green-500 py-20 rounded-2xl'> \n-<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n+<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\"\n+      style={{\n+             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n+          backgroundSize: 'cover',\n+          backgroundPosition: 'center',\n+          backgroundRepeat: 'no-repeat',\n+        }}>\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
+                },
+                {
+                    "date": 1748012493032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n export default function FounderSection() {\n   return ( \n     <section className=\"relative  px-5  md:px-20\">\n \n-<div className='bg-green-500 py-20 rounded-2xl'> \n+<div className=' rounded-2xl'> \n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n"
+                },
+                {
+                    "date": 1748012510028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import bgimg from '../../../public/herobg.png';\n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative  px-5  md:px-20\">\n+    <section className=\"relative  \">\n \n <div className=' rounded-2xl'> \n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n"
+                },
+                {
+                    "date": 1748012518427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import bgimg from '../../../public/herobg.png';\n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative  \">\n+    <section className=\"relative  bg-black\">\n \n <div className=' rounded-2xl'> \n <div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n"
+                },
+                {
+                    "date": 1748012532062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return ( \n     <section className=\"relative  bg-black\">\n \n <div className=' rounded-2xl'> \n-<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\"\n+<div className=\"relative z-10 max-w-6xl mx-auto px-6 px-14 text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748012546160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return ( \n     <section className=\"relative  bg-black\">\n \n <div className=' rounded-2xl'> \n-<div className=\"relative z-10 max-w-6xl mx-auto px-6 px-14 text-white space-y-4 bg-green-500  text-justify\"\n+<div className=\"relative z-10 max-w-7xl mx-auto px-6  text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748012551564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return ( \n     <section className=\"relative  bg-black\">\n \n <div className=' rounded-2xl'> \n-<div className=\"relative z-10 max-w-7xl mx-auto px-6  text-white space-y-4 bg-green-500  text-justify\"\n+<div className=\"relative z-10  mx-auto px-6  text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748012562135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return ( \n     <section className=\"relative  bg-black\">\n \n <div className=' rounded-2xl'> \n-<div className=\"relative z-10  mx-auto px-6  text-white space-y-4 bg-green-500  text-justify\"\n+<div className=\"relative z-10  px-32  text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748012568466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return ( \n     <section className=\"relative  bg-black\">\n \n <div className=' rounded-2xl'> \n-<div className=\"relative z-10  px-32  text-white space-y-4 bg-green-500  text-justify\"\n+<div className=\"relative z-10   text-white space-y-4 bg-green-500  text-justify\"\n       style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748012576901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,18 +4,12 @@\n import bgimg from '../../../public/herobg.png';\n \n export default function FounderSection() {\n   return ( \n-    <section className=\"relative  bg-black\">\n+    <section className=\"relative  px-5  md:px-20\">\n \n-<div className=' rounded-2xl'> \n-<div className=\"relative z-10   text-white space-y-4 bg-green-500  text-justify\"\n-      style={{\n-             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n-          backgroundSize: 'cover',\n-          backgroundPosition: 'center',\n-          backgroundRepeat: 'no-repeat',\n-        }}>\n+<div className='bg-green-500 py-20 rounded-2xl'> \n+<div className=\"relative z-10 max-w-6xl mx-auto px-6 text-justify text-white space-y-4 bg-green-500  text-justify\">\n         <h2 className=\"text-3xl font-bold\">\n           Founded in 2024, 5 Sports Hospital has become a beacon of excellence\n           in sports medicine and orthopedic care.\n         </h2>\n"
                 }
             ],
             "date": 1747851421762,

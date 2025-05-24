@@ -1,26 +1,35 @@
 // src/components/global/Background/WavyBackground.jsx
 'use client';
 import React from 'react';
+import defaultBackgroundImage from './../../../../public/herobg.png';
 
 const WavyBackground = ({
   height = 400,
   lines = 30,
   maxAmplitude = 20,
   className = '',
+  backgroundImage = null,
   children,
 }) => {
   const yPositions = Array.from({ length: lines }, (_, i) =>
     (i * height) / (lines - 1)
   );
 
+  // Use passed backgroundImage or fallback to default
+  const bgImageUrl =
+    backgroundImage?.src || (typeof backgroundImage === 'string' && backgroundImage) || defaultBackgroundImage.src;
+
   return (
     <div
       className={`
         relative overflow-hidden rounded-3xl
-        bg-gradient-to-b from-[#334d6e] to-[#7fb1d2]
+        bg-cover bg-center bg-no-repeat
         ${className}
       `}
-      style={{ height }}
+      style={{
+        height,
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.7)), url(${bgImageUrl})`,
+      }}
     >
       {/* SVG waves */}
       <svg

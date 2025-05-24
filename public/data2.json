@@ -29,13 +29,7 @@
         "imageUrl": "/pain.png",
         "linkText": "EXPLORE NOW"
       },
-      {
-        "id": "rehab-membership",
-        "heading": "Rehab Membership",
-        "paragraph": "Accelerate recovery with daily access to world-class facilities, ideal for returning to sports.",
-        "imageUrl": "/rehab-membership.png",
-        "linkText": "EXPLORE NOW"
-      },
+
       {
         "id": "elevate-program",
         "heading": "Elevate Programme",

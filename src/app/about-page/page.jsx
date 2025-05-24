@@ -7,7 +7,6 @@ import { Space_Grotesk } from 'next/font/google';
 
 import WavyBackground from './../../components/global/Background/WavyBackground';
 import GetInTouch from './../../components/AboutUs/GetInTouch';
-import Card from './../../components/AboutUs/Card';
 import FontLoader from './../../components/global/card/FontLoader';
 
 const spaceGrotesk = Space_Grotesk({
@@ -19,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 const foundersData = [
   {
     name: 'Dr. Pooja',
-    imageSrc: '/doctor1.png',
+    imageSrc: '/doctor.png',
     heading: 'Dr. Pooja - Consultant Physiotherapist & Sports Medicine',
     subheading: 'Founder & Director, Sports Medicine Specialist',
     description: `BPT, MPT in Orthopaedics, Certified Sports Physiotherapist
@@ -40,7 +39,7 @@ With a focus on achieving lasting results, Dr. Pooja emphasizes holistic care, e
   },
   {
     name: 'Dr. Nataraj',
-    imageSrc: '/doctor2.png',
+    imageSrc: '/sirdoc.png',
     heading: 'Dr. Nataraj HM',
     subheading: 'Dr. Nataraj HM - Head of Department Orthopaedics & Sports Surgery',
     description: `MBBS, MS Orthopaedics, MCh Orthopaedics (USAIM)
@@ -61,7 +60,9 @@ Dr. Nataraj is a member of ISAKOS, the Indian Arthroscopy Society, and other pre
 const teamMembers = [
   {
     name: 'Dr. Pooja Jhade',
-    title: 'Founder | Director',
+    title: 'Founder | Director  , PHYSIOTHERAPI Specialist in Sports Surgery ',
+
+    subtitle: 'Certified Sports Physiotherapist',
     phone: '+91 9353 555 755 | +91 9353 555 855',
     email: 'dr.pooja@5sportshealth.com',
     address: 'No 40 & 41, Ambedkar Nagar, Mullur, Sarjapur Road, Bangalore 560003',
@@ -70,6 +71,8 @@ const teamMembers = [
   {
     name: 'Dr. Nataraj H M',
     title: 'HOD - ORTHOPAEDICS, Specialist in Sports Surgery',
+
+    subtitle: 'Senior Consultant Orthopaedics',
     phone: '+91 9353 555 755 | +91 9353 555 855',
     email: 'dr.nataraj@5sportshealth.com',
     address: 'No 40 & 41, Ambedkar Nagar, Mullur, Sarjapur Road, Bangalore 560003',
@@ -78,6 +81,8 @@ const teamMembers = [
   {
     name: 'Dr. Radhesh R Menon',
     title: 'Consultant Orthopaedic Hand & Upperlimb Surgeon',
+      
+    subtitle: 'Specialist in Upperlimb Surgery',
     phone: '+91 9353 555 755 | +91 9353 555 855',
     email: 'dr.radhesh@5sportshealth.com',
     address: 'No 40 & 41, Ambedkar Nagar, Mullur, Sarjapur Road, Bangalore 560003',
@@ -103,6 +108,32 @@ const features = [
     desc: 'From nutrition to physiotherapy, we address every aspect of athletic well-being.',
   },
 ];
+
+// Mock Card Component (since actual Card component code isn't provided)
+const Card = ({ title,  title2, subtitle, description, iconType }) => {
+  const [name, role] = title; // Extract name and role from title array
+  return (
+    <div className="relative bg-white dark:bg-gray-800  rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
+      {/* Decorative Sport Icon */}
+     
+      <div className="text-center mt-6">
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white">{name}</h3>
+        <p className="text-sm text-green-600 dark:text-green-400 mt-1">{role}</p>
+        {title2 && (
+          <p className="text-sm text-green-600 dark:text-green-400 mt-1">{title2}</p>
+        )}
+        {subtitle && (
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 italic">{subtitle}</p>
+        )}
+        {description && (
+          <p className="mt-4 text-gray-600 dark:text-gray-300 whitespace-pre-line text-sm">
+            {description}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default function AboutUs() {
   const { darkMode } = useTheme();
@@ -137,7 +168,7 @@ export default function AboutUs() {
       {/* Hero Section */}
       <section className="flex w-full text-black md:px-20 px-4 py-12 md:py-20 max-md:flex-col">
         {/* Main Article with notches */}
-        <article className="relative flex flex-col py-8 md:py-10 w-full bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible">
+        <article className="relative flex flex-col py-8 md:py-6 w-full bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible">
           {/* Left notch */}
           <div
             className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full hidden md:block transform -translate-y-1/2"
@@ -152,7 +183,7 @@ export default function AboutUs() {
           </h2>
 
           <div className="flex flex-wrap gap-4 justify-center mt-3 w-full text-lg md:text-2xl text-center">
-            <p className="max-w-3xl px-4">
+            <p className="max-w-6xl px-4">
               At 5 Sports, we unlock athletic potential through cutting-edge diagnostics, rapid recovery, and tailored injury-prevention—backed by 18 years of expertise.
             </p>
           </div>
@@ -211,7 +242,7 @@ export default function AboutUs() {
       </section>
 
       {/* Founders Popup Section */}
-      <div className="p-4 md:p-8 md:px-20">
+      <div className="p-4 md:p-8 md:px-20" id="x">
         <section className="flex w-full text-black max-md:flex-col mb-10 mt-12 md:mt-20">
           {/* Main Article with notches */}
           <article className="relative flex flex-col py-8 md:py-10 w-full bg-white border border-white border-solid rounded-[32px] overflow-visible">
@@ -305,17 +336,20 @@ export default function AboutUs() {
             {/* Right notch */}
             <div className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full hidden md:block transform -translate-y-1/2" />
 
-            <h2 className="self-center text-4xl md:text-6xl font-bold leading-none">
+            <h2  className="self-center text-4xl md:text-6xl font-bold leading-none">
               Meet Our Team
             </h2>
           </article>
         </section>
 
-        <div className="flex flex-wrap justify-center gap-4 md:gap-40">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  justify-items-center">
           {teamMembers.map((m, i) => (
-            <div key={i} className="">
+            <div key={i} className="w-full max-w-sm px-9">
               <Card
-                title={[m.name, m.title]}
+                title={[m.name, m.title ]}
+
+                subtitle={m.subtitle}
+                title2={m.title2} // Pass subtitle as a separate prop
                 description={`
                   📞 ${m.phone}
                   📧 ${m.email}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1747898627870,
@@ -40,6 +40,10 @@
                 {
                     "date": 1747898775604,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,9 @@\n \n         <h2 className=\"self-center md:text-6xl font-bold leading-none max-md:text-4xl\">\n         Meet Our Experts\n         </h2>\n-9\n+\n         <div className=\"flex flex-wrap gap-5 justify-center mt-3 w-full md:text-2xl text-center\">\n   <p className=\"max-w-3xl\">\n   Our highly skilled specialists are here to help you achieve peak performance and recovery.\n   </p>\n"
+                },
+                {
+                    "date": 1748014622011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     },\n     {\n       name: 'Dr Nataraj H M',\n       role: 'Knee & Shoulder Specialist HOD-Orthopaedics',\n-      image: '/doctor2.png',\n+      image: '/NatarajDP.png',\n       expertise: [\n         'Robotic Knee Replacement',\n         'Robotic Partial Knee Replacement',\n         'Computer Assisted Surgeries',\n"
                 }
             ],
             "date": 1747898627870,

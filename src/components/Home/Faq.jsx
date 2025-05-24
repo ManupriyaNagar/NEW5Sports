@@ -120,9 +120,9 @@ const FAQ = () => {
 
 
 
-    <section className="flex flex-col md:flex-row w-full bg-black text-black px-2 md:px-20 py-8">
+    <section className="flex flex-col md:flex-row w-full bg-black text-black px-2 md:px-20 py-2">
     {/* Main Article with notches */}
-    <article className="relative flex flex-col py-8 w-full bg-lime-400 border border-white rounded-2xl overflow-visible p-4 md:p-10">
+    <article className="relative flex flex-col py-8 w-full bg-lime-400 border border-white rounded-2xl overflow-visible p-4 md:p-4">
       {/* Left notch: hidden on mobile */}
       <div
         className="hidden md:block absolute -left-8 top-1/2 w-12 h-12 bg-black rounded-full transform -translate-y-1/2"
@@ -136,7 +136,7 @@ const FAQ = () => {
         Frequently Asked Questions
       </h2>
 
-      <p className="mt-4 text-base md:text-2xl text-center max-w-3xl mx-auto hidden md:block">
+      <p className="mt-1 text-base md:text-2xl text-center max-w-3xl mx-auto hidden md:block">
         Everything you need to know about training, rehab, memberships, and recovery at 5 Sports Hospital.
       </p>
     </article>

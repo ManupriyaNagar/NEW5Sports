@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Home/RecoverySection.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1748009229314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1748009229314,
+            "name": "Commit-0",
+            "content": "import Image from \"next/image\";\n\nexport default function RecoverySection() {\n  return (\n    <section className=\"bg-black text-white px-4 py-16 relative\">\n      <div className=\"max-w-6xl mx-auto space-y-20\">\n\n        {/* Top Block */}\n        <div className=\"flex flex-col md:flex-row items-center gap-8\">\n          {/* Text */}\n          <div className=\"flex-1\">\n            <h2 className=\"text-2xl md:text-3xl font-bold mb-4 leading-snug\">\n              The Game-Changing <br />\n              Recovery System That <br />\n              Brings Athletes Back <br />\n              Stronger Than Ever\n            </h2>\n            <p className=\"text-gray-300 text-sm md:text-base\">\n              For years, the secrets of elite recovery and rehabilitation have\n              been confined to professional sports circles. As an athlete, you’ve\n              been left with generalized treatments or ineffective solutions. ➔\n            </p>\n          </div>\n\n          {/* Image */}\n          <div className=\"flex-1 border border-lime-400 rounded-2xl overflow-hidden p-2\">\n            <Image\n              src=\"/news1.jpg\" // Replace with actual image path\n              alt=\"Runner\"\n              width={500}\n              height={500}\n              className=\"w-full h-auto\"\n            />\n          </div>\n        </div>\n\n        {/* Bottom Block */}\n        <div className=\"flex flex-col md:flex-row items-center gap-8 md:flex-row-reverse\">\n          {/* Text */}\n          <div className=\"flex-1\">\n            <h2 className=\"text-2xl md:text-3xl font-bold mb-4 leading-snug\">\n              Here’s the Real Problem <br />\n              with Recovery Today:\n            </h2>\n            <p className=\"text-gray-300 text-sm md:text-base\">\n              Standard recovery methods don’t work for everyone. Generic programs,\n              trendy techniques, and lack of personalized care result in re-injury\n              and poor performance. ➔\n            </p>\n          </div>\n\n          {/* Image */}\n          <div className=\"flex-1 border border-green-400 rounded-2xl overflow-hidden p-2\">\n            <Image\n              src=\"/news2.png\" // Replace with actual image path\n              alt=\"Runner\"\n              width={500}\n              height={500}\n              className=\"w-full h-auto\"\n            />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n}\n"
+        }
+    ]
+}

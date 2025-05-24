@@ -54,32 +54,34 @@ const keyBenefits = [
   },
 ];
 
-// Data for Orthobiologics Cards
+// Updated Data for Orthobiologics Cards
 const orthobiologics = [
   {
     title: "Platelet Rich Plasma (PRP)",
     duration: "1 to 1.5 hours",
     injections: "Usually 3 injections in 3-week intervals",
-    cost: "₹14,000 - ₹21,000",
+    originalCost: "₹21,000", // Original price to be shown with strikethrough
+    offerCost: "₹15,000", // Offer price to be highlighted
     procedureCharge: "₹4,000",
   },
   {
     title: "Growth Factor Concentrate",
     duration: "1 to 1.5 hours",
     injections: "Usually 3 injections in 3-week intervals",
-    cost: "₹14,000 - ₹21,000",
+    originalCost: "₹21,000", // Original price to be shown with strikethrough
+    offerCost: "₹15,000", // Offer price to be highlighted
     procedureCharge: "₹4,000",
   },
   {
     title: "Bone Marrow Concentrate (BMAC)",
     duration: "2 to 2.5 hours",
-    cost: "₹55,000",
+    cost: "₹55,000", // No offer, so use the original cost field
     procedureCharge: "₹20,000",
   },
   {
     title: "Stem Cells",
     duration: "1 hour",
-    cost: "₹1,50,000",
+    cost: "₹1,50,000", // No offer, so use the original cost field
     procedureCharge: "₹10,000",
   },
 ];
@@ -195,7 +197,7 @@ export default function SportsPsychologyPage() {
             >
               Types of Orthobiologics
             </motion.h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8">
               {orthobiologics.map((ortho, index) => (
                 <motion.div
                   key={ortho.title}
@@ -218,7 +220,17 @@ export default function SportsPsychologyPage() {
                     )}
                     <li className="flex items-center justify-between">
                       <span className="text-lime-400">Cost:</span>
-                      <span>{ortho.cost}</span>
+                      <div className="flex items-center gap-2">
+                        {ortho.originalCost && ortho.offerCost ? (
+                          <>
+                            <span className="text-gray-400 line-through">{ortho.originalCost}</span>
+                            <span className="text-green-400 font-bold">{ortho.offerCost}</span>
+                            <span className="text-green-400 text-xs">(Offer)</span>
+                          </>
+                        ) : (
+                          <span>{ortho.cost}</span>
+                        )}
+                      </div>
                     </li>
                     <li className="flex items-center justify-between">
                       <span className="text-lime-400">Procedure Charge:</span>

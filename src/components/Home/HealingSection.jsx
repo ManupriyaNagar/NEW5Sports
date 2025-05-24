@@ -27,7 +27,7 @@ const therapies = [
 
 export default function HealingSection() {
   return (
-    <section className="bg-black text-white py-16 px-4">
+    <section className="bg-black text-white px-4 relative py-20">
       <div className=" text-center">
         {/* Header */}
         <section className="flex  w-full text-black px-16 max-md:flex-col">

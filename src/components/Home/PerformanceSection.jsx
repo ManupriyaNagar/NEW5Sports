@@ -12,7 +12,7 @@ const cardData = [
     highlight: "Heart + Lungs = Your Endurance Power Unleashed",
     test: "Comprehensive Health Assessment",
     why: "Efficient heart and lung function = Better endurance, recovery, and overall stamina for peak performance.",
-    who: "Endurance athletes, long-distance runners, cyclists, and those focused on improving stamina and aerobic capacity.",
+    who: "Endurance athletes, long-distance runners, cyclists, and dedicated individuals focused on improving stamina and aerobic capacity.",
     extra: `We provide comprehensive testing to optimize your endurance. Understand your limits and create a plan to perform better, recover faster, and dominate your game. Ready to elevate? Contact us today!`,
   },
   {
@@ -61,7 +61,7 @@ const PerformanceSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-gray-900 text-white relative">
+    <section className="py-20 bg-gradient-to-b from-black to-black text-white relative ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

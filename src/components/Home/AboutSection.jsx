@@ -2,9 +2,9 @@
 import React from 'react';
 
 const AboutUsSection = () => (
-  <section className="flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20 py-10">
+  <section className="flex flex-col md:flex-row w-full bg-black text-white px-4 md:px-20  ">
     {/* Main Article with notches */}
-    <article className="relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full">
+    <article className="relative flex flex-col bg-lime-400 border border-white rounded-2xl overflow-visible p-6 md:p-10 w-full  py-20">
       {/* Left notch: hidden on mobile */}
       <div
         className="hidden md:block absolute -left-8 top-1/2 w-14 h-14 bg-black rounded-full
