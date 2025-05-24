@@ -20,11 +20,11 @@ const navItems = [
     name: 'Athletes',
     href: '',
     submenu: [
-      { name: 'Injury', href: '/atheletes/injury' },
-      { name: 'Performance Lab', href: '/atheletes/performance-lab' },
-      { name: 'Programmes', href: '/atheletes/programmes' },
-      { name: 'Sports Psychology', href: '/atheletes/sports-pychology' },
-      { name: 'Sports Nutrition', href: '/atheletes/sports-nutrients' },
+      { name: 'Injury', href: '/Atheletes/injury' },
+      { name: 'Performance Lab', href: '/Atheletes/performance-lab' },
+      { name: 'Programmes', href: '/Atheletes/programmes' },
+      { name: 'Sports Psychology', href: '/Atheletes/sports-pychology' },
+      { name: 'Sports Nutrition', href: '/Atheletes/sports-nutrients' },
     ],
   },
   {
@@ -65,10 +65,16 @@ const navItems = [
     submenu: [
       {
         name: 'Dental Services',
-        href: '/cosmo-dental/dentalservice',
+        href: '/cosmo-dental/dental-service',
         submenu: [
-          { name: 'Root Canal', href: '/cosmo-dental/dentalservice' },
-          { name: 'Braces', href: '/cosmo-dental/braces' },
+          { name: 'Overview', href: '/cosmo-dental/dental-service/overview' },
+          { name: 'Dental Implants', href: '/cosmo-dental/dental-service/dental-implants' },
+          { name: 'Invisalign', href: '/cosmo-dental/dental-service/invisalign' },
+          { name: 'Orthodontic Treatment', href: '/cosmo-dental/cosmetic#veneers' },
+          { name: 'Root Canal Treatment', href: '/cosmo-dental/cosmetic#veneers' },
+          { name: 'Laser Teeth Whitening', href: '/cosmo-dental/cosmetic#veneers' },
+          { name: 'Advanced Imaging', href: '/cosmo-dental/cosmetic#veneers' },
+          { name: 'Treatment Gallery', href: '/cosmo-dental/cosmetic#veneers' },
         ],
       },
       {
@@ -76,6 +82,8 @@ const navItems = [
         href: '/cosmo-dental/cosmetic',
         submenu: [
           { name: 'Teeth Whitening', href: '/cosmo-dental/cosmetic#whitening' },
+          { name: 'Veneers', href: '/cosmo-dental/cosmetic#veneers' },
+          { name: 'Veneers', href: '/cosmo-dental/cosmetic#veneers' },
           { name: 'Veneers', href: '/cosmo-dental/cosmetic#veneers' },
         ],
       },

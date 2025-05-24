@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import performanceLabData from './../../../../lib/performance-lab.json';
-import PerformanceLabDetailClient from './../../../../components/Atheletes/PerformanceLabDetailClient';
+import PerformanceLabDetailClient from '../../../../components/Atheletes/PerformanceLabDetailClient';
 
 // Define Service interface for type safety
 const Service = {

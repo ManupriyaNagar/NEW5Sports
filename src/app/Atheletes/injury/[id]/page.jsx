@@ -2,7 +2,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import physiotherapyData from '../../../../lib/physiotherapy.json';
-import ProgrammeDetailClient from './../../../../components/Atheletes/ProgrammeDetailClient';
+import ProgrammeDetailClient from '../../../../components/Atheletes/ProgrammeDetailClient';
 
 export function generateStaticParams() {
   return physiotherapyData.map((p) => ({ id: p.id }));

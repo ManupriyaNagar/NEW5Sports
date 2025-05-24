@@ -5,7 +5,7 @@ import React from 'react';
 import programsData from '../../../../lib/programmes.json';
 
 
-import ProgramDetailClient from './../../../../components/Atheletes/ProgramDetailClient';
+import ProgramDetailClient from '../../../../components/Atheletes/ProgramDetailClient';
 
 
 
