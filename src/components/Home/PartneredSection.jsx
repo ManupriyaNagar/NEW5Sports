@@ -25,7 +25,7 @@ const PartneredSection = ({
     </div>
 
     {/* ───── Bottom Section (Flat Green) ───── */}
-    <div className=" relative border-2 border-green-900 rounded-3xl h-[12rem] overflow-visible  bg-lime-900 "
+    <div className=" relative border-2 border-green-900 rounded-3xl h-[15rem] overflow-visible  bg-lime-900 "
          style={{
              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,
           backgroundSize: 'cover',

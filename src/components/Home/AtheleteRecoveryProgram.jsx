@@ -2,30 +2,30 @@ import Image from "next/image";
 
 export default function AthletesRecoveryProgram() {
   return (
-    <section className="bg-black rounded-t-3xl text-center px-4 py-12 relative ">
+    <section className="bg-black rounded-t-3xl text-center px-5 py-12 relative ">
       {/* Side cutouts */}
 
       {/* Header */}
-      <section className="flex  w-full text-black px-20 max-md:flex-col">
+      <section className="flex  w-full text-black  max-md:flex-col ">
       {/* Main Article with notches */}
-      <article className="relative flex flex-col py-10 w-full   bg-white border border-lime-400 border-solid rounded-[32px] overflow-visible ">
+      <article className="relative flex flex-col md:py-10 py-5 w-full   bg-white border border-lime-400 border-solid rounded-[22px] overflow-visible ">
         {/* Left notch */}
         <div
-          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+          className="absolute -left-8 top-1/2 hidden md:block w-[60px] h-[60px] bg-black rounded-full 
                      transform -translate-y-1/2"
         />
         {/* Right notch */}
         <div
-          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+          className="absolute -right-8 hidden md:block top-1/2 w-[60px] h-[60px] bg-black rounded-full 
                      transform -translate-y-1/2"
         />
 
-        <h2 className="self-center text-6xl font-bold leading-none max-md:text-4xl">
+        <h2 className="self-center text-2xl  md:text-6xl font-bold leading-none ">
       Athletes Recovery Program
         </h2>
 
-        <div className="flex flex-wrap gap-5 justify-center mt-6 w-full text-2xl text-center">
-  <p className="max-w-3xl">
+        <div className="hidden md:block flex-wrap gap-5 justify-center mt-6 w-full text-2xl text-center ">
+  <p className="max-w-7xl mx-auto">
     Learn more about our mission to redefine sports medicine and athlete care.
   </p>
 </div>

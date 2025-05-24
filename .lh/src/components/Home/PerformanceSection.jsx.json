@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1747547001888,
@@ -68,6 +68,10 @@
                 {
                     "date": 1748019503486,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     title: \"Cardiac Health\",\n     highlight: \"Heart + Lungs = Your Endurance Power Unleashed\",\n     test: \"Comprehensive Health Assessment\",\n     why: \"Efficient heart and lung function = Better endurance, recovery, and overall stamina for peak performance.\",\n-    who: \"Endurance athletes, long-distance runners, cyclists, and those focused on improving stamina and aerobic capacity.\",\n+    who: \"Endurance athletes, long-distance runners, cyclists, and dedicated individuals focused on improving stamina and aerobic capacity.\",\n     extra: `We provide comprehensive testing to optimize your endurance. Understand your limits and create a plan to perform better, recover faster, and dominate your game. Ready to elevate? Contact us today!`,\n   },\n   {\n     id: \"muscle\",\n"
+                },
+                {
+                    "date": 1748081259123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n - Sports-Specific Blood Tests: Fine-tune nutrition and recovery with detailed biomarkers.\n - Organ Function Tests: Ensure your heart, liver, and kidneys operate at peak levels for faster recovery and sustained performance.\n Why It Matters: A healthy body recovers faster and performs longer. Let’s build your winning strategy!`,\n   },\n-];\n+]; \n \n const PerformanceSection = () => {\n   const [expanded, setExpanded] = useState({});\n   const { darkMode } = useTheme();\n"
                 }
             ],
             "date": 1747547001888,

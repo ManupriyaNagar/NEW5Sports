@@ -36,7 +36,7 @@ const cardData = [
 - Organ Function Tests: Ensure your heart, liver, and kidneys operate at peak levels for faster recovery and sustained performance.
 Why It Matters: A healthy body recovers faster and performs longer. Let’s build your winning strategy!`,
   },
-];
+]; 
 
 const PerformanceSection = () => {
   const [expanded, setExpanded] = useState({});

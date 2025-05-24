@@ -34,7 +34,7 @@ const SportsInfoCards = () => {
 
   return (
     <section
-      className={`md:py-20 transition-colors duration-500  sticky top-7 ${
+      className={`md:py-20 transition-colors duration-500   ${
         darkMode
           ? 'bg-gradient-to-b from-black via-black to-black text-white'
           : 'bg-gray-100 text-gray-900'
@@ -83,7 +83,7 @@ const SportsInfoCards = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center transition-transform duration-300 hover:scale-95 hover:shadow-xl ${
+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-64 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${
                 darkMode
                   ? `${truth.bgColor} border-gray-100`
                   : `${truth.bgColor} border-gray-300`

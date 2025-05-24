@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 34,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1748009212949,
@@ -144,6 +144,10 @@
                 {
                     "date": 1748017960535,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n       />\n     </div>\n \n     {/* ───── Bottom Section (Flat Green) ───── */}\n-    <div className=\" relative border-2 border-green-900 rounded-3xl h-[12rem] overflow-visible  bg-green-900 \"\n+    <div className=\" relative border-2 border-green-900 rounded-3xl h-[12rem] overflow-visible  bg-lime-900 \"\n          style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748082100255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n       />\n     </div>\n \n     {/* ───── Bottom Section (Flat Green) ───── */}\n-    <div className=\" relative border-2 border-green-900 rounded-3xl h-[12rem] overflow-visible  bg-lime-900 \"\n+    <div className=\" relative border-2 border-green-900 rounded-3xl h-[15rem] overflow-visible  bg-lime-900 \"\n          style={{\n              backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n           backgroundSize: 'cover',\n           backgroundPosition: 'center',\n"
                 }
             ],
             "date": 1748009212949,

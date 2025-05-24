@@ -117,7 +117,7 @@ const MeetOurExperts = () => {
         </h2>
 
         <div className="flex flex-wrap gap-5 justify-center mt-3 w-full md:text-2xl text-center">
-  <p className="max-w-3xl">
+  <p className="max-w-3xl hidden md:block">
   Our highly skilled specialists are here to help you achieve peak performance and recovery.
   </p>
 </div>
@@ -152,13 +152,13 @@ const MeetOurExperts = () => {
                       className="flex flex-col sm:flex-row"
                     >
                       {/* Image */}
-                      <div className="w-full sm:w-1/2 h-[250px] sm:h-auto relative overflow-hidden group">
+                      <div className="w-full sm:w-1/2 h-[250px]  sm:h-auto relative overflow-hidden group">
                         <Image
                           src={member.image}
                           alt={member.name}
                           width={400}
                           height={300}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          className="w-full h-[45vh]  object-cover transition-transform duration-500 group-hover:scale-110"
                           unoptimized
                         />
                       </div>

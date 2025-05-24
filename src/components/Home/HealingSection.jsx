@@ -30,17 +30,17 @@ export default function HealingSection() {
     <section className="bg-black text-white px-4 relative py-20">
       <div className=" text-center">
         {/* Header */}
-        <section className="flex  w-full text-black px-16 max-md:flex-col">
+        <section className="flex  w-full text-black md:px-16 max-md:flex-col">
       {/* Main Article with notches */}
-      <article className="relative flex flex-col py-10 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
+      <article className="relative flex flex-col md:py-10 py-5 w-full   bg-lime-400 border border-white border-solid rounded-[32px] overflow-visible ">
         {/* Left notch */}
         <div
-          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+          className="absolute -left-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full md:block hidden
                      transform -translate-y-1/2"
         />
         {/* Right notch */}
         <div
-          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full 
+          className="absolute -right-8 top-1/2 w-[60px] h-[60px] bg-black rounded-full md:block hidden
                      transform -translate-y-1/2"
         />
 
@@ -48,8 +48,8 @@ export default function HealingSection() {
         Healing Being Transformed
         </h2>
 
-        <div className="flex flex-wrap gap-5 justify-center mt-4 w-full text-2xl text-center">
-  <p className="max-w-3xl">
+        <div className=" flex-wrap gap-5 justify-center mt-4 w-full text-2xl text-center md:block hidden mx-auto">
+  <p className="max-w-6xl mx-auto">
   Elite recovery methods are being made accessible to all— enabling faster healing and peak performance.
   </p>
 </div>

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 187,
+            "activePatchIndex": 226,
             "patches": [
                 {
                     "date": 1747851709011,
@@ -756,6 +756,162 @@
                 {
                     "date": 1748012829224,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n                 </h1>\n \n                 <button\n                   onClick={() => window.location.href = 'https://kivihealth.com/clinic/fives-sport-hospital-'}\n-                  className=\"md:mt-3 mt-18 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n+                  className=\"md:mt-5 mt-18 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n                 >\n                   <CalendarCheck className=\"w-6 h-6\" />\n                   Book an Appointment\n                 </button>\n"
+                },
+                {
+                    "date": 1748074164801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n                 <img\n                   key={`scroll-image-${idx}`}\n                   src={src}\n                   alt={`scroll-img-${idx}`}\n-                  className=\"h-24 w-60 rounded-full mr-4\"\n+                  className=\"md:h-24 md:w-60 rounded-full mr-4\"\n                 />\n               ))}\n             </motion.div>\n           </div>\n"
+                },
+                {
+                    "date": 1748074190023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n                 <img\n                   key={`scroll-image-${idx}`}\n                   src={src}\n                   alt={`scroll-img-${idx}`}\n-                  className=\"md:h-24 md:w-60 rounded-full mr-4\"\n+                  className=\"md:h-24 md:w-60  w-36 h-16 rounded-full mr-4\"\n                 />\n               ))}\n             </motion.div>\n           </div>\n"
+                },
+                {
+                    "date": 1748074265429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-full overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[95vw] overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074277556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[95vw] overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[95vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074286167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[95vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[80vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074295339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[80vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[89vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074306813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[89vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[88vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074312646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[88vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[89vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074319406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[89vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[91vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074326671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[91vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[90vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074429564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[90vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[91vw] mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074451956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[91vw] mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[91vw] -z-10 mx-auto overflow-hidden py-4 z-10\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074466110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[91vw] -z-10 mx-auto overflow-hidden py-4 z-10\">\n+          <div className=\"relative w-[91vw] -z-10 mx-auto overflow-hidden py-4 re;ative\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074486671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\"relative w-[91vw] -z-10 mx-auto overflow-hidden py-4 re;ative\">\n+          <div className=\" w-[91vw] -z-10 mx-auto overflow-hidden py-4 relative\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074527423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n             alt=\"Right Decoration\"\n             className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n           />\n \n-          <div className=\" w-[91vw] -z-10 mx-auto overflow-hidden py-4 relative\">\n+          <div className=\" w-[91vw] -z-50 mx-auto overflow-hidden py-4 relative\">\n             <motion.div\n               className=\"flex min-w-max\"\n               animate={{ x: ['0%', '-50%'] }}\n               transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}\n"
+                },
+                {
+                    "date": 1748074583547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n       <section\n         className=\"text-white py-10 overflow-hidden px-4 md:px-16 min-h-screen relative\"\n       >\n         <div\n-          className=\"z-20 relative border-2 border-lime-400 rounded-4xl overflow-visible px-0 h-[80vh] bg-green-900\"\n+          className=\"z-20 relative border-2 border-lime-400 rounded-3xl overflow-visible px-0 h-[80vh] bg-green-900\"\n           style={{\n             backgroundImage: `linear-gradient(to top, rgba(0, 4, 0, 0.5), rgba(4, 0, 0, 0.9)), url(${bgimg.src})`,\n             backgroundSize: 'cover',\n             backgroundPosition: 'center',\n"
+                },
+                {
+                    "date": 1748074633472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         >\n           <img\n             src=\"/hero1.png\"\n             alt=\"Left Decoration\"\n-            className=\"absolute bottom-0 -left-12 w-32 h-32 md:w-[30rem] md:h-[30rem] object-contain z-20\"\n+            className=\"absolute bottom-0 -left-12 w-32 h-32 md:w-[30rem] md:h-[30rem] object-contain z-20 hidden md:block\"\n           />\n \n           <img\n             src=\"/hero2.png\"\n"
+                },
+                {
+                    "date": 1748074650075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n \n           <img\n             src=\"/hero2.png\"\n             alt=\"Right Decoration\"\n-            className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20\"\n+            className=\"absolute bottom-0 -right-2 md:w-[25rem] object-contain z-20 hidden md:block\"\n           />\n \n           <div className=\" w-[91vw] -z-50 mx-auto overflow-hidden py-4 relative\">\n             <motion.div\n"
+                },
+                {
+                    "date": 1748074901674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,12 +105,12 @@\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n-              <button className=\"bg-[#D3FA22] text-black px-6 py-2 rounded-full\">\n+              <button className=\"bg-[#D3FA22] text-black md:px-6 md:py-2 rounded-full\">\n                 Improve Performance\n               </button>\n-              <button className=\"bg-[#FFFFFF] text-black px-6 py-2 rounded-full\">\n+              <button className=\"bg-[#FFFFFF] text-black md:px-6 md:py-2 rounded-full\">\n                 Rehabilitate Injuries\n               </button>\n             </div>\n           </div>\n"
+                },
+                {
+                    "date": 1748074923279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n             <div className=\"flex justify-center space-x-4\">\n               <button className=\"bg-[#D3FA22] text-black md:px-6 md:py-2 rounded-full\">\n                 Improve Performance\n               </button>\n-              <button className=\"bg-[#FFFFFF] text-black md:px-6 md:py-2 rounded-full\">\n+              <button className=\"bg-[#FFFFFF] text-xs text-black md:px-6 md:py-2 rounded-full\">\n                 Rehabilitate Injuries\n               </button>\n             </div>\n           </div>\n"
+                },
+                {
+                    "date": 1748074939243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n             <div className=\"flex justify-center space-x-4\">\n               <button className=\"bg-[#D3FA22] text-black md:px-6 md:py-2 rounded-full\">\n                 Improve Performance\n               </button>\n-              <button className=\"bg-[#FFFFFF] text-xs text-black md:px-6 md:py-2 rounded-full\">\n+              <button className=\"bg-[#FFFFFF] text-black md:px-6 md:py-2 rounded-full\">\n                 Rehabilitate Injuries\n               </button>\n             </div>\n           </div>\n"
+                },
+                {
+                    "date": 1748074954376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,12 +105,12 @@\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n-              <button className=\"bg-[#D3FA22] text-black md:px-6 md:py-2 rounded-full\">\n+              <button className=\"bg-[#D3FA22] text-black md:px-6 md:py-2 rounded-full  hidden md:block\">\n                 Improve Performance\n               </button>\n-              <button className=\"bg-[#FFFFFF] text-black md:px-6 md:py-2 rounded-full\">\n+              <button className=\"bg-[#FFFFFF] text-black md:px-6 md:py-2 rounded-full  hidden md:block\">\n                 Rehabilitate Injuries\n               </button>\n             </div>\n           </div>\n"
+                },
+                {
+                    "date": 1748075321098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n                 </h1>\n \n                 <button\n                   onClick={() => window.location.href = 'https://kivihealth.com/clinic/fives-sport-hospital-'}\n-                  className=\"md:mt-5 mt-18 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n+                  className=\"md:mt-5  md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n                 >\n                   <CalendarCheck className=\"w-6 h-6\" />\n                   Book an Appointment\n                 </button>\n"
+                },
+                {
+                    "date": 1748075327502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n                 </h1>\n \n                 <button\n                   onClick={() => window.location.href = 'https://kivihealth.com/clinic/fives-sport-hospital-'}\n-                  className=\"md:mt-5  md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n+                  className=\"md:mt-5 mt-6 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n                 >\n                   <CalendarCheck className=\"w-6 h-6\" />\n                   Book an Appointment\n                 </button>\n"
+                },
+                {
+                    "date": 1748075334800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n                 </h1>\n \n                 <button\n                   onClick={() => window.location.href = 'https://kivihealth.com/clinic/fives-sport-hospital-'}\n-                  className=\"md:mt-5 mt-6 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-1 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n+                  className=\"md:mt-5 mt-6 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-2 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n                 >\n                   <CalendarCheck className=\"w-6 h-6\" />\n                   Book an Appointment\n                 </button>\n"
+                },
+                {
+                    "date": 1748075351135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n           <div className=\"container mx-auto px-4 relative z-10 text-center rounded-full mt-5\">\n             <div className=\"flex items-center\">\n               <div className=\"items-center flex flex-col justify-center w-full rounded-full py-4\">\n \n-                <h1 className=\"text-5xl font-extrabold uppercase\">5 SPORTS Health</h1>\n+                <h1 className=\"md:text-5xl font-extrabold uppercase\">5 SPORTS Health</h1>\n                 <p className=\"text-xl\">Where Sports Meets Health Excellence</p>\n                 <p className={`${koulen.className} text-3xl text-[#D3FA22] font-extrabold mt-7`}>\n                   INDIA’S FIRST INTEGRATED SPORTS MEDICINE & REHAB CENTER\n                 </p>\n@@ -89,9 +89,9 @@\n                 </h1>\n \n                 <button\n                   onClick={() => window.location.href = 'https://kivihealth.com/clinic/fives-sport-hospital-'}\n-                  className=\"md:mt-5 mt-6 md:px-4 md:py-3 rounded-lg md:text-xl px-1 py-2 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n+                  className=\"md:mt-5 mt-6 md:px-4 md:py-3 rounded-lg md:text-xl px-2 py-2 font-medium transition flex items-center justify-center text-black hover:text-white hover:bg-white transform animate-gradient gap-2 shadow-2xl shadow-gradient\"\n                 >\n                   <CalendarCheck className=\"w-6 h-6\" />\n                   Book an Appointment\n                 </button>\n"
+                },
+                {
+                    "date": 1748075364225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n           <div className=\"container mx-auto px-4 relative z-10 text-center rounded-full mt-5\">\n             <div className=\"flex items-center\">\n               <div className=\"items-center flex flex-col justify-center w-full rounded-full py-4\">\n \n-                <h1 className=\"md:text-5xl font-extrabold uppercase\">5 SPORTS Health</h1>\n+                <h1 className=\"md:text-5xl font-extrabold uppercase text-2xl\">5 SPORTS Health</h1>\n                 <p className=\"text-xl\">Where Sports Meets Health Excellence</p>\n                 <p className={`${koulen.className} text-3xl text-[#D3FA22] font-extrabold mt-7`}>\n                   INDIA’S FIRST INTEGRATED SPORTS MEDICINE & REHAB CENTER\n                 </p>\n"
+                },
+                {
+                    "date": 1748075381022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-2xl font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748075394643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-2xl font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-xl font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748075401215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-xl font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748075421998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n   return (\n     <section>\n       <section\n-        className=\"text-white py-10 overflow-hidden px-4 md:px-16 min-h-screen relative\"\n+        className=\"text-white py-10 overflow-hidden px-4 md:px-16 mmd:min-h-screen relative\"\n       >\n         <div\n           className=\"z-20 relative border-2 border-lime-400 rounded-3xl overflow-visible px-0 h-[80vh] bg-green-900\"\n           style={{\n"
+                },
+                {
+                    "date": 1748075428714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n   return (\n     <section>\n       <section\n-        className=\"text-white py-10 overflow-hidden px-4 md:px-16 mmd:min-h-screen relative\"\n+        className=\"text-white py-10 overflow-hidden px-4 md:px-16 md:min-h-screen relative\"\n       >\n         <div\n           className=\"z-20 relative border-2 border-lime-400 rounded-3xl overflow-visible px-0 h-[80vh] bg-green-900\"\n           style={{\n"
+                },
+                {
+                    "date": 1748081544627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-xs  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748081557887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-xs  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-md  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748081578982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-md  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-[0.2rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748081588702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-[0.2rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-[0.9rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748081652816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-[0.9rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-2xl  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n"
+                },
+                {
+                    "date": 1748081703391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,10 +100,11 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-2xl  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-[0.9rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n+              \n             </div>\n \n             <div className=\"flex justify-center space-x-4\">\n               <button className=\"bg-[#D3FA22] text-black md:px-6 md:py-2 rounded-full  hidden md:block\">\n"
+                },
+                {
+                    "date": 1748081711029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           </div>\n \n           <div className=\"absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2\">\n             <div className=\"bottom-0 mt-8 justify-center flex flex-col items-center\">\n-              <p className=\"md:text-xl text-[0.9rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n+              <p className=\"md:text-xl text-[0.8rem]  font-thin\">UNLOCK A NEW LEVEL OF</p>\n               <h2 className=\"md:text-5xl font-bold mt-2 mb-5\">PERFORMANCE</h2>\n               \n             </div>\n \n"
                 }
             ],
             "date": 1747851709011,

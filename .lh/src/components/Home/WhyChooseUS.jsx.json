@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1748016290451,
@@ -32,6 +32,14 @@
                 {
                     "date": 1748016374563,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,9 @@\n \n                   {/* Title */}\n                   <h3\n                     className={`text-lg font-bold uppercase tracking-tight mb-3 ${\n-                      darkMode ? 'text-green-400' : 'text-green-700'\n+                      darkMode ? 'text-lime-400' : 'text-green-700'\n                     }`}\n                   >\n                     {feature.title}\n                   </h3>\n"
+                },
+                {
+                    "date": 1748076248126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             </h2>\n           </div>\n \n           <p\n-            className={`text-3xl md:font-size-1.5rem mx-auto mt-4 ${\n+            className={`text-xl md:font-size-1.5rem mx-auto mt-4 ${\n               darkMode ? 'text-gray-300' : 'text-gray-700'\n             }`}\n           >\n             Discover what makes us the <span className=\"text-lime-500\">#1 Sports Medicine & Rehab Center</span> in India.\n"
+                },
+                {
+                    "date": 1748076255139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n               className={`absolute inset-0 w-full h-full rounded-lg skew-y-1 ${\n                 darkMode ? '' : 'bg-green-500'\n               }`}\n             ></span>\n-            <h2 className=\"text-2xl md:text-5xl font-extrabold uppercase drop-shadow-lg relative tracking-wide\">\n+            <h2 className=\"text-xl md:text-5xl font-extrabold uppercase drop-shadow-lg relative tracking-wide\">\n               <strong>Why Choose Us?</strong>\n             </h2>\n           </div>\n \n"
                 }
             ],
             "date": 1748016290451,

@@ -57,13 +57,13 @@ export default function WhyChooseUs() {
                 darkMode ? '' : 'bg-green-500'
               }`}
             ></span>
-            <h2 className="text-2xl md:text-5xl font-extrabold uppercase drop-shadow-lg relative tracking-wide">
+            <h2 className="text-4xl md:text-5xl font-extrabold uppercase drop-shadow-lg relative tracking-wide">
               <strong>Why Choose Us?</strong>
             </h2>
           </div>
 
           <p
-            className={`text-3xl md:font-size-1.5rem mx-auto mt-4 ${
+            className={`text-xl md:font-size-1.5rem mx-auto mt-4 ${
               darkMode ? 'text-gray-300' : 'text-gray-700'
             }`}
           >

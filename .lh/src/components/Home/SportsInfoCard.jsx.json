@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 37,
             "patches": [
                 {
                     "date": 1747858528413,
@@ -124,6 +124,38 @@
                 {
                     "date": 1748008923282,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n   ];\n \n   return (\n     <section\n-      className={`md:py-20 transition-colors duration-500  sticky fixed ${\n+      className={`md:py-20 transition-colors duration-500  sticky top-7 ${\n         darkMode\n           ? 'bg-gradient-to-b from-black via-black to-black text-white'\n           : 'bg-gray-100 text-gray-900'\n       } relative`}\n"
+                },
+                {
+                    "date": 1748076662088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-96 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
+                },
+                {
+                    "date": 1748076676191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n   ];\n \n   return (\n     <section\n-      className={`md:py-20 transition-colors duration-500  sticky top-7 ${\n+      className={`md:py-20 transition-colors duration-500   ${\n         darkMode\n           ? 'bg-gradient-to-b from-black via-black to-black text-white'\n           : 'bg-gray-100 text-gray-900'\n       } relative`}\n"
+                },
+                {
+                    "date": 1748076689396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-96 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-60 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
+                },
+                {
+                    "date": 1748076696935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-60 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-72 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
+                },
+                {
+                    "date": 1748076716271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-72 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center  transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
+                },
+                {
+                    "date": 1748076752877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center  transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-64 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
+                },
+                {
+                    "date": 1748076758578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-64 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-68 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
+                },
+                {
+                    "date": 1748076932945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               initial={{ opacity: 0, scale: 0.95 }}\n               whileInView={{ opacity: 1, scale: 1 }}\n               viewport={{ once: true }}\n               transition={{ delay: index * 0.1, duration: 0.4 }}\n-              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h-68 transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n+              className={`cursor-pointer backdrop-blur-md border rounded-xl p-6 text-center h- transition-transform duration-300 hover:scale-95 hover:shadow-xl ${\n                 darkMode\n                   ? `${truth.bgColor} border-gray-100`\n                   : `${truth.bgColor} border-gray-300`\n               } relative`}\n"
                 }
             ],
             "date": 1747858528412,
